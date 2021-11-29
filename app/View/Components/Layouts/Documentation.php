@@ -102,7 +102,7 @@ class Documentation extends Component
         ]])->map(function (array $link) {
             $route = data_get($link, 'route');
 
-            data_set($link, 'active', request()->routeIs($route));
+            data_set($link, 'active', request()->url() === $route);
 
             return $link;
         })->toArray();
