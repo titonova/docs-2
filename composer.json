@@ -17,7 +17,8 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.8",
         "ph7jack/wireui": "^0.14.2",
-        "sentry/sentry-laravel": "^2.10"
+        "sentry/sentry-laravel": "^2.10",
+        "torchlight/torchlight-laravel": "^0.5.7"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
