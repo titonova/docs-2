@@ -116,7 +116,7 @@
         </div>
     </div>
 
-    <div class="max-w-3xl mx-auto lg:max-w-9xl lg:pl-4 lg:grid lg:grid-cols-12 lg:gap-8">
+    <div class="max-w-3xl mx-auto lg:max-w-9xl lg:pl-4 lg:grid lg:grid-cols-12 lg:gap-8 dark:bg-secondary-800">
         <div class="hidden lg:block lg:col-span-3 xl:col-span-2">
             <nav class="sticky top-4">
                 <div class="flex-shrink-0 flex justify-between items-center px-4 py-4">

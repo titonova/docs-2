@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="{{ session('dark', false) ? 'dark' : '' }}">
 
 <head>
     <meta charset="utf-8">
@@ -22,7 +22,7 @@
     @stack('styles')
 </head>
 
-<body class="font-sans overflow-y-scroll min-h-screen bg-blueGray-100 dark:bg-secondary-800 {{ session('dark', false) ? 'dark' : '' }}">
+<body class="font-sans overflow-y-scroll min-h-screen bg-blueGray-100 dark:bg-secondary-800">
     <x-notifications />
     <x-dialog />
 

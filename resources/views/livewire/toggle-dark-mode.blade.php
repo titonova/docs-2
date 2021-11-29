@@ -5,12 +5,14 @@
         return window.matchMedia('(prefers-color-scheme: dark)').matches
     },
     enable() {
+        this.dark = true
         window.localStorage.setItem('dark', true)
-        document.body.classList.add('dark')
+        document.documentElement.classList.add('dark')
     },
     disable() {
+        this.dark = false
         window.localStorage.setItem('dark', false)
-        document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark')
     },
     syncDarkMode() {
         this.dark ? this.enable() : this.disable()
@@ -21,9 +23,17 @@ x-init="function() {
 
     $watch('dark', dark => this.syncDarkMode())
 }">
-    <x-icon name="sun" class="w-5 h-5 text-gray-700 dark:text-secondary-200" />
+    <x-icon
+        class="w-5 h-5 cursor-pointer text-gray-700 dark:text-secondary-200"
+        x-on:click="disable"
+        name="sun"
+    />
 
-    <x-toggle wire:model="dark" />
+    <x-toggle x-model="dark" id="dark-mode" />
 
-    <x-icon name="moon" class="w-5 h-5 text-gray-700 dark:text-secondary-200" />
+    <x-icon
+        class="w-5 h-5 cursor-pointer text-gray-700 dark:text-secondary-200"
+        x-on:click="enable"
+        name="moon"
+    />
 </div>
