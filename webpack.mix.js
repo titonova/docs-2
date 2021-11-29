@@ -1,4 +1,5 @@
 const mix = require('laravel-mix')
+const tailwindcss = require('tailwindcss')
 
 mix.js('resources/js/alpine.js', 'public/dist/alpine.js')
     .js('resources/js/app.js', 'public/dist/app.js')
