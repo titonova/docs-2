@@ -29,6 +29,9 @@ class Documentation extends Component
             'label'     => 'Customizations',
             'route'     => route('docs.customization'),
         ], [
+            'label'     => 'Contribution Guide',
+            'route'     => route('docs.contributing'),
+        ], [
             'header'    => 'Form Components',
             'label'     => 'Inputs',
             'route'     => route('docs.inputs'),

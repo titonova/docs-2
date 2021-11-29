@@ -42,3 +42,4 @@ Route::get('docs/textarea',        Documentation\Textarea::class)->name('docs.te
 Route::get('docs/changelog',       Documentation\Changelog::class)->name('docs.changelog');
 Route::get('docs/colors',          Documentation\Colors::class)->name('docs.colors');
 Route::get('docs/customization',   Documentation\Customization::class)->name('docs.customization');
+Route::get('docs/contributing',    Documentation\Contributing::class)->name('docs.contributing');
