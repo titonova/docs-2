@@ -9,10 +9,9 @@
             </a>
         </div>
         <div class="mt-4 md:mt-0 md:order-1">
-            Code highlighting provided by
-            <a href="https://torchlight.dev" class="text-center font-semibold text-teal-600">
-                Torchlight
-            </a>
+            <p class="text-center text-base text-gray-400">
+                &copy; 2021 Wire Ui Components.
+            </p>
         </div>
     </div>
 </footer>

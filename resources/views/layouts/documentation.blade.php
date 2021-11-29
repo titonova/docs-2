@@ -181,10 +181,11 @@
                             <x-icons.github class="h-6 w-6" />
                         </a>
                     </div>
-                    <div class="mt-4 md:mt-0 md:order-1">
-                        <p class="text-center text-base text-gray-400">
-                            &copy; 2021 Wire Ui Components.
-                        </p>
+                    <div class="mt-4 md:mt-0 md:order-1 text-sm text-gray-600">
+                        Code highlighting provided by
+                        <a href="https://torchlight.dev" target="_blank" class="text-center font-semibold text-teal-600">
+                            Torchlight
+                        </a>
                     </div>
                 </div>
             </footer>
