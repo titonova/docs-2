@@ -18,6 +18,8 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.4.4",
+        "sass": "^1.43.5",
+        "sass-loader": "^12.3.0",
         "tailwindcss": "^2.2.19"
     },
     "dependencies": {

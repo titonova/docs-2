@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./torchlight.scss";
+@import "./animations.scss";
+
+[x-cloak] {
+    display: none !important;
+}
+
+@layer utilities {
+    @variants responsive {
+        .soft-scrollbar::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            cursor: pointer;
+        }
+
+        .soft-scrollbar::-webkit-scrollbar-track {
+            background-color: rgba(211, 211, 211, 0.808);
+            cursor: pointer;
+        }
+
+        .soft-scrollbar::-webkit-scrollbar-thumb {
+            cursor: pointer;
+            background-color: #a0aec0;
+        }
+
+        .soft-scrollbar-width-2::-webkit-scrollbar {
+            width: 7px !important;
+            height: 7px !important;
+            cursor: pointer;
+        }
+    }
+
+    .striped tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    @variants dark {
+        .striped tr:nth-child(even) {
+            @apply bg-secondary-700;
+        }
+    }
+}
