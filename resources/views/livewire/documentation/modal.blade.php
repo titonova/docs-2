@@ -99,17 +99,12 @@
         </x-modal.card>
     </x-code-preview>
 
-    <div class="rounded-lg border shadow-soft bg-blue-50 dark:bg-secondary-700 dark:border-none p-4">
-        <div class="flex">
-            <div class="flex-shrink-0">
-                <x-icon name="information-circle" class="h-5 w-5 text-blue-400" />
-            </div>
-            <div class="ml-3 flex-1 md:flex md:justify-between">
-                <p class="text-sm text-blue-500">
-                    Tip: You can use global function <b>$openModal('myModal')</b> to open modal from js
-                </p>
-            </div>
-        </div>
+    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
+        <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+
+        <p class="text-sm text-blue-700 dark:text-blue-400">
+            Tip: You can use global function <b>$openModal('myModal')</b> to open modal from js
+        </p>
     </div>
 
     <div id="modal-options">

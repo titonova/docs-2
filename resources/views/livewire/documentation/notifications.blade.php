@@ -148,17 +148,12 @@
         <p class="mt-4 mb-1 text-gray-500">You can create a confirmation notification by the blade</p>
         <x-code language="html" :code="$bladeConfirmExample" />
 
-        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-5 border shadow-soft rounded-lg">
-            <div class="flex">
-                <div class="flex-shrink-0">
-                    <x-icon name="exclamation" class="h-5 w-5 text-yellow-400" />
-                </div>
-                <div class="ml-3">
-                    <p class="text-sm text-yellow-700">
-                        This directive does not work on blade component, like <b>x-button</b>
-                    </p>
-                </div>
-            </div>
+        <div class="flex items-center gap-x-3 bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-5 border shadow-soft rounded-lg">
+            <x-icon name="exclamation" class="h-5 w-5 flex-shrink-0 text-yellow-400" />
+
+            <p class="text-sm text-yellow-700">
+                This directive does not work on blade component, like <b>x-button</b>
+            </p>
         </div>
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>

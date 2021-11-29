@@ -190,11 +190,16 @@
         </div>
     </x-code-preview>
 
-    <p class="dark:text-gray-400">
-        You can show a spinner loading when an action if fired <br>
-        You can pass <b>wire:target</b> value into <b>spinner</b> prop
-        If no value is give, all loading effects will be applied
-    </p>
+    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
+        <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+
+        <p class="text-sm text-blue-700 dark:text-blue-400">
+            You can show a spinner loading when an action if fired <br>
+            You can pass <b>wire:target</b> value into <b>spinner</b> prop
+            If no value is give, all loading effects will be applied
+        </p>
+    </div>
+
     <x-code-preview
         title="Loading Spinner"
         href="#loading-spinner"

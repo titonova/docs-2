@@ -43,17 +43,12 @@
             <p class="mb-1 mt-6">Now add the component to layout</p>
             <x-code language="html" :code="$addComponentExample" />
 
-            <div class="rounded-lg border shadow-soft bg-blue-50 dark:bg-secondary-700 dark:border-none mt-5 p-4">
-                <div class="flex">
-                    <div class="flex-shrink-0">
-                        <x-icon name="information-circle" class="h-5 w-5 text-blue-400" />
-                    </div>
-                    <div class="ml-3 flex-1 md:flex md:justify-between">
-                        <p class="text-sm text-blue-700 dark:text-blue-500">
-                            Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals
-                        </p>
-                    </div>
-                </div>
+            <div class="mt-4 flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
+                <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+
+                <p class="text-sm text-blue-700 dark:text-blue-400">
+                    Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals
+                </p>
             </div>
         </div>
     </div>

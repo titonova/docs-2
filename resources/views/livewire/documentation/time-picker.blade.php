@@ -19,22 +19,19 @@
             </p>
         </div>
 
-        <div class="rounded-md bg-yellow-50 dark:bg-secondary-700 p-4 overflow-auto mt-3">
-            <div class="flex">
-                <div class="flex-shrink-0">
-                    <x-icon name="exclamation" class="h-5 w-5 text-yellow-400" />
-                </div>
-                <div class="ml-3">
-                    <h3 class="text-sm font-medium text-yellow-800 dark:text-yellow-400">
-                        Attention
-                    </h3>
-                    <div class="mt-2 text-sm text-yellow-700 dark:text-yellow-500">
-                        <p>
-                            If you are using a model property bind <b>(wire:model="appointment.datetime")</b> as datetime,
-                            must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>,
-                            and automatically set 00:00 to time
-                        </p>
-                    </div>
+        <div class="flex items-start gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700 p-4">
+            <x-icon name="exclamation" class="h-5 w-5 flex-shrink-0 text-yellow-400" />
+
+            <div>
+                <h3 class="text-sm font-medium text-yellow-800 dark:text-yellow-400">
+                    Attention
+                </h3>
+                <div class="mt-2 text-sm text-yellow-700 dark:text-yellow-500">
+                    <p>
+                        If you are using a model property bind <b>(wire:model="appointment.datetime")</b> as datetime,
+                        must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>,
+                        and automatically set 00:00 to time
+                    </p>
                 </div>
             </div>
         </div>
