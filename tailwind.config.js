@@ -5,6 +5,8 @@ module.exports = {
         require('./vendor/ph7jack/wireui/tailwind.config.js')
     ],
     purge: [
+        './app/Http/Livewire/**/*.php',
+        './app/View/**/*.php',
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './storage/framework/views/*.php',
