@@ -22,7 +22,7 @@
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <div class="mt-5 prose max-w-none xl:mb-8 text-gray-500">
                 <p>
-                    The Wire UI dialog API is designed to show alerts and dialog confirmation.
+                    The WireUI dialog API is designed to show alerts and dialog confirmation.
                     Dialogs use livewire events to work.
                     You can customize a dialog however you like.
                 </p>

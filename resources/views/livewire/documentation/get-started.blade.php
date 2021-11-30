@@ -1,7 +1,7 @@
 <div class="space-y-10">
     <x-slot name="summary">
         <x-summary>
-            <x-summary.header href="#meet-wireui" label="Meet Wire UI" />
+            <x-summary.header href="#meet-wireui" label="Meet WireUI" />
 
             <x-summary.header href="#installation" label="Installation">
                 <x-summary.item href="#requirements" label="Requirements" />
@@ -12,17 +12,17 @@
     </x-slot>
 
     <div id="meet-wireui">
-        <x-section.title href="#meet-wireui" title="Meet Wire UI" />
+        <x-section.title href="#meet-wireui" title="Meet WireUI" />
 
         <div class="mt-3 prose max-w-none text-gray-500">
             <p>
-                The Wire UI is a library of components and resources to empower your application development with Laravel and Livewire.
+                The WireUI is a library of components and resources to empower your application development with Laravel and Livewire.
                 Starting a new project with Livewire can be a little boring at first because you have to create all the
-                components manually, Wire UI exists to skip this step and go straight to development.
+                components manually, WireUI exists to skip this step and go straight to development.
             </p>
 
             <p>
-                Using the Wire UI in your project, you will have some advantages:
+                Using the WireUI in your project, you will have some advantages:
             </p>
 
             <ul>
@@ -72,7 +72,7 @@
 
         <div class="mt-5 prose max-w-none xl:max-w-3xl text-gray-500">
             <p>
-                Wire UI does not need any additional configuration,
+                WireUI does not need any additional configuration,
                 but you can publish the files and configure as you like some preferences
             </p>
 

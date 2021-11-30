@@ -30,7 +30,7 @@
                     <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0 md:space-x-10">
                         <div class="flex items-center justify-between w-full md:w-auto">
                             <a href="{{ route('home') }}" class="text-2xl font-extrabold text-teal-600">
-                                Wire UI
+                                WireUI
                             </a>
                             <div class="-mr-2 flex items-center md:hidden">
                                 <button class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center
@@ -83,7 +83,7 @@
                     <div class="px-5 pt-4 flex items-center justify-between">
                         <div>
                             <a href="{{ route('home') }}" class="text-2xl font-extrabold text-teal-600">
-                                Wire UI
+                                WireUI
                             </a>
                         </div>
                         <div class="-mr-2">
@@ -143,7 +143,7 @@
         <div class="relative py-8 sm:py-24 lg:py-32">
             <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 class="text-xl font-semibold tracking-wider text-teal-600 uppercase">
-                    Wire UI Features
+                    WireUI Features
                 </h2>
 
                 <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">

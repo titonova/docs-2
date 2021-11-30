@@ -20,7 +20,7 @@
                 </button>
 
                 <a href="{{ route('home') }}" class="font-extrabold text-teal-600 text-xl">
-                    Wire UI
+                    WireUI
                 </a>
 
                 <livewire:toggle-dark-mode />
@@ -72,7 +72,7 @@
 
                 <div class="flex-shrink-0 flex justify-between items-center px-4 pb-4">
                     <a href="{{ route('home') }}" class="text-2xl text-teal-600 font-extrabold">
-                        Wire UI
+                        WireUI
                     </a>
 
                     <a href="{{ config('links.wireui') }}" class="inline-flex items-center shadow-sm text-gray-400">
@@ -121,7 +121,7 @@
             <nav class="sticky top-4">
                 <div class="flex-shrink-0 flex justify-between items-center px-4 py-4">
                     <a href="{{ route('home') }}" class="text-2xl text-teal-600 font-extrabold">
-                        Wire UI
+                        WireUI
                     </a>
                     <a href="{{ config('links.wireui') }}" class="inline-flex items-center shadow-sm text-gray-400">
                         <x-icons.github-solid class="lg:w-7 lg:h-7" />
