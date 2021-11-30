@@ -7,12 +7,18 @@ use Livewire\Component;
 
 class GetStarted extends Component
 {
+    public string $directiveExample = <<<HTML
+        ...
+        @wireUiScripts
+        <script src="alpine.js"></script>
+        ...
+    HTML;
+
     public string $scriptsExample = <<<HTML
     <html>
         <head>
             ...
-            <wireui:scripts /> or @wireUiScripts
-
+            <wireui:scripts />
             <script src="alpine.js"></script>
         </head>
     </html>

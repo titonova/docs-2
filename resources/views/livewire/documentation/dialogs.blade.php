@@ -19,8 +19,8 @@
     <div>
         <x-section.title id="dialogs" href="#dialogs" title="Dialogs" />
 
-        <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
-            <div class="mt-5 prose max-w-none xl:mb-8 text-gray-500">
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8">
+            <div class="mt-5 prose text-gray-500 max-w-none xl:mb-8">
                 <p>
                     The WireUI dialog API is designed to show alerts and dialog confirmation.
                     Dialogs use livewire events to work.
@@ -40,11 +40,11 @@
     <div id="first-steps">
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
-            <p class="mb-1 mt-6">Now add the component to layout</p>
+            <p class="mt-6 mb-1">Now add the component to layout</p>
             <x-code language="html" :code="$addComponentExample" />
 
-            <div class="mt-4 flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-                <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+            <div class="flex items-center p-4 mt-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
+                <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
 
                 <p class="text-sm text-blue-700 dark:text-blue-400">
                     Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals
@@ -71,7 +71,7 @@
 
     <div id="alert-dialog">
         <x-section.title href="#alert-dialog" title="Alert Dialog" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Sometimes you may want to inform the user that an action has been successful,
                 or it cannot be completed, even a simple warning, the dialog API allows for this easily.
@@ -123,7 +123,7 @@
 
     <div id="confirm-dialog">
         <x-section.title href="#confirm-dialog" title="Confirm Dialog" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 You may also want to ask the user for a confirmation of a certain action,
                 the dialog API has a special way for that. See the example below.
@@ -164,9 +164,9 @@
     <div id="confirm-directive">
         <x-section.title href="#confirm-directive" title="Confirm Directive" />
 
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                Alternatively, you can use an html directive to create a confirmation dialog <br>
+                Alternatively, you can use a html directive to create a confirmation dialog <br>
                 Blade components do not support <b>@bladeDirectives</b>
             </p>
         </div>
@@ -180,7 +180,7 @@
 
     <div id="dialog-events">
         <x-section.title href="#dialog-events" title="Dialog Events" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Dialog can have 3 events, onClose, onDismiss and onTimeout.
                 Each event will be triggered when they happen.
@@ -197,7 +197,7 @@
             </ul>
         </div>
 
-        <p class="text-gray-500 mb-1">
+        <p class="mb-1 text-gray-500">
             You can create events via javascript using closure
         </p>
         <x-code language="js" :code="<<<EOT
@@ -208,7 +208,7 @@
         }
         EOT" />
 
-        <p class="text-gray-500 mt-6 mb-1">
+        <p class="mt-6 mb-1 text-gray-500">
             Or use the events to call actions on the Livewire Component,
             in which case the component ID is required
         </p>
@@ -230,7 +230,7 @@
         }, livewireComponentId)
         EOT" />
 
-        <p class="text-gray-500 mt-6 mb-1">
+        <p class="mt-6 mb-1 text-gray-500">
             Events can also be used for notifications created by the Livewire Component
         </p>
         <x-code language="php" :code="$phpEventsExample" />
@@ -244,7 +244,7 @@
         </x-dialog>
 
         <x-section.title href="#custom-dialog" title="Custom Dialog" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 You can create dialogs with custom title, description or any code in slot
             </p>
@@ -280,7 +280,7 @@
 
     <div id="dialog-options">
         <x-section.title href="#dialog-options" title="Dialog Options" />
-        <x-options-table class="mt-2 mb-6 w-full">
+        <x-options-table class="w-full mt-2 mb-6">
             <x-option-table-row prop="id" required="false" default="none" type="string" available="--" />
             <x-option-table-row prop="title" required="false" default="none" type="string" available="--" />
             <x-option-table-row prop="description" required="false" default="none" type="string" available="--" />
