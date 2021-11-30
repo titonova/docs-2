@@ -27,6 +27,8 @@ Please follow the steps below to run this project locally:
 
 STEP 1: Fork this repository (Click on "Fork").
 
+<br/>
+
 STEP 2: Clone your forked repository:
 
 ```bash
@@ -34,6 +36,8 @@ git clone https://github.com/:::USERNAME:::/docs wireui-docs && cd wireui-docs
 ```
 
 📝 **NOTE:** Replace *:::USERNAME:::* with your GitHub username.
+
+<br/>
 
 STEP 3:  Register and create your Torchlight token at [https://torchlight.dev](https://torchlight.dev).
 
@@ -44,6 +48,8 @@ torch_EFhVTgSra9HioAxtsK3ljnsj45BHmf
 ```
 
 Store it safely for the next step.
+
+<br/>
 
 STEP 4: Execute the `run` script:
 
