@@ -52,8 +52,6 @@ composerInstall () {
 }
 
 compileAssets () {
-
-
     echo -e "${LABEL_WIREUI}Compiling assets..."
 
     yarn install
