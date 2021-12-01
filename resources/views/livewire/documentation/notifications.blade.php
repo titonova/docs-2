@@ -19,7 +19,7 @@
         <x-section.title title="Notifications" />
         <div class="mt-5 prose max-w-none xl:mb-8 text-gray-500">
             <p>
-                The Wire UI notification API is designed to show alerts, notifications and action confirmations.
+                The WireUI notification API is designed to show alerts, notifications and action confirmations.
                 Notifications use livewire events to work.
                 You can customize a notification however you like.
             </p>

@@ -10,7 +10,7 @@
         </div>
         <div class="mt-4 md:mt-0 md:order-1">
             <p class="text-center text-base text-gray-400">
-                &copy; 2021 Wire Ui Components.
+                &copy; 2021 WireUI Components.
             </p>
         </div>
     </div>

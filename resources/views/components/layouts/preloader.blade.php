@@ -3,7 +3,7 @@
     id="page-preloader">
     <div class="flex flex-col items-center justify-center h-40 w-40">
         <p class="text-teal-600 font-extrabold text-3xl">
-            Wire UI
+            WireUI
         </p>
 
         <div class="w-full px-5 mt-1">

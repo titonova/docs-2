@@ -10,7 +10,7 @@
     <x-section.title id="wireui-hooks" href="#wireui-hooks" title="WireUi Hooks" />
     <div class="mt-3 prose max-w-none text-gray-500">
         <p>
-            Wire UI Hooks is a simple way to perform any action in determinated momoment.
+            WireUI Hooks is a simple way to perform any action in determinated momoment.
             Is possible to fires a notification when Notifications component is ready,
             or call livewire action when WireUi is loaded.
             See available hooks bellow
