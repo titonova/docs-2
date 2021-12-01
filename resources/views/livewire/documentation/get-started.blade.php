@@ -14,15 +14,14 @@
     <div id="meet-wireui">
         <x-section.title href="#meet-wireui" title="Meet WireUI" />
 
-        <div class="mt-3 prose max-w-none text-gray-500">
+        <div class="mt-3 prose text-gray-500 max-w-none">
             <p>
                 The WireUI is a library of components and resources to empower your application development with Laravel and Livewire.
-                Starting a new project with Livewire can be a little boring at first because you have to create all the
-                components manually, WireUI exists to skip this step and go straight to development.
+                Starting a new project with Livewire can be time-consuming when you have to create all the components from scratch. Wire UI helps to skip this step and get you straight to the development phase.
             </p>
 
             <p>
-                Using the WireUI in your project, you will have some advantages:
+                Installing WireUI enriches your project with:
             </p>
 
             <ul>
@@ -31,23 +30,20 @@
                 <li>Confirmation notifications</li>
                 <li>All Heroicons</li>
             </ul>
-
-            <p>
-                Start using it now and enjoy everything that is available
-            </p>
         </div>
     </div>
 
     <div id="requirements">
         <x-section.title href="#requirements" title="Requirements" />
 
-        <div class="mt-3 prose max-w-none text-gray-500">
+        <div class="mt-3 prose text-gray-500 max-w-none">
             <ul>
                 <li>Laravel 8.x</li>
                 <li>Livewire 2.5 or above</li>
                 <li>Alpine.js 3.x</li>
                 <li>Tailwindcss 2.x</li>
                 <li>PHP 7.4.x | 8.x</li>
+                <li><a href="https://getcomposer.org" target="_blank" class="font-semibold text-center text-teal-600">Composer</a></li>
             </ul>
         </div>
     </div>
@@ -55,14 +51,19 @@
     <div id="installation">
         <x-section.title href="#installation" title="Installation" />
 
-        <div class="mt-5 prose max-w-none text-gray-500">
-            <p id="installing-package">Use the composer to install this library in your project</p>
+        <div class="mt-5 prose text-gray-500 max-w-none">
+            <p id="installing-package">1. Run the following command to add WireUI to your project:</p>
             <x-code language="shell" code="composer require ph7jack/wireui" />
 
-            <p>Now add the scripts to layout, above alpinejs script</p>
+            <p>2. Add the WireUI <wireui:scripts /> tag above Alpinejs script tag in your page layout:<br/>
+            
             <x-code language="html" :code="$scriptsExample" />
+            
+            <p>Alternatively, you can use the equivalent Blade directive:</p>
 
-            <p>Add this in your TailwindCss config</p>
+            <x-code language="html" :code="$directiveExample" />
+
+            <p>3. Add the following settings to your Tailwindcss config (tailwind.config.js).</p>
             <x-code language="js" :code="$tailwindConfigExample" />
         </div>
     </div>
@@ -70,10 +71,10 @@
     <div id="publishing">
         <x-section.title href="#publishing" title="Publishing" />
 
-        <div class="mt-5 prose max-w-none xl:max-w-3xl text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none xl:max-w-3xl">
             <p>
                 WireUI does not need any additional configuration,
-                but you can publish the files and configure as you like some preferences
+                but you can publish the files and customize them to your preference.
             </p>
 
             <x-code language="bash" :code="<<<EOT
