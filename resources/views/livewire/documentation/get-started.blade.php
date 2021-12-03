@@ -53,12 +53,12 @@
 
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p id="installing-package">1. Run the following command to add WireUI to your project:</p>
-            <x-code language="shell" code="composer require ph7jack/wireui" />
+            <x-code language="shell" code="composer require wireui/wireui" />
 
             <p>2. Add the WireUI <wireui:scripts /> tag above Alpinejs script tag in your page layout:<br/>
-            
+
             <x-code language="html" :code="$scriptsExample" />
-            
+
             <p>Alternatively, you can use the equivalent Blade directive:</p>
 
             <x-code language="html" :code="$directiveExample" />

@@ -16,7 +16,7 @@
                 <div class="text-md text-gray-500">
                     <div>
                         <a class="font-medium text-gray-900 dark:text-gray-400 mr-2"
-                            href="https://github.com/PH7-Jack/wireui/releases/tag/{{ $release }}">
+                            href="https://github.com/wireui/wireui/releases/tag/{{ $release }}">
                             {{ $release }}
                         </a>
 

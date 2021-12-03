@@ -26,7 +26,7 @@
 
         <li>
             <p>Clone the wireui into the root of the project</p>
-            <x-code language="shell" code="git clone git@github.com:PH7-Jack/wireui.git" />
+            <x-code language="shell" code="git clone git@github.com:wireui/wireui.git" />
         </li>
 
         <li>
@@ -36,7 +36,7 @@
 
         <li>
             <p>Require the wireui</p>
-            <x-code language="shell" code="composer require ph7jack/wireui" />
+            <x-code language="shell" code="composer require wireui/wireui" />
         </li>
     </ul>
 </div>

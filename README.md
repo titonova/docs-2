@@ -1,6 +1,6 @@
 # WireUI - Docs
 
-Page for [WireUI](https://github.com/PH7-Jack/wireui) documentation.
+Page for [WireUI](https://github.com/wireui/wireui) documentation.
 
 🌐 Live at: [https://livewire-wireui.com/](https://livewire-wireui.com/)
 
@@ -16,10 +16,10 @@ Please follow the steps below to run this project locally:
 
 ### Requirements
 
-- PHP 7.4+
-- [Composer](https://getcomposer.org)
-- [Yarn](https://yarnpkg.com)
-- A valid [Torchlight](https://torchlight.dev) token (free for non-profit open-source projects).
+-   PHP 7.4+
+-   [Composer](https://getcomposer.org)
+-   [Yarn](https://yarnpkg.com)
+-   A valid [Torchlight](https://torchlight.dev) token (free for non-profit open-source projects).
 
 </br>
 
@@ -35,11 +35,11 @@ STEP 2: Clone your forked repository:
 git clone https://github.com/:::USERNAME:::/docs wireui-docs && cd wireui-docs
 ```
 
-📝 **NOTE:** Replace *:::USERNAME:::* with your GitHub username.
+📝 **NOTE:** Replace _:::USERNAME:::_ with your GitHub username.
 
 <br/>
 
-STEP 3:  Register and create your Torchlight token at [https://torchlight.dev](https://torchlight.dev).
+STEP 3: Register and create your Torchlight token at [https://torchlight.dev](https://torchlight.dev).
 
 You should have received a token similar to this:
 
