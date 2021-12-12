@@ -17,7 +17,7 @@
 
     <div id="notifications">
         <x-section.title title="Notifications" />
-        <div class="mt-5 prose max-w-none xl:mb-8 text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none xl:mb-8">
             <p>
                 The WireUI notification API is designed to show alerts, notifications and action confirmations.
                 Notifications use livewire events to work.
@@ -38,7 +38,7 @@
     <div id="first-steps">
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
-            <p class="mb-1 mt-6">Now add the component to layout</p>
+            <p class="mt-6 mb-1">Now add the component to layout</p>
             <x-code language="html" :code="$addComponentNotificationExample" />
         </div>
     </div>
@@ -61,7 +61,7 @@
 
     <div id="alert-notifications">
         <x-section.title href="#alert-notifications" title="Alert Notifications" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Sometimes you may want to inform the user that an action has been successful,
                 or it cannot be completed, even a simple warning, the notifications API allows for this easily.
@@ -114,7 +114,7 @@
 
     <div id="confirm-notifications">
         <x-section.title href="#confirm-notifications" title="Confirm Notifications" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 You may also want to ask the user for a confirmation of a certain action,
                 the Notifications API has a special way for that. See the example below.
@@ -148,8 +148,8 @@
         <p class="mt-4 mb-1 text-gray-500">You can create a confirmation notification by the blade</p>
         <x-code language="html" :code="$bladeConfirmExample" />
 
-        <div class="flex items-center gap-x-3 bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-5 border shadow-soft rounded-lg">
-            <x-icon name="exclamation" class="h-5 w-5 flex-shrink-0 text-yellow-400" />
+        <div class="flex items-center p-4 mt-5 border border-l-4 border-yellow-400 rounded-lg gap-x-3 bg-yellow-50 shadow-soft">
+            <x-icon name="exclamation" class="flex-shrink-0 w-5 h-5 text-yellow-400" />
 
             <p class="text-sm text-yellow-700">
                 This directive does not work on blade component, like <b>x-button</b>
@@ -165,7 +165,7 @@
 
     <div id="notification-events">
         <x-section.title href="#notification-events" title="Notifications Events" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Notifications can have 3 events, onClose, onDismiss and onTimeout.
                 Each event will be triggered when they happen.
@@ -182,7 +182,7 @@
             </ul>
         </div>
 
-        <p class="text-gray-500 mb-1">
+        <p class="mb-1 text-gray-500">
             You can create events via javascript using closure
         </p>
         <x-code language="js" :code="<<<EOT
@@ -193,7 +193,7 @@
         }
         EOT" />
 
-        <p class="text-gray-500 mt-6 mb-1">
+        <p class="mt-6 mb-1 text-gray-500">
             Or use the events to call actions on the Livewire Component,
             in which case the component ID is required
         </p>
@@ -215,7 +215,7 @@
         }, livewireComponentId)
         EOT" />
 
-        <p class="text-gray-500 mt-6 mb-1">
+        <p class="mt-6 mb-1 text-gray-500">
             Events can also be used for notifications created by the Livewire Component
         </p>
         <x-code language="php" :code="$phpEventsExample" />
@@ -246,16 +246,16 @@
         </x-options-table>
 
         <div>
-            <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500">
+            <h3 class="mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Custom Types
             </h3>
 
-            <h3 class="text-sm uppercase mb-1 mt-3 font-semibold text-gray-500">
+            <h3 class="mt-3 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Icon
             </h3>
             <x-code language="ts" code="'success'|'error'|'info'|'warning'|'question'" />
 
-            <h3 class="text-sm uppercase mb-1 mt-4 font-semibold text-gray-500">
+            <h3 class="mt-4 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Action
             </h3>
             <x-code language="ts" :code="<<<EOT
@@ -270,7 +270,7 @@
             }
             EOT" />
 
-            <h3 class="text-sm uppercase mb-1 mt-4 font-semibold text-gray-500">
+            <h3 class="mt-4 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Event
             </h3>
             <x-code language="ts" :code="<<<EOT
@@ -284,9 +284,9 @@
     </div>
 
     <div id="playground">
-        <x-section.title href="#playground" title="Playground" />
+        <x-section.title href="#playground" title="🪁 Playground" />
 
-        <div class="bg-blueGray-100 dark:bg-secondary-800 dark:border-secondary-700 shadow rounded-lg border px-4 py-2 mt-4" x-data="{
+        <div class="px-4 py-2 mt-4 border rounded-lg shadow bg-blueGray-100 dark:bg-secondary-800 dark:border-secondary-700" x-data="{
             options: `{
 title: 'Playground Title',
 description: 'testing in playground',
@@ -317,9 +317,7 @@ icon: 'success',
                 />
             </div>
 
-            <button class="inline-flex justify-center items-center px-3 py-2 border border-transparent text-sm
-                           leading-4 font-medium rounded-md shadow-sm text-white bg-teal-600 w-full mt-3
-                           focus:ring-teal-500 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2"
+            <button class="inline-flex items-center justify-center w-full px-3 py-2 mt-3 text-sm font-medium leading-4 text-white bg-teal-600 border border-transparent rounded-md shadow-sm focus:ring-teal-500 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2"
                 x-on:click="addNotification"
                 type="button">
                 Add Notification
@@ -329,7 +327,7 @@ icon: 'success',
 
     <div id="publishing">
         <x-section.title href="#publishing" title="Publishing" />
-        <div class="mt-5 prose max-w-none text-gray-500">
+        <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 You can customize notification layout and styles publishing resources
             </p>
