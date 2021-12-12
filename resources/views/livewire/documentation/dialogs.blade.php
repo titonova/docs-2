@@ -375,7 +375,7 @@
             }
         }
     }">
-        <x-section.title href="#playground" title="Playground" />
+        <x-section.title href="#playground" title="🪁 Playground" />
 
         <x-card class="space-y-4">
             <div>
