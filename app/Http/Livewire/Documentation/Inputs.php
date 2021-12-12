@@ -7,6 +7,10 @@ use Livewire\Component;
 
 class Inputs extends Component
 {
+    public string $wireModelExample = <<<HTML
+    <x-input wire:model="firstName" label="Name" placeholder="User's first name" />
+    HTML;
+
     public string $simpleInputExample = <<<HTML
     <x-input label="Name" placeholder="your name" />
     HTML;
@@ -32,7 +36,7 @@ class Inputs extends Component
     HTML;
 
     public string $prefixInputExample = <<<HTML
-    <x-input label="Name" placeholder="your name" prefix="$" />
+    <x-input class="pl-32" label="Name" placeholder="your website" prefix="https://www." />
     HTML;
 
     public string $suffixInputExample = <<<HTML
@@ -44,7 +48,7 @@ class Inputs extends Component
         <x-slot name="prepend">
             <div class="absolute inset-y-0 left-0 flex items-center p-0.5">
                 <x-button
-                    class="rounded-l-md h-full"
+                    class="h-full rounded-l-md"
                     icon="sort-ascending"
                     primary
                     flat
@@ -60,7 +64,7 @@ class Inputs extends Component
         <x-slot name="append">
             <div class="absolute inset-y-0 right-0 flex items-center p-0.5">
                 <x-button
-                    class="rounded-r-md h-full"
+                    class="h-full rounded-r-md"
                     icon="sort-ascending"
                     primary
                     flat
