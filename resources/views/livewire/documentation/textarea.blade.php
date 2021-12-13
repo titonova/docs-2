@@ -34,10 +34,10 @@
 
     <div id="textarea-options" class="dark:text-gray-400">
         <x-section.title href="#textarea-options" title="Textarea Options" />
-        <p>
-            The textarea component has all
-            <a class="text-indigo-700" href="{{ route('docs.inputs') }}#input-options">input</a>
-            options and slots
-        </p>
+        <div class="mt-5">
+            <p>
+                The textarea component has all <a class="font-semibold text-center text-teal-600 underline" href="{{ route('docs.inputs') }}#input-options">Inputs</a> options and slots.
+            </p>
+        </div>
     </div>
 </div>
