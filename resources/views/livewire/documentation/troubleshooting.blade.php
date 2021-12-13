@@ -17,7 +17,7 @@
                 This page contains common issues encountered with WireUI and their solutions. 
             </p>
             <p>
-                If you haven't found the problem you are trying to fix, review the <a class="font-semibold text-center text-teal-600" href="https://github.com/wireui/wireui/issues" target="_blank">Issues</a> page at the WireUI GitHub repository.<br/>In case your problem has not been discussed there, feel free to open a new Issue, informing as many details as possible.
+                If you haven't found the problem you are trying to fix, review the <a class="font-semibold text-center text-teal-600 underline" href="https://github.com/wireui/wireui/issues" target="_blank">Issues</a> page at the WireUI GitHub repository.<br/>In case your problem has not been discussed there, feel free to open a new Issue, informing as many details as possible.
             </p>
         </div>
     </div>
