@@ -18,10 +18,11 @@
             <p>
                The <b>Errors</b> component is useful for displaying errors in a friendly way. 
             </p>
-        <p>
-               We can find this component often combined with the <a class="text-indigo-700 underline" href="{{ route('docs.inputs') }}">Inputs component</a> to report validation errors.
+            <p>
+               We can find this component often combined with the <a class="font-semibold text-center text-teal-600" href="{{ route('docs.inputs') }}">Inputs</a> component to report validation errors.
             </p>
         </div>
+
 
         <div class="flex items-start p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
             <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
