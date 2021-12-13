@@ -20,7 +20,7 @@
 
     <div id="buttons">
         <x-section.title title="Buttons" />
-        <div class="mt-5 prose xl:mb-8 text-gray-500">
+        <div class="mt-5 prose text-gray-500 xl:mb-8">
             <p>
                 The button component has multiples styles and options to customize.
                 A simple API to use button component with icons and any colors
@@ -45,7 +45,7 @@
         id="button-colors"
         language="html"
         :code="$buttonColorsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
             <x-button label="No Color" />
             <x-button primary label="Primary" />
             <x-button secondary label="Secondary" />
@@ -63,7 +63,7 @@
         id="rounded-buttons"
         language="html"
         :code="$roundedButtonsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
             <x-button rounded label="No Color" />
             <x-button rounded primary label="Primary" />
             <x-button rounded secondary label="Secondary" />
@@ -81,7 +81,7 @@
         id="squared-buttons"
         language="html"
         :code="$squaredButtonsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
             <x-button squared label="No Color" />
             <x-button squared primary label="Primary" />
             <x-button squared secondary label="Secondary" />
@@ -99,7 +99,7 @@
         id="outline-buttons"
         language="html"
         :code="$outlineButtonsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
             <x-button outline label="No Color" />
             <x-button outline primary label="Primary" />
             <x-button outline secondary label="Secondary" />
@@ -117,7 +117,7 @@
         id="flat-buttons"
         language="html"
         :code="$flatButtonsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
             <x-button flat label="No Color" />
             <x-button flat primary label="Primary" />
             <x-button flat secondary label="Secondary" />
@@ -135,7 +135,7 @@
         id="button-icons"
         language="html"
         :code="$buttonIconsExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-6">
             <x-button icon="home" label="No Color" />
             <x-button icon="pencil" primary label="Primary" />
             <x-button icon="clipboard-list" secondary label="Secondary" />
@@ -153,7 +153,7 @@
         id="only-icons"
         language="html"
         :code="$onlyIconsExample">
-        <div class="flex flex-wrap justify-evenly gap-4">
+        <div class="flex flex-wrap gap-4 justify-evenly">
             <x-button icon="home" />
             <x-button icon="pencil" primary />
             <x-button icon="clipboard-list" secondary />
@@ -171,7 +171,7 @@
         id="button-sizes"
         language="html"
         :code="$buttonSizesExample">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
+        <div class="grid items-center grid-cols-2 gap-4 md:grid-cols-4">
             <div>
                 <x-button xs icon="pencil" primary label="Primary" />
             </div>
@@ -190,8 +190,8 @@
         </div>
     </x-code-preview>
 
-    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-        <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+    <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
+        <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
 
         <p class="text-sm text-blue-700 dark:text-blue-400">
             You can show a spinner loading when an action if fired <br>
@@ -206,7 +206,7 @@
         id="loading-spinner"
         language="html"
         :code="$loadingSpinnerExample">
-        <div class="flex gap-4 items-center">
+        <div class="flex items-center gap-4">
             <x-button wire:click="$refresh" spinner primary label="Save without target" />
 
             <x-button wire:click="sleeping" spinner="sleeping" primary label="Save with target" />
@@ -215,7 +215,7 @@
 
     <div id="button-options">
         <x-section.title href="#button-options" title="Button Options" />
-        <x-options-table class="mt-2 mb-6 w-full">
+        <x-options-table class="w-full mt-2 mb-6">
             <x-option-table-row prop="xs"        required="false" default="false" type="boolean" available="true|false" />
             <x-option-table-row prop="md"        required="false" default="false" type="boolean" available="true|false" />
             <x-option-table-row prop="lg"        required="false" default="false" type="boolean" available="true|false" />
@@ -238,8 +238,8 @@
             <x-option-table-row prop="spinner"   required="false" default="none" type="boolean|string" available="--" />
         </x-options-table>
 
-        <label class="mb-1 text-gray-700 font-semibold">Colors</label>
-        <x-code language="js" :code="<<<EOT
+        <label class="mb-1 font-semibold text-gray-700">Colors</label>
+        <x-code nocopy language="js" :code="<<<EOT
         primary|secondary|positive|negative|warning|info|dark
         EOT" />
     </div>
