@@ -19,10 +19,16 @@
     <wireui:scripts />
     <script src="{{ mix('dist/alpine.js') }}" defer></script>
 
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
     @stack('styles')
 </head>
 
-<body class="font-sans overflow-y-scroll min-h-screen bg-blueGray-100 dark:bg-secondary-800">
+<body class="font-sans overflow-y-scroll min-h-screen bg-slate-100 dark:bg-secondary-800">
     <x-notifications />
     <x-dialog />
 

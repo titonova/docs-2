@@ -22,7 +22,7 @@
 
                         <a class="my-0.5 relative inline-flex items-center bg-white dark:bg-secondary-700
                                   rounded-full border dark:border-0 border-gray-300 px-3 py-0.5 text-sm">
-                            <div class="absolute flex-shrink-0 flex items-center justify-center">
+                            <div class="absolute shrink-0 flex items-center justify-center">
                                 <span class="h-1.5 w-1.5 rounded-full {{ $badgeColor }} dark:bg-white" aria-hidden="true"></span>
                             </div>
                             <div class="ml-3.5 font-medium text-gray-900 dark:text-secondary-400 capitalize">{{ $type }}</div>

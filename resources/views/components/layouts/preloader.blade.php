@@ -1,4 +1,4 @@
-<div class="fixed bg-blueGray-100 dark:bg-secondary-800 inset-0 z-50 flex items-center justify-center"
+<div class="fixed bg-slate-100 dark:bg-secondary-800 inset-0 z-50 flex items-center justify-center"
     {{ $attributes }}
     id="page-preloader">
     <div class="flex flex-col items-center justify-center h-40 w-40">

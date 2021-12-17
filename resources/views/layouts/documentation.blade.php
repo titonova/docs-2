@@ -47,7 +47,7 @@
                 :aria-hidden="!sidebar">
             </div>
 
-            <div class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-blueGray-100 pointer-events-auto dark:bg-secondary-900"
+            <div class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-slate-100 pointer-events-auto dark:bg-secondary-900"
                 x-show="sidebar"
                 x-transition:enter="transition ease-in-out duration-300 transform"
                 x-transition:enter-start="-translate-x-full"
@@ -70,7 +70,7 @@
                     </button>
                 </div>
 
-                <div class="flex-shrink-0 flex justify-between items-center px-4 pb-4">
+                <div class="shrink-0 flex justify-between items-center px-4 pb-4">
                     <a href="{{ route('home') }}" class="text-2xl text-teal-600 font-extrabold">
                         WireUI
                     </a>
@@ -96,7 +96,7 @@
                                 <li class="px-2">
                                     <a @class([
                                             'flex items-center h-12 px-4 rounded-lg text-gray-500 transition-colors ease-in-out duration-300',
-                                            'font-medium bg-blueGray-100 border text-gray-800 dark:bg-secondary-700 dark:border-none dark:text-secondary-400' => $link['active'],
+                                            'font-medium bg-slate-100 border text-gray-800 dark:bg-secondary-700 dark:border-none dark:text-secondary-400' => $link['active'],
                                         ])
                                         href="{{ $link['route'] }}"
                                         @isset($link['target'])
@@ -112,14 +112,14 @@
             </div>
 
             <!-- only to fit mobile sidebar -->
-            <div class="flex-shrink-0 w-10" aria-hidden="true"></div>
+            <div class="shrink-0 w-10" aria-hidden="true"></div>
         </div>
     </div>
 
     <div class="max-w-3xl mx-auto lg:max-w-9xl lg:pl-4 lg:grid lg:grid-cols-12 lg:gap-8 dark:bg-secondary-800">
         <div class="hidden lg:block lg:col-span-3 xl:col-span-2">
             <nav class="sticky top-4">
-                <div class="flex-shrink-0 flex justify-between items-center px-4 py-4">
+                <div class="shrink-0 flex justify-between items-center px-4 py-4">
                     <a href="{{ route('home') }}" class="text-2xl text-teal-600 font-extrabold">
                         WireUI
                     </a>
@@ -143,7 +143,7 @@
                                 <a @class([
                                         'flex items-center h-12 px-4 rounded-lg text-gray-600 transition-colors ease-in-out duration-300',
                                         'font-medium hover:text-gray-900 hover:underline',
-                                        'mt-1 font-medium shadow-md border dark:border-0 bg-blueGray-50' => $link['active'],
+                                        'mt-1 font-medium shadow-md border dark:border-0 bg-slate-50' => $link['active'],
                                         'dark:bg-secondary-700 text-gray-900 dark:text-secondary-200'    => $link['active'],
                                         'dark:text-gray-500' => !$link['active'],
                                     ])
@@ -168,7 +168,7 @@
                      xl:shadow-soft bg-white dark:bg-secondary-900 dark:border-secondary-600 dark:shadow-none
                      lg:dark:border-2 xl:dark:my-4"
             style="min-height: 98vh">
-            <div class="p-4 sm:px-6 flex-grow">
+            <div class="p-4 sm:px-6 grow">
                 {{ $slot }}
             </div>
 
