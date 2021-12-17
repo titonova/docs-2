@@ -4,7 +4,7 @@ module.exports = {
     presets: [
         require('./vendor/wireui/wireui/tailwind.config.js')
     ],
-    purge: [
+    content: [
         './app/Http/Livewire/**/*.php',
         './app/View/**/*.php',
         './resources/**/*.blade.php',
@@ -15,11 +15,10 @@ module.exports = {
         './vendor/wireui/wireui/ts/**/*.ts',
         './vendor/wireui/wireui/src/View/**/*.php'
     ],
-    darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
             colors: {
-                blueGray: colors.blueGray,
+                slate: colors.slate,
                 teal: colors.teal,
             },
             boxShadow: {
@@ -51,14 +50,6 @@ module.exports = {
                 '8xl': '90rem',
                 '9xl': '95rem'
             }
-        },
-    },
-    variants: {
-        extend: {
-            textColor: ['focus-within'],
-            borderWidth: ['hover', 'focus'],
-            fontWeight: ['hover', 'focus'],
-            margin: ['dark', 'responsive']
         },
     },
     plugins: [

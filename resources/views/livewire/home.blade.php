@@ -1,7 +1,7 @@
 <div>
     <x-layouts.preloader />
 
-    <div class="relative overflow-x-hidden bg-blueGray-100">
+    <div class="relative overflow-x-hidden bg-slate-100">
         <div class="hidden pointer-events-none sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
             <div class="relative h-full mx-auto max-w-7xl">
                 <svg class="absolute transform right-full translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
@@ -65,7 +65,7 @@
             </div>
 
             <!-- mobile dropdown -->
-            <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
+            <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right md:hidden"
                 x-transition:enter="duration-150 ease-out"
                 x-transition:enter-start="opacity-0 scale-95"
                 x-transition:enter-end="opacity-100 scale-10"
