@@ -44,7 +44,7 @@
             <x-code language="html" :code="$addComponentExample" />
 
             <div class="flex items-center p-4 mt-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
-                <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
+                <x-icon name="information-circle" class="shrink-0 w-5 h-5 text-blue-400" />
 
                 <p class="text-sm text-blue-700 dark:text-blue-400">
                     Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals

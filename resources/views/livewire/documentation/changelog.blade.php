@@ -107,12 +107,12 @@
                 <x-code language="html" :code="$upgradeGuide" />
 
                 <p class="mt-2">
-                    Change your tailwindcss purge config
+                    Change your tailwindcss content config
                 </p>
                 <x-code language="js" :code="<<<EOT
                 module.exports = {
                     ...
-                    purge: [
+                    content: [
                         ...
                         './vendor/ph7jack/wireui/resources/**/*.blade.php',
                         './vendor/ph7jack/wireui/ts/**/*.ts',

@@ -7,10 +7,19 @@ use Livewire\Component;
 
 class GetStarted extends Component
 {
+    public const REQUIREMENTS = [
+        'Laravel 8.x'           => 'https://laravel.com',
+        'Livewire 2.5 or above' => 'https://laravel-livewire.com',
+        'Alpine.js 3.x'         => 'https://alpinejs.dev',
+        'Tailwindcss 3.x'       => 'https://tailwindcss.com',
+        'PHP 7.4.x | 8.x'       => 'https://www.php.net',
+        'Composer'              => 'https://getcomposer.org',
+    ];
+
     public string $directiveExample = <<<HTML
         ...
         @wireUiScripts
-        <script src="alpine.js"></script>
+        <script src="//unpkg.com/alpinejs"></script>
         ...
     HTML;
 
@@ -19,7 +28,7 @@ class GetStarted extends Component
         <head>
             ...
             <wireui:scripts />
-            <script src="alpine.js"></script>
+            <script src="//unpkg.com/alpinejs"></script>
         </head>
     </html>
     HTML;
@@ -31,7 +40,7 @@ class GetStarted extends Component
             ...
             require('./vendor/wireui/wireui/tailwind.config.js')
         ],
-        purge: [
+        content: [
             ...
             './vendor/wireui/wireui/resources/**/*.blade.php',
             './vendor/wireui/wireui/ts/**/*.ts',

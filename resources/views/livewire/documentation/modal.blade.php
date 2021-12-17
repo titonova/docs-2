@@ -100,7 +100,7 @@
     </x-code-preview>
 
     <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-        <x-icon name="information-circle" class="h-5 w-5 flex-shrink-0 text-blue-400" />
+        <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
 
         <p class="text-sm text-blue-700 dark:text-blue-400">
             Tip: You can use global function <b>$openModal('myModal')</b> to open modal from js

@@ -38,12 +38,15 @@
 
         <div class="mt-3 prose text-gray-500 max-w-none">
             <ul>
-                <li>Laravel 8.x</li>
-                <li>Livewire 2.5 or above</li>
-                <li>Alpine.js 3.x</li>
-                <li>Tailwindcss 2.x</li>
-                <li>PHP 7.4.x | 8.x</li>
-                <li><a href="https://getcomposer.org" target="_blank" class="font-semibold text-center text-teal-600">Composer</a></li>
+                @foreach ($this::REQUIREMENTS as $label => $link)
+                    <li class="group flex items-center" wire:key="requirements.{{ $loop->index }}">
+                        <a href="{{ $link }}" target="_blank" class="font-semibold no-underline text-teal-600">
+                            {{ $label }}
+                        </a>
+
+                        <x-icon name="arrow-right" class="w-4 h-4 ml-2 hidden group-hover:flex text-teal-600" />
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>

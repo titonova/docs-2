@@ -37,8 +37,8 @@ class Card extends Component
     public function getBadgeColor(string $type): string
     {
         $colors = [
-            'release'     => 'bg-green-500',
-            'feature'     => 'bg-green-500',
+            'release'     => 'bg-emerald-500',
+            'feature'     => 'bg-emerald-500',
             'hotfix'      => 'bg-red-500',
             'enhancement' => 'bg-primary-500',
         ];
