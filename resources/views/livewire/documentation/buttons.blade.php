@@ -210,6 +210,8 @@
             <x-button wire:click="$refresh" spinner primary label="Save without target" />
 
             <x-button wire:click="sleeping" spinner="sleeping" primary label="Save with target" />
+
+            <x-button wire:click="sleeping" spinner="sleeping" loading-delay="short" primary label="Save with target + Delaying indicator" />
         </div>
     </x-code-preview>
 
@@ -235,7 +237,8 @@
             <x-option-table-row prop="label"     required="false" default="none" type="string"   available="" />
             <x-option-table-row prop="icon"      required="false" default="none" type="string"   available="all heroicons" />
             <x-option-table-row prop="rightIcon" required="false" default="none" type="string"   available="all heroicons" />
-            <x-option-table-row prop="spinner"   required="false" default="none" type="boolean|string" available="--" />
+            <x-option-table-row prop="spinner" required="false" default="none" type="boolean|string" available="--" />
+            <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
 
         <label class="mb-1 text-gray-700 font-semibold">Colors</label>
