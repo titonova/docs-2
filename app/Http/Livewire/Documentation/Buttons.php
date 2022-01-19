@@ -98,6 +98,7 @@ class Buttons extends Component
     public string $loadingSpinnerExample = <<<HTML
     <x-button wire:click="save" spinner primary label="Save without target" />
     <x-button wire:click="save" spinner="save" primary label="Save with target" />
+    <x-button wire:click="save" spinner="save" loading-delay="short" primary label="Save with target + Delaying indicator" />
     HTML;
 
     public function sleeping(): void
