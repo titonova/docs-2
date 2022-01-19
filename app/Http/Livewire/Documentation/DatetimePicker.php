@@ -50,6 +50,18 @@ class DatetimePicker extends Component
     />
     HTML;
 
+    public ?string $mixAndMaxDates = null;
+
+    public string $mixAndMaxDatesExample = <<<HTML
+    <x-datetime-picker
+        label="Appointment Date"
+        placeholder="Appointment Date"
+        wire:model="model"
+        :min="now()->subDays(7)->hours(12)->minutes(12)"
+        :max="now()->addDays(7)->hours(12)->minutes(12)"
+    />
+    HTML;
+
     public function render()
     {
         return view('livewire.documentation.datetime-picker')->layout(Documentation::class);
