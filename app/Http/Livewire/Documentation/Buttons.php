@@ -89,16 +89,17 @@ class Buttons extends Component
     HTML;
 
     public string $buttonSizesExample = <<<HTML
-    <x-button xs icon="pencil" primary label="Primary" />
-    <x-button icon="clipboard-list" secondary label="Secondary" />
-    <x-button md icon="check" positive label="Positive" />
-    <x-button lg icon="x" negative label="Negative" />
+    <x-button xs icon="pencil" primary label="Extra Small Button" />
+    <x-button sm icon="users" dark label="Small Button" />
+    <x-button icon="clipboard-list" secondary label="Normal" />
+    <x-button md icon="check" positive label="Medium Button" />
+    <x-button lg icon="x" negative label="Large Button" />
     HTML;
 
     public string $loadingSpinnerExample = <<<HTML
     <x-button wire:click="save" spinner primary label="Save without target" />
     <x-button wire:click="save" spinner="save" primary label="Save with target" />
-    <x-button wire:click="save" spinner="save" loading-delay="short" primary label="Save with target + Delaying indicator" />
+    <x-button wire:click="save" spinner="save" loading-delay="short" primary label="Save with target + delay indicator" />
     HTML;
 
     public function sleeping(): void
