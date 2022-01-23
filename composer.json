@@ -9,16 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "friendsofphp/php-cs-fixer": "^3.3",
+        "friendsofphp/php-cs-fixer": "^3.5",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.65",
-        "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.8",
+        "laravel/framework": "^8.80",
+        "laravel/sanctum": "^2.14",
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.10",
         "sentry/sentry-laravel": "^2.10",
         "torchlight/torchlight-laravel": "^0.5.7",
-        "wireui/wireui": "^0.14.3"
+        "wireui/wireui": "^0.16.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -69,7 +69,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

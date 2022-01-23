@@ -6,6 +6,7 @@
                 <x-summary.item href="#custom-format" label="Custom Datetime Format" />
                 <x-summary.item href="#display-format" label="Custom Display Format" />
                 <x-summary.item href="#without-timezone" label="Without Timezone" />
+                <x-summary.item href="#min-max-dates" label="Min & Max dates" />
             </x-summary.header>
 
             <x-summary.header href="#datetime-picker-options" label="Datetime Picker Options" />
@@ -101,6 +102,45 @@
         </div>
     </x-code-preview>
 
+    <x-code-preview
+        title="Min & Max dates"
+        href="#min-max-dates"
+        id="min-max-dates"
+        language="html"
+        :code="$mixAndMaxDatesExample">
+        <div class="flex justify-center">
+            <div class="sm:max-w-md sm:px-16">
+                <ul class="dark:text-gray-400 mb-2">
+                    <li>
+                        <b>System Time:</b> {{ now() }} {{ now()->timezoneName }}
+                    </li>
+
+                    <li>
+                        <b>Min date:</b> now() - 7 days, 12:30 PM
+                    </li>
+
+                    <li>
+                        <b>Max date:</b> now() + 7 days, 12:30 PM
+                    </li>
+
+                    <li>
+                        <b>Model:</b> {{ $mixAndMaxDates }}
+                    </li>
+                </ul>
+
+                <x-datetime-picker
+                    id="min-max-dates-input"
+                    without-timezone
+                    label="Appointment Date"
+                    placeholder="Appointment Date"
+                    wire:model="mixAndMaxDates"
+                    :min="now()->subDays(7)->hours(12)->minutes(30)"
+                    :max="now()->addDays(7)->hours(12)->minutes(30)"
+                />
+            </div>
+        </div>
+    </x-code-preview>
+
     <div id="datetime-picker-options">
         <x-section.title href="#datetime-picker-options" title="Datetime Picker Options" />
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
@@ -117,10 +157,12 @@
             <x-option-table-row prop="without-time"     required="false" default="false" type="boolean" available="--" />
             <x-option-table-row prop="interval"         required="false" default="10" type="string|number" available="--" />
             <x-option-table-row prop="time-format"      required="false" default="12" type="string"        available="12|24" />
-            <x-option-table-row prop="timezone"        required="false" default="UTC" type="string" available="All js available timezones" />
-            <x-option-table-row prop="user-timezone"   required="false" default="real user timezone" type="string" available="All js available timezones" />
-            <x-option-table-row prop="parse-format"    required="false" default="ISO8601" type="string" available="All dayjs formats" />
-            <x-option-table-row prop="display-format"  required="false" default="localeFormat" type="string" available="All dayjs formats" />
+            <x-option-table-row prop="timezone"         required="false" default="UTC" type="string" available="All js available timezones" />
+            <x-option-table-row prop="user-timezone"    required="false" default="real user timezone" type="string" available="All js available timezones" />
+            <x-option-table-row prop="parse-format"     required="false" default="ISO8601" type="string" available="All dayjs formats" />
+            <x-option-table-row prop="display-format"   required="false" default="localeFormat" type="string" available="All dayjs formats" />
+            <x-option-table-row prop="min"              required="false" default="null" type="Carbon|DateTimeInterface|string|timestamp|null" available="All Suported Carbon::parse dates" />
+            <x-option-table-row prop="max"              required="false" default="null" type="Carbon|DateTimeInterface|string|timestamp|null" available="All Suported Carbon::parse dates" />
         </x-options-table>
 
         <a href="https://day.js.org/docs/en/display/format">Dayjs formats</a>

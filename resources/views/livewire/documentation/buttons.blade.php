@@ -190,8 +190,8 @@
         </div>
     </x-code-preview>
 
-    <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
-        <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
+    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
+        <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
 
         <p class="text-sm text-blue-700 dark:text-blue-400">
             You can show a spinner loading when an action if fired <br>
@@ -210,6 +210,8 @@
             <x-button wire:click="$refresh" spinner primary label="Save without target" />
 
             <x-button wire:click="sleeping" spinner="sleeping" primary label="Save with target" />
+
+            <x-button wire:click="sleeping" spinner="sleeping" loading-delay="short" primary label="Save with target + Delaying indicator" />
         </div>
     </x-code-preview>
 
@@ -235,7 +237,8 @@
             <x-option-table-row prop="label"     required="false" default="none" type="string"   available="" />
             <x-option-table-row prop="icon"      required="false" default="none" type="string"   available="all heroicons" />
             <x-option-table-row prop="rightIcon" required="false" default="none" type="string"   available="all heroicons" />
-            <x-option-table-row prop="spinner"   required="false" default="none" type="boolean|string" available="--" />
+            <x-option-table-row prop="spinner" required="false" default="none" type="boolean|string" available="--" />
+            <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
 
         <label class="mb-1 font-semibold text-gray-700">Colors</label>

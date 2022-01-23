@@ -148,10 +148,10 @@
         <p class="mt-4 mb-1 text-gray-500">You can create a confirmation notification by the blade</p>
         <x-code language="html" :code="$bladeConfirmExample" />
 
-        <div class="flex items-center p-4 mt-5 border border-l-4 border-yellow-400 rounded-lg gap-x-3 bg-yellow-50 shadow-soft">
-            <x-icon name="exclamation" class="flex-shrink-0 w-5 h-5 text-yellow-400" />
+        <div class="flex items-center gap-x-3 bg-ambar-50 border-l-4 border-ambar-400 p-4 mt-5 border shadow-soft rounded-lg">
+            <x-icon name="exclamation" class="h-5 w-5 shrink-0 text-ambar-400" />
 
-            <p class="text-sm text-yellow-700">
+            <p class="text-sm text-ambar-700">
                 This directive does not work on blade component, like <b>x-button</b>
             </p>
         </div>
@@ -286,7 +286,7 @@
     <div id="playground">
         <x-section.title href="#playground" title="🪁 Playground" />
 
-        <div class="px-4 py-2 mt-4 border rounded-lg shadow bg-blueGray-100 dark:bg-secondary-800 dark:border-secondary-700" x-data="{
+        <div class="bg-slate-100 dark:bg-secondary-800 dark:border-secondary-700 shadow rounded-lg border px-4 py-2 mt-4" x-data="{
             options: `{
 title: 'Playground Title',
 description: 'testing in playground',
