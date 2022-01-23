@@ -101,7 +101,7 @@ TorchlightToken(){
 }
 
 serveProject(){
-  echo -e "${LABEL_WIREUI}Would you like to start the ${YELLOW}Artisan Server${NC} [Y/n]?"
+  echo -e "${LABEL_WIREUI}Would you like to start the ${YELLOW}Artisan Server${NC} [y/N]?"
   read ANSWER 
 
   if [ "$ANSWER" != "${ANSWER#[Yy]}" ]; then 
