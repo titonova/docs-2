@@ -18,7 +18,7 @@ document.querySelectorAll('pre').forEach((pre, key) => {
    
     btn.innerHTML = "copy";
     btn.setAttribute('title', 'copy');
-    btn.setAttribute('class', 'rounded overflow-visible absolute top-0 right-0 p-3 text-white px-2 py-2 font-mono text-sm  text-gray-900 bg-teal-100 rounded-md"');
+    btn.setAttribute('class', 'rounded overflow-visible absolute top-1 right-1 p-3 text-white px-1 py-1 font-mono text-sm  text-gray-900 bg-teal-100 rounded-md"');
     btn.setAttribute("data-copybutton", "");
     btn.dataset.clipboardTarget = `#${codeBlock.id}`;
     pre.appendChild(btn);
