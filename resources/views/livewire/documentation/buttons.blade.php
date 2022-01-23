@@ -242,7 +242,7 @@
         </x-options-table>
 
         <label class="mb-1 font-semibold text-gray-700">Colors</label>
-        <x-code nocopy language="js" :code="<<<EOT
+        <x-code-no-copy language="js" :code="<<<EOT
         primary|secondary|positive|negative|warning|info|dark
         EOT" />
     </div>

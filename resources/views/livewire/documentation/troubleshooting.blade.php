@@ -31,7 +31,7 @@
             </p>
             <p>Error:</p>
             
-            <x-code language="shell" :code="$tailwindFormsError" />
+            <x-code-no-copy  language="shell" :code="$tailwindFormsError" />
             <p>Solution:</p>
             
             <p>Modify your Tailwind-forms version and then, run <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">npm update</span> command.</p>
