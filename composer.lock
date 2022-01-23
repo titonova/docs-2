@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdbaf3be4aae961b97cff3cbe81ef760",
+    "content-hash": "92d1bd883d16be81b12bdc8711c54040",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2222,31 +2222,32 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.9.0",
+            "version": "v2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "e117c78f9a4b19edb294b5b576138fd1f896925a"
+                "reference": "0d417b27791af09c79108eafd1344842f83a26ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/e117c78f9a4b19edb294b5b576138fd1f896925a",
-                "reference": "e117c78f9a4b19edb294b5b576138fd1f896925a",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/0d417b27791af09c79108eafd1344842f83a26ee",
+                "reference": "0d417b27791af09c79108eafd1344842f83a26ee",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^7.0|^8.0",
-                "illuminate/support": "^7.0|^8.0",
-                "illuminate/validation": "^7.0|^8.0",
+                "illuminate/database": "^7.0|^8.0|^9.0",
+                "illuminate/support": "^7.0|^8.0|^9.0",
+                "illuminate/validation": "^7.0|^8.0|^9.0",
+                "league/mime-type-detection": "^1.9",
                 "php": "^7.2.5|^8.0",
-                "symfony/http-kernel": "^5.0"
+                "symfony/http-kernel": "^5.0|^6.0"
             },
             "require-dev": {
                 "calebporzio/sushi": "^2.1",
-                "laravel/framework": "^7.0|^8.0",
+                "laravel/framework": "^7.0|^8.0|^9.0",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "^5.0|^6.0",
-                "orchestra/testbench-dusk": "^5.2|^6.0",
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0",
                 "phpunit/phpunit": "^8.4|^9.0",
                 "psy/psysh": "@stable"
             },
@@ -2282,7 +2283,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.9.0"
+                "source": "https://github.com/livewire/livewire/tree/v2.10.1"
             },
             "funding": [
                 {
@@ -2290,7 +2291,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-13T20:07:05+00:00"
+            "time": "2022-01-21T13:39:10+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7426,29 +7427,29 @@
         },
         {
             "name": "wireui/wireui",
-            "version": "v0.15.0",
+            "version": "v0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wireui/wireui.git",
-                "reference": "3d97e2f2e983f3984495cb77d620993b675fddc5"
+                "reference": "b10f5934b08aab9d03fabbf64c890b23931edafe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/3d97e2f2e983f3984495cb77d620993b675fddc5",
-                "reference": "3d97e2f2e983f3984495cb77d620993b675fddc5",
+                "url": "https://api.github.com/repos/wireui/wireui/zipball/b10f5934b08aab9d03fabbf64c890b23931edafe",
+                "reference": "b10f5934b08aab9d03fabbf64c890b23931edafe",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^3.1",
                 "illuminate/database": "^8.0",
                 "illuminate/support": "^8.0",
                 "illuminate/validation": "^8.0",
+                "laravel/framework": "^8.80",
+                "livewire/livewire": "^2.9",
                 "php": "^7.4|^8.0",
                 "symfony/http-kernel": "^5.0"
             },
             "require-dev": {
-                "laravel/framework": "^8.0",
-                "livewire/livewire": "^2.6",
+                "friendsofphp/php-cs-fixer": "^3.5",
                 "mockery/mockery": "^1.3.1",
                 "orchestra/testbench": "^6.0",
                 "orchestra/testbench-dusk": "^6.0",
@@ -7489,9 +7490,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v0.15.0"
+                "source": "https://github.com/wireui/wireui/tree/v0.16.0"
             },
-            "time": "2021-12-17T02:06:18+00:00"
+            "time": "2022-01-23T04:00:37+00:00"
         }
     ],
     "packages-dev": [
