@@ -26,15 +26,15 @@
         <x-section.title href="#tailwind-forms" title="Tailwind-forms" />
 
         <div class="mt-5 prose text-gray-500 max-w-none">
-            <p id="installing-package">If you have encountered the error <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">TypeError: require(...) is not a function</span>, you must update your Tailwind-Forms to 
-                <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">"^0.3.0"</span>. This is often the case with Laravel Breeze installation.
+            <p id="installing-package">If you have encountered the error <x-green>TypeError: require(...) is not a function</x-green>, you must update your Tailwind-Forms to 
+                <x-green>"^0.3.0"</x-green>. This is often the case with Laravel Breeze installation.
             </p>
             <p>Error:</p>
             
             <x-code-no-copy  language="shell" :code="$tailwindFormsError" />
             <p>Solution:</p>
             
-            <p>Modify your Tailwind-forms version and then, run <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">npm update</span> command.</p>
+            <p>Modify your Tailwind-forms version and then, run <x-green>npm update</x-green> command.</p>
             <x-code language="js" :code="$tailwindFormsUpdate" />
         </div>
     </div>

@@ -66,7 +66,7 @@
 
             <x-code language="html" :code="$directiveExample" />
 
-            <p>3. Add the following settings to your Tailwindcss config file, <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">tailwind.config.js</span>:</p>
+            <p>3. Add the following settings to your Tailwindcss config file, <x-green>tailwind.config.js</x-green>:</p>
             <x-code language="js" :code="$tailwindConfigExample" />
         </div>
     </div>

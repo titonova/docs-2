@@ -27,7 +27,7 @@
                 
             </p>
             <p>
-            You can set the attribute <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">wire:model</span> to automatically have the attributes <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">id</span> set to the MD5 of the model and <span class="px-2 py-2 font-mono text-sm font-semibold text-gray-900 bg-teal-100 rounded-md">name</span> to the exact model. You must NOT pass the attributes id and name for this to work. 
+            You can set the attribute <x-green>wire:model</x-green> to automatically have the attributes <x-green>id</x-green> set to the MD5 of the model and <x-green>name</x-green> to the exact model. You must NOT pass the attributes id and name for this to work. 
             </p>
             <x-code language="html" :code="$wireModelExample" />
         </div>
