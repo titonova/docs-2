@@ -116,7 +116,7 @@
         language="blade"
         :code="$prefixInputExample">
         <div class="max-w-sm mx-auto">
-            <x-input class="pl-[105px]" label="Website" placeholder="your website" prefix="https://www." />
+            <x-input class="pl-[104px]" label="Website" placeholder="your-website.com" prefix="https://www." />
         </div>
     </x-code-preview>
 

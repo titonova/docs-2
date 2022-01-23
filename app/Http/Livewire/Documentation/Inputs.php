@@ -36,7 +36,7 @@ class Inputs extends Component
     HTML;
 
     public string $prefixInputExample = <<<HTML
-    <x-input class="pl-32" label="Name" placeholder="your website" prefix="https://www." />
+    <x-input class="pl-[104px]" label="Website" placeholder="your-website.com" prefix="https://www." />
     HTML;
 
     public string $suffixInputExample = <<<HTML
