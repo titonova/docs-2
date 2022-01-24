@@ -18,7 +18,7 @@
         "livewire/livewire": "^2.10",
         "sentry/sentry-laravel": "^2.10",
         "torchlight/torchlight-laravel": "^0.5.7",
-        "wireui/wireui": "^0.16.0"
+        "wireui/wireui": "^0.16.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
