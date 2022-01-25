@@ -11,16 +11,25 @@
             <x-code language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
 
         <p>
-           Then, open the file config/wireui.php and rename the alias key with your preferred name.
+           Then, open the file <x-green>config/wireui.php</x-green> and rename the alias key with your preferred name.
             <br/><br/>
-           Now, publish clear the View Cache, run:  
+           After saving, you must clear the View Cache, run the command:  
         </p>
 
-        <x-code language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
+        <x-code language="shell" code="php artisan view:clear" />
     </div>
 
+    <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
+        <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
+
+        <p class="text-sm text-blue-700 dark:text-blue-400">
+            Tip: It's advisable to run this command always after you make changes.
+        </p>
+
+    </div>
     <div>
-       <p>See the next example of customization:</p>
+
+       <p>The example below shows some customizations:</p>
         <br/>
         <x-code language="php">
 ...
