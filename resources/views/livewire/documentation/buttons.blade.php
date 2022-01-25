@@ -190,7 +190,7 @@
         </div>
     </x-code-preview>
 
-    <x-tip>You can show a spinner loading when an action if fired <br> You can pass <b>wire:target</b> value into <b>spinner</b> prop If no value is give, all loading effects will be applied</x-tip>
+    <x-info>You can show a spinner loading when an action if fired <br> You can pass <b>wire:target</b> value into <b>spinner</b> prop If no value is give, all loading effects will be applied</x-info>
 
     <x-code-preview
         title="Loading Spinner"

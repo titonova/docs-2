@@ -44,7 +44,7 @@
 
             <x-code language="html" :code="$addComponentExample" />
             <br/>
-            <x-tip>Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals </x-tip>
+            <x-info>Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals </x-info>
         </div>
     </div>
 

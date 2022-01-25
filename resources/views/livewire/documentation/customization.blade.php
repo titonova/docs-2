@@ -19,7 +19,7 @@
         <x-code language="shell" code="php artisan view:clear" />
     </div>
 
-    <x-tip>Tip: It's advisable to run this command always after you make changes.</x-tip>
+    <x-info>Tip: It's advisable to run this command always after you make changes.</x-info>
     
     <div>
 

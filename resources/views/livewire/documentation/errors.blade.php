@@ -23,7 +23,7 @@
             </p>
         </div>
 
-        <x-tip>Tip: You can customize the default error messages in the language translation files.</x-tip>
+        <x-info>Tip: You can customize the default error messages in the language translation files.</x-info>
 
     </div>
 
@@ -61,7 +61,7 @@
             </div>
         </x-code-preview>
 
-        <x-tip>Tip: The key <b>{errors}</b> will be replaced with the number of error messages.</x-tip>
+        <x-info>Tip: The key <b>{errors}</b> will be replaced with the number of error messages.</x-info>
     </div>
 
     <div id="errors-options">
