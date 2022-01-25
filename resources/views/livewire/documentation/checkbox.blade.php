@@ -10,7 +10,15 @@
             <x-summary.header href="#checkbox-options" label="Checkbox Options" />
         </x-summary>
     </x-slot>
+    <div>
+        <x-section.title title="Checkbox" />
 
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+            <p>
+                Checkboxes are used in forms to present the user with a list of options, allowing them to select one or more of these options.
+            </p>
+        </div>
+    </div>
     <x-code-preview
         title="Simple Checkbox"
         href="#simple-checkbox"
