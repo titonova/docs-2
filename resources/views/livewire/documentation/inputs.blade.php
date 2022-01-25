@@ -32,14 +32,9 @@
             <x-code language="html" :code="$wireModelExample" />
         </div>
     </div>
-    <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
-        <x-icon name="information-circle" class="flex-shrink-0 w-5 h-5 text-blue-400" />
+    
+    <x-tip>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-tip>
 
-        <p class="text-sm text-blue-700 dark:text-blue-400">
-            Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a>
-             to display validation error messages for your input.
-        </p>
-    </div>
     <div class="space-y-4">
         <x-code-preview
             title="Simple Input"
@@ -119,14 +114,8 @@
             <x-input class="pl-[104px]" label="Website" placeholder="your-website.com" prefix="https://www." />
         </div>
     </x-code-preview>
-
-    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-        <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
-
-        <p class="text-sm text-blue-700 dark:text-blue-400">
-            Tip: You can use <b>pl-x</b> class to control the left padding on your input
-        </p>
-    </div>
+    
+    <x-tip>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-tip>
 
     <x-code-preview
         title="Input Suffix"
