@@ -16,6 +16,7 @@
         <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
                 Radio buttons are used in forms to present the user with a list of options, allowing only a single selection. Radio buttons can also be used to switch options, like turning something on/off.
+            </p>
         </div>
     </div>
     <x-code-preview
