@@ -15,7 +15,7 @@
                 
             </p>
             <p>
-            You can set the attribute <x-green>wire:model</x-green> to automatically have the attributes <x-green>id</x-green> set to the MD5 of the model and <x-green>name</x-green> to the exact model. You must NOT pass the attributes id and name for this to work. 
+                You can set the attribute <x-green>wire:model</x-green> to automatically have the attributes <x-green>id</x-green> set to the MD5 of the model and <x-green>name</x-green> to the exact model. You must NOT pass the attributes id and name for this to work. 
             </p>
             <x-code language="html" :code="$wireModelExample" />
         </div>
