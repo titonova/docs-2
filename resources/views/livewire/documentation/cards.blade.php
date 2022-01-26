@@ -1,4 +1,3 @@
-
 <div class="space-y-10">
     <x-slot name="summary">
         <x-summary>
