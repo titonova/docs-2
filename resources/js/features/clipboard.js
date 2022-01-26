@@ -1,6 +1,5 @@
 import ClipboardJS from 'clipboard/dist/clipboard';
 
-
 document.querySelectorAll('pre').forEach((pre, key) => {
 
     if (("nocopy" in pre.dataset)) {
