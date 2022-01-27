@@ -45,7 +45,7 @@
         id="button-colors"
         language="html"
         :code="$buttonColorsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button label="No Color" />
             <x-button primary label="Primary" />
             <x-button secondary label="Secondary" />
@@ -63,7 +63,7 @@
         id="rounded-buttons"
         language="html"
         :code="$roundedButtonsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button rounded label="No Color" />
             <x-button rounded primary label="Primary" />
             <x-button rounded secondary label="Secondary" />
@@ -81,7 +81,7 @@
         id="squared-buttons"
         language="html"
         :code="$squaredButtonsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button squared label="No Color" />
             <x-button squared primary label="Primary" />
             <x-button squared secondary label="Secondary" />
@@ -99,7 +99,7 @@
         id="outline-buttons"
         language="html"
         :code="$outlineButtonsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button outline label="No Color" />
             <x-button outline primary label="Primary" />
             <x-button outline secondary label="Secondary" />
@@ -117,7 +117,7 @@
         id="flat-buttons"
         language="html"
         :code="$flatButtonsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7 2xl:grid-cols-8">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button flat label="No Color" />
             <x-button flat primary label="Primary" />
             <x-button flat secondary label="Secondary" />
@@ -135,7 +135,7 @@
         id="button-icons"
         language="html"
         :code="$buttonIconsExample">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-6">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button icon="home" label="No Color" />
             <x-button icon="pencil" primary label="Primary" />
             <x-button icon="clipboard-list" secondary label="Secondary" />
@@ -153,7 +153,7 @@
         id="only-icons"
         language="html"
         :code="$onlyIconsExample">
-        <div class="flex flex-wrap gap-4 justify-evenly">
+        <div class="flex flex-wrap justify-left gap-4">
             <x-button icon="home" />
             <x-button icon="pencil" primary />
             <x-button icon="clipboard-list" secondary />
@@ -171,21 +171,21 @@
         id="button-sizes"
         language="html"
         :code="$buttonSizesExample">
-        <div class="grid items-center grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="flex flex-wrap justify-left gap-4">
             <div>
-                <x-button xs icon="pencil" primary label="Primary" />
+                <x-button xs icon="pencil" primary label="Extra Small Button" />
             </div>
-
             <div>
-                <x-button icon="clipboard-list" secondary label="Secondary" />
+                <x-button sm icon="users" dark label="Small Button" />
             </div>
-
             <div>
-                <x-button md icon="check" positive label="Positive" />
+                <x-button icon="clipboard-list" secondary label="Normal" />
             </div>
-
             <div>
-                <x-button lg icon="x" negative label="Negative" />
+                <x-button md icon="check" positive label="Medium Button" />
+            </div>
+            <div>
+                <x-button lg icon="x" negative label="Large Button" />
             </div>
         </div>
     </x-code-preview>
@@ -203,7 +203,7 @@
 
             <x-button wire:click="sleeping" spinner="sleeping" primary label="Save with target" />
 
-            <x-button wire:click="sleeping" spinner="sleeping" loading-delay="short" primary label="Save with target + Delaying indicator" />
+            <x-button wire:click="sleeping" spinner="sleeping" loading-delay="short" primary label="Save with target + delay indicator" />
         </div>
     </x-code-preview>
 
