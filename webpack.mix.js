@@ -12,3 +12,5 @@ mix.js('resources/js/alpine.js', 'public/dist/alpine.js')
 if (mix.inProduction()) {
     mix.version()
 }
+
+mix.disableSuccessNotifications()
