@@ -26,7 +26,7 @@
         <x-section.title href="#version-update" title="Version Update" />
 
         <div class="mt-5 prose text-gray-500 max-w-none">
-            <p>The <a class="text-indigo-700 underline" href="{{ route('docs.changelog') }}#input-options">Changelog</a> page contains information about all recent versions, list of changes and the <x-green>Upgrade Guide</x-green>, with all the steps that must be taken after a version update.
+            <p>The <a class="text-indigo-700 underline" href="{{ route('docs.changelog') }}#input-options">Changelog</a> page contains information about all recent versions, list of changes and the <x-mark>Upgrade Guide</x-mark>, with all the steps that must be taken after a version update.
             <p>If you have recently updated WireUI and are facing issues, make sure to read the specific information for your version before proceeding in this section.</p>
             <p>To stay informed about WireUI's latest news, follow the author <a class="text-indigo-700 underline" href="https://twitter.com/ph7jack" target="_blank">@ph7jack</a> on Twitter. </p>
         </div>
@@ -35,15 +35,16 @@
         <x-section.title href="#tailwind-forms" title="Tailwind-forms" />
 
         <div class="mt-5 prose text-gray-500 max-w-none">
-            <p id="installing-package">If you have encountered the error <x-green>TypeError: require(...) is not a function</x-green>, you must update your Tailwind-Forms to 
-                <x-green>"^0.3.0"</x-green>. This is often the case with Laravel Breeze installation.
+            <p id="installing-package">If you have encountered the error <x-mark>TypeError: require(...) is not a function</x-mark>, you must update your Tailwind-Forms to 
+                <x-mark>"^0.3.0"</x-mark>. This is often the case with Laravel Breeze installation.
             </p>
             <p>Error:</p>
             
-            <x-code-no-copy  language="shell" :code="$tailwindFormsError" />
+            <x-code copy="false" lineNumbers="false" language="shell" :code="$tailwindFormsError" />
+            
             <p>Solution:</p>
             
-            <p>Modify your Tailwind-forms version and then, run <x-green>npm update</x-green> command.</p>
+            <p>Modify your Tailwind-forms version and then, run <x-mark>npm update</x-mark> command.</p>
             <x-code language="js" :code="$tailwindFormsUpdate" />
         </div>
     </div>

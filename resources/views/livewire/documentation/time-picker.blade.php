@@ -19,7 +19,7 @@
             </p>
         </div>
 
-        <x-attention>If you are using a model property bind <b>(wire:model="appointment.datetime")</b> as datetime, must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>, and automatically set 00:00 to time</x-attention>
+        <x-box attention>If you are using a model property bind <b>(wire:model="appointment.datetime")</b> as datetime, must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>, and automatically set 00:00 to time</x-box>
     </div>
 
     <x-code-preview

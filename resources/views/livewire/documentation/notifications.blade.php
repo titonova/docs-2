@@ -148,7 +148,7 @@
         <p class="mt-4 mb-1 text-gray-500">You can create a confirmation notification by the blade</p>
         <x-code language="html" :code="$bladeConfirmExample" />
         <br/>
-        <x-attention>This directive does not work on blade component, like <b>x-button</b></x-attention>
+        <x-box attention>This directive does not work on blade component, like <b>x-button</b></x-box>
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>
         <x-code language="php" :code="$livewireConfirmExample" />

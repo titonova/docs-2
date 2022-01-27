@@ -11,7 +11,7 @@
             <x-code language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
 
         <p>
-           Then, open the file <x-green>config/wireui.php</x-green> and rename the alias key with your preferred name.
+           Then, open the file <x-mark>config/wireui.php</x-mark> and rename the alias key with your preferred name.
             <br/><br/>
            After saving, you must clear the View Cache, run the command:  
         </p>
@@ -19,7 +19,7 @@
         <x-code language="shell" code="php artisan view:clear" />
     </div>
 
-    <x-info>Tip: It's advisable to run this command always after you make changes.</x-info>
+    <x-box info>Tip: It's advisable to run this command always after you make changes.</x-box>
     
     <div>
 

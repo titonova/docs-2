@@ -27,13 +27,13 @@
                 
             </p>
             <p>
-            You can set the attribute <x-green>wire:model</x-green> to automatically have the attributes <x-green>id</x-green> set to the MD5 of the model and <x-green>name</x-green> to the exact model. You must NOT pass the attributes id and name for this to work. 
+            You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work. 
             </p>
-            <x-code language="html" :code="$wireModelExample" />
+            <x-code lineNumbers="false" language="html" :code="$wireModelExample" />
         </div>
     </div>
     
-    <x-info>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-info>
+    <x-box info>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-box>
 
     <div class="space-y-4">
         <x-code-preview
@@ -115,7 +115,7 @@
         </div>
     </x-code-preview>
     
-    <x-info>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-info>
+    <x-box info>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-box>
 
     <x-code-preview
         title="Input Suffix"

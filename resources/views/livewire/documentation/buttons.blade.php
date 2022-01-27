@@ -190,7 +190,7 @@
         </div>
     </x-code-preview>
 
-    <x-info>You can show a spinner loading when an action if fired <br> You can pass <b>wire:target</b> value into <b>spinner</b> prop If no value is give, all loading effects will be applied</x-info>
+    <x-box info>You can show a spinner loading when an action if fired <br> You can pass <b>wire:target</b> value into <b>spinner</b> prop If no value is give, all loading effects will be applied</x-box>
 
     <x-code-preview
         title="Loading Spinner"
@@ -234,7 +234,7 @@
         </x-options-table>
 
         <label class="mb-1 font-semibold text-gray-700">Colors</label>
-        <x-code-no-copy language="js" :code="<<<EOT
+        <x-code copy="false" lineNumbers="false" language="js" :code="<<<EOT
         primary|secondary|positive|negative|warning|info|dark
         EOT" />
     </div>
