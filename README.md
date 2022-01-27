@@ -1,10 +1,8 @@
 # WireUI - Docs
 
-Page for [WireUI](https://github.com/wireui/wireui) documentation.
+Page for [WireUI](https://github.com/wireui/wireui) documentation. 
 
-🌐 Live at: [https://livewire-wireui.com/](https://livewire-wireui.com/)
-
-Made with [Laravel](https://laravel.com) & [Livewire](https://laravel-livewire.com).
+Visit at: [https://livewire-wireui.com/](https://livewire-wireui.com/)
 
 <br/>
 
@@ -25,34 +23,106 @@ Please follow the steps below to run this project locally:
 
 ### Get started
 
-STEP 1: Fork this repository (Click on "Fork").
+STEP 1: 
+
+Fork this repository, click on "Fork" in this page.
 
 <br/>
 
-STEP 2: Clone your forked repository:
+STEP 2: 
+
+Clone your forked repository, run the command:
 
 ```bash
-git clone https://github.com/:::USERNAME:::/docs wireui-docs && cd wireui-docs
+git clone https://github.com/YOUR-USERNAME/docs wireui-docs && cd wireui-docs
 ```
 
-📝 **NOTE:** Replace _:::USERNAME:::_ with your GitHub username.
+<br/>
+STEP 3:
+
+WireUI Doc uses Torchlight to provide code highlighting.
+
+Before continuing, you must register at [https://torchlight.dev](https://torchlight.dev) and get your access token.
+
+The token will be required in the next step, and it should look like similar to:
+
+ ```bash
+ torch_EFhVTgSra9HioAxtsK3ljnsj45BHmf
+ ```
 
 <br/>
 
-STEP 3: Register and create your Torchlight token at [https://torchlight.dev](https://torchlight.dev).
-
-You should have received a token similar to this:
-
-```bash
-torch_EFhVTgSra9HioAxtsK3ljnsj45BHmf
-```
-
-Store it safely for the next step.
-
-<br/>
-
-STEP 4: Execute the `run` script:
+STEP 4: In your project folder, execute the `run.sh` script:
 
 ```bash
 ./run.sh
 ```
+
+This script automate the process of installing dependencies and set up the `.env` file.
+
+### Doc syntax
+
+The WireUI Doc provides some components to facilitate the writing experience.
+
+You are welcome to explore the code in `resources/views/livewire/` folder to view real usage examples.
+
+#### Code snippets
+
+Code snippets should always be included using the `<x-code>` tag.
+
+The mandatory attributes are `language`, for the code language and the `code`, for the code itself.
+
+For example:
+
+```php
+//...
+<x-code language="bash" :code="<<<EOT
+php artisan vendor:publish --tag='wireui.config'
+php artisan vendor:publish --tag='wireui.resources'
+php artisan vendor:publish --tag='wireui.lang'
+EOT" />
+```
+
+A copy button is loaded by default, to suppress the button, add the attribute: `copy=false`.
+
+Likewise, line numbers are displayed by default. This can be turned off by adding the attribute `lineNumber=false`.
+
+```php
+<x-code copy="false" lineNumbers="false" language="shell" :code="Command exit with error error code xyz...." />
+```
+
+#### Text mark
+
+When giving instructions or using technical words, highlight important information with the `<x-mark>` tag.
+
+For example, when using:
+
+```php
+Run <x-mark>npm install<x-mark> to install all to install all dependencies.
+```
+
+The outcome is similar to:
+
+Run `npm install` to install all to install all dependencies.
+
+#### Boxes
+
+Sometimes it's crucial to highlight information such as a mandatory step or a compatibility issue. In these situations, situations, you should use the `<x-box attention>` tag, which will produce a yellow "attention" box.
+
+For example:
+
+```php
+<x-box attention>If you are using FooJS 1.0, you must configure bar=null before update.</x-box>
+```
+
+In addition, if you need to provide a friendly message, a tip, or extra information, you should use of the `<x-box info>` tag, which produces a blue info box.
+
+```php
+<x-box info>Read more about supported formats <a href="#formats">here</a>.</x-box>
+```
+
+<br/>
+
+---
+
+WireUI Doc runs on  [Laravel](https://laravel.com) & [Livewire](https://laravel-livewire.com).
