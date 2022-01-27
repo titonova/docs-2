@@ -12,7 +12,9 @@ Thank you for your interest in contributing! 😊
 
 Please follow the steps below to run this project locally:
 
-### Requirements
+### Get started 🚀 
+
+#### Requirements
 
 -   PHP 7.4+
 -   [Composer](https://getcomposer.org)
@@ -21,15 +23,15 @@ Please follow the steps below to run this project locally:
 
 </br>
 
-### Get started
+#### Setup
 
-STEP 1: 
+**STEP 1:**
 
 Fork this repository, click on "Fork" in this page.
 
 <br/>
 
-STEP 2: 
+**STEP 2:**
 
 Clone your forked repository, run the command:
 
@@ -38,7 +40,8 @@ git clone https://github.com/YOUR-USERNAME/docs wireui-docs && cd wireui-docs
 ```
 
 <br/>
-STEP 3:
+
+**STEP 3:**
 
 WireUI Doc uses Torchlight to provide code highlighting.
 
@@ -52,7 +55,7 @@ The token will be required in the next step, and it should look like similar to:
 
 <br/>
 
-STEP 4: In your project folder, execute the `run.sh` script:
+**STEP 4:** In your project folder, execute the `run.sh` script:
 
 ```bash
 ./run.sh
@@ -60,7 +63,11 @@ STEP 4: In your project folder, execute the `run.sh` script:
 
 This script automate the process of installing dependencies and set up the `.env` file.
 
-### Doc syntax
+<br>
+
+---
+
+### Doc syntax 📝
 
 The WireUI Doc provides some components to facilitate the writing experience.
 
@@ -91,6 +98,8 @@ Likewise, line numbers are displayed by default. This can be turned off by addin
 <x-code copy="false" lineNumbers="false" language="shell" :code="Command exit with error error code xyz...." />
 ```
 
+<br/>
+
 #### Text mark
 
 When giving instructions or using technical words, highlight important information with the `<x-mark>` tag.
@@ -104,6 +113,8 @@ Run <x-mark>npm install<x-mark> to install all to install all dependencies.
 The outcome is similar to:
 
 Run `npm install` to install all to install all dependencies.
+
+<br/>
 
 #### Boxes
 
