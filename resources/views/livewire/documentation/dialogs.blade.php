@@ -324,7 +324,7 @@
 
             <div>
                 <b>Icons</b>
-                <x-code language="text" code="success | error | info | warning | question" />
+                <x-code copy='false' lineNumbers='false' language="text" code="success | error | info | warning | question" />
             </div>
 
             <div>
