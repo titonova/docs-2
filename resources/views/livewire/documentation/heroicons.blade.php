@@ -19,7 +19,7 @@
         EOT' />
 
         <p>You can publish the icon configuration and define what will be the default style</p>
-        <x-code language="bash" code="php artisan vendor:publish --tag='wireui.config'" />
+        <x-code lineNumbers='false' language="bash" code="php artisan vendor:publish --tag='wireui.config'" />
 
         <p>Or use an environment variable for that</p>
         <x-code language="bash" code="WIREUI_ICONS_STYLE=solid" />
