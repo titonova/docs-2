@@ -21,7 +21,6 @@ Please follow the steps below to run this project locally:
 -   [Yarn](https://yarnpkg.com)
 -   A valid [Torchlight](https://torchlight.dev) token (free for non-profit open-source projects).
 
-</br>
 
 #### Setup
 
@@ -73,6 +72,8 @@ The WireUI Doc provides some components to facilitate the writing experience.
 
 You are welcome to explore the code in `resources/views/livewire/` folder to view real usage examples.
 
+<br/>
+
 #### Code snippets
 
 Code snippets should always be included using the `<x-code>` tag.
@@ -90,9 +91,9 @@ php artisan vendor:publish --tag='wireui.lang'
 EOT" />
 ```
 
-A copy button is loaded by default, to suppress the button, add the attribute: `copy=false`.
+A copy button is loaded by default, to suppress the button, add the attribute: `copy="false"`.
 
-Likewise, line numbers are displayed by default. This can be turned off by adding the attribute `lineNumber=false`.
+Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `lineNumber="false`.
 
 ```php
 <x-code copy="false" lineNumbers="false" language="shell" :code="Command exit with error error code xyz...." />
