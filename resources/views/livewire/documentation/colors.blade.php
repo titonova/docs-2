@@ -6,7 +6,7 @@
             <p>
                 You can customize default colors for all WireUI components: Notifications, dialogs, inputs, selects, buttons... 
                 <br/>
-                You just need to extend Tailwind Colors setting in <x-green>tailwind.config.js</x-green> adding preferred ones. <br>
+                You just need to extend Tailwind Colors setting in <x-mark>tailwind.config.js</x-mark> adding preferred ones. <br>
             </p>
         </div>
 
