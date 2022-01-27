@@ -31,6 +31,25 @@
             <p>To stay informed about WireUI's latest news, follow the author <a class="text-indigo-700 underline" href="https://twitter.com/ph7jack" target="_blank">@ph7jack</a> on Twitter. </p>
         </div>
     </div>
+
+    <div id="https-http">
+        <x-section.title href="#version-update" title="WireUI not using https" />
+
+        <div class="mt-5 prose text-gray-500 max-w-none">
+            <p>If your assets (scripts, css files) are loaded with <x-mark>http://</x-mark> instead of <x-mark>https://</x-mark>, you may try the following steps:</p>
+            
+            <p>1. Make sure the `APP_URL` inside your <x-mark>.env</x-mark> file is set with https prefix.</p>
+
+            <x-code language="shell" code="APP_URL=https://example.com" />
+
+            <p>2. Run the command below to clear Laravel's cache:</p>
+
+            <x-code lineNumbers="false" language="shell" code="php artisan optimize:clear" />
+
+            
+        </div>
+    </div>
+
     <div id="tailwind-forms">
         <x-section.title href="#tailwind-forms" title="Tailwind-forms" />
 
