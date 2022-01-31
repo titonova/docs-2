@@ -326,7 +326,7 @@ icon: 'success',
                 You can customize notification layout and styles publishing resources
             </p>
 
-            <x-code lineNumbers='false' language="bash" code="php artisan vendor:publish --tag='wireui.resources'" />
+            <x-code line-numbers='false' language="bash" code="php artisan vendor:publish --tag='wireui.resources'" />
         </div>
     </div>
 </div>
