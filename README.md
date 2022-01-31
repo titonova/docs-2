@@ -96,7 +96,7 @@ A copy button is loaded by default, to suppress the button, add the attribute: `
 Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `line-number="false`.
 
 ```php
-<x-code copy="false" lineNumbers="false" language="shell" :code="Command exit with error error code xyz...." />
+<x-code copy="false" line-numbers="false" language="shell" :code="Command exit with error error code xyz...." />
 ```
 
 <br/>
