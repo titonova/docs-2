@@ -44,9 +44,7 @@
 
             <p>2. Run the command below to clear Laravel's cache:</p>
 
-            <x-code lineNumbers="false" language="shell" code="php artisan optimize:clear" />
-
-            
+            <x-code line-numbers="false" language="shell" code="php artisan optimize:clear" />
         </div>
     </div>
 
