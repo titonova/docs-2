@@ -57,7 +57,7 @@
             </p>
             <p>Error:</p>
             
-            <x-code copy="false" lineNumbers="false" language="shell" :code="$tailwindFormsError" />
+            <x-code copy="false" line-numbers="false" language="shell" :code="$tailwindFormsError" />
             
             <p>Solution:</p>
             
