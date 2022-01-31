@@ -16,7 +16,7 @@
            After saving, you must clear the View Cache, run the command:  
         </p>
 
-        <x-code lineNumbers='false' language="shell" code="php artisan view:clear" />
+        <x-code line-numbers='false' language="shell" code="php artisan view:clear" />
     </div>
 
     <x-box info>Tip: It's advisable to run this command always after you make changes.</x-box>
