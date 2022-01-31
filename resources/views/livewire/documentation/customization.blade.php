@@ -8,7 +8,7 @@
         <p>
             To perform customizations, you must publish the WireUI config. Run the command:
         </p>
-            <x-code lineNumbers='false' language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
+            <x-code line-numbers='false' language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
 
         <p>
            Then, open the file <x-mark>config/wireui.php</x-mark> and rename the alias key with your preferred name.
