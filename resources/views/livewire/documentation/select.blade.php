@@ -127,16 +127,17 @@
     <div id="select-options">
         <x-section.title href="#select-options" title="Select Options" />
         <x-options-table class="mt-2 mb-6 w-full">
-            <x-option-table-row prop="label"        required="false" default="none" type="string" available="--" />
-            <x-option-table-row prop="placeholder"  required="false" default="none" type="string" available="--" />
-            <x-option-table-row prop="option-value" required="false" default="none" type="string" available="--" />
-            <x-option-table-row prop="option-label" required="false" default="none" type="string" available="--" />
+            <x-option-table-row prop="label"        required="false" default="none" type="string" available="*" />
+            <x-option-table-row prop="placeholder"  required="false" default="none" type="string" available="*" />
+            <x-option-table-row prop="option-value" required="false" default="none" type="string" available="*" />
+            <x-option-table-row prop="option-label" required="false" default="none" type="string" available="*" />
             <x-option-table-row prop="option-key-label" required="false" default="false" type="boolean" />
             <x-option-table-row prop="option-key-value" required="false" default="false" type="boolean" />
-            <x-option-table-row prop="options"      required="false" default="none" type="Collection|array"   available="--" />
+            <x-option-table-row prop="options"      required="false" default="none" type="Collection|array"   available="*" />
             <x-option-table-row prop="optionComponent" required="false" default="select.option" type="string" available="select.option|select.user-option" />
-            <x-option-table-row prop="searchable"      required="false" default="true"    type="boolean"  available="--" />
-            <x-option-table-row prop="multiselect"     required="false" default="false"    type="boolean" available="--" />
+            <x-option-table-row prop="clearable"       required="false" default="true"    type="boolean"  available="boolean" />
+            <x-option-table-row prop="searchable"      required="false" default="true"    type="boolean"  available="boolean" />
+            <x-option-table-row prop="multiselect"     required="false" default="false"    type="boolean" available="boolean" />
             <x-option-table-row prop="icon"            required="false" default="none"     type="string"  available="all heroicons" />
             <x-option-table-row prop="rightIcon"       required="false" default="selector" type="string"  available="all heroicons" />
         </x-options-table>
