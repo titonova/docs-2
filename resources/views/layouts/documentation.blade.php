@@ -174,14 +174,14 @@
 
             <!-- footer -->
             <footer class="mt-5">
-                <div class="mx-auto pt-6 md:flex md:items-center md:justify-between">
+                <div class="mx-auto pt-6 pb-6 px-3 sm:px-5 lg:px-4 lg:pb-4 xl:px-0 xl:pb-0 md:flex md:items-center md:justify-between">
                     <div class="flex justify-center space-x-6 md:order-2">
                         <a href="{{ config('links.wireui') }}" class="text-gray-400 hover:text-gray-500">
                             <span class="sr-only">GitHub</span>
                             <x-icons.github class="h-6 w-6" />
                         </a>
                     </div>
-                    <div class="mt-4 md:mt-0 md:order-1 text-sm text-gray-600">
+                    <div class="text-center sm:text-left mt-4 md:mt-0 md:order-1 text-sm text-gray-600">
                         Code highlighting provided by
                         <a href="https://torchlight.dev" target="_blank" class="text-center font-semibold text-teal-600">
                             Torchlight
