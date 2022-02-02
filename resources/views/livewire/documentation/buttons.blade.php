@@ -158,7 +158,7 @@
         id="rounded-buttons"
         language="html"
         :code="$roundedButtonsCode">
-        <div class="flex flex-wrap justify-left gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
             <x-button rounded label="No Color" />
             <x-button rounded primary label="Primary" />
             <x-button rounded secondary label="Secondary" />
@@ -176,7 +176,7 @@
         id="squared-buttons"
         language="html"
         :code="$squaredButtonsCode">
-        <div class="flex flex-wrap justify-left gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
             <x-button squared label="No Color" />
             <x-button squared primary label="Primary" />
             <x-button squared secondary label="Secondary" />
@@ -194,7 +194,7 @@
         id="circle-buttons"
         language="html"
         :code="$circleButtonsCode">
-        <div class="flex flex-wrap gap-x-2">
+        <div class="flex flex-wrap gap-3">
             <x-button.circle icon="home" />
             <x-button.circle primary icon="pencil" />
             <x-button.circle secondary icon="clipboard-list"  />
@@ -216,8 +216,8 @@
         id="button-icons"
         language="html"
         :code="$buttonIconsCode">
-        <div class="flex flex-wrap justify-left gap-4">
-            <x-button icon="home" label="No Color" />
+        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+            <x-button icon="home" label="Default" />
             <x-button icon="pencil" primary label="Primary" />
             <x-button icon="clipboard-list" secondary label="Secondary" />
             <x-button icon="check" positive label="Positive" />
@@ -283,9 +283,14 @@
     <div id="button-options">
         <x-section.title href="#button-options" title="Button Options" />
         <x-options-table class="mt-2 mb-6 w-full">
-            <x-option-table-row prop="xs"        required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="md"        required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="lg"        required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="2xs"  required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="xs"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="sm"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="md"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="lg"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="xl"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="2xs|xs|sm|default|md|lg|xl" />
+
             <x-option-table-row prop="primary"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="secondary" required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="positive"  required="false" default="false" type="boolean" available="boolean" />
@@ -293,16 +298,17 @@
             <x-option-table-row prop="warning"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="info"      required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="dark"      required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="rounded"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="squared"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="bordered"  required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="flat"      required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="color"     required="false" default="none" type="string"   available="default colors + all tailwind colors" />
-            <x-option-table-row prop="size"      required="false" default="sm"   type="string"   available="2xs|xs|sm|default|md|lg|xl" />
-            <x-option-table-row prop="label"     required="false" default="none" type="string"   available="*" />
-            <x-option-table-row prop="icon"      required="false" default="none" type="string"   available="all heroicons" />
-            <x-option-table-row prop="rightIcon" required="false" default="none" type="string"   available="all heroicons" />
+            <x-option-table-row prop="color"     required="false" default="none"  type="string"  available="default colors + all tailwind colors" />
+
+            <x-option-table-row prop="rounded" required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="squared" required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="flat"    required="false" default="false" type="boolean" available="boolean" />
+
+            <x-option-table-row prop="label"     required="false" default="none" type="string" available="*" />
+            <x-option-table-row prop="icon"      required="false" default="none" type="string" available="all heroicons" />
+            <x-option-table-row prop="rightIcon" required="false" default="none" type="string" available="all heroicons" />
             <x-option-table-row prop="spinner"   required="false" default="none" type="boolean|string" available="*" />
+
             <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
     </div>

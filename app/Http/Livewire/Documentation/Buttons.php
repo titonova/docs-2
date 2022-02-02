@@ -147,7 +147,7 @@ class Buttons extends Component
     HTML;
 
     public string $buttonIconsCode = <<<HTML
-    <x-button icon="home" label="No Color" />
+    <x-button icon="home" label="Default" />
     <x-button icon="pencil" primary label="Primary" />
     <x-button icon="clipboard-list" secondary label="Secondary" />
     <x-button icon="check" positive label="Positive" />
