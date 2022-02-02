@@ -14,6 +14,7 @@
             </x-summary.header>
 
             <x-summary.header href="#button-options" label="Button Options" />
+            <x-summary.header href="#playground"     label="Playground" />
         </x-summary>
     </x-slot>
 
@@ -305,4 +306,6 @@
             <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
     </div>
+
+    <livewire:docs.buttons.playground />
 </div>
