@@ -38,7 +38,6 @@ checkComposer () {
 }
 
 composerInstall () {
-
   if [ ! -d ./vendor ]; then
     echo -e "${LABEL_WIREUI}Installing project dependencies with composer..."
 
@@ -101,6 +100,15 @@ TorchlightToken(){
     fi
 }
 
+serveProject(){
+  echo -e "${LABEL_WIREUI}Would you like to start the ${YELLOW}Artisan Server${NC} [y/N]?"
+  read ANSWER 
+
+  if [ "$ANSWER" != "${ANSWER#[Yy]}" ]; then 
+    php artisan serve
+  fi
+}
+
 # ══════════════ SCRIPT ═════════
 
 echo -e "${LABEL_WIREUI}${YELLOW}Let's begin!${NC}"
@@ -122,6 +130,8 @@ generateAppKey
 
 compileAssets
 
-echo -e "${LABEL_OK}All good! Run ${YELLOW}php artisan serve${NC} to start a PHP Server!"
+echo -e "${LABEL_OK}WireUI Doc is configured!"
 
 echo -e "${LABEL_WIREUI}🙏 Thank you for contributing!"
+
+serveProject

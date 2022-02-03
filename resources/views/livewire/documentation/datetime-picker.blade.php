@@ -146,7 +146,7 @@
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
                 The datetime picker accepts all
-                <a class="dark:text-primary-500" href="{{ route('docs.inputs') }}#input-options">input</a>
+                <a class="text-indigo-700 underline" href="{{ route('docs.inputs') }}#input-options">input</a>
                 options and slots
             </p>
         </div>
@@ -166,6 +166,6 @@
             <x-option-table-row prop="max"              required="false" default="null" type="Carbon|DateTimeInterface|string|timestamp|null" available="All Suported Carbon::parse dates" />
         </x-options-table>
 
-        <a href="https://day.js.org/docs/en/display/format">Dayjs formats</a>
+        <p>Read more about <a class="text-indigo-700 underline" target="_blank" href="https://day.js.org/docs/en/display/format">Dayjs formats</a>.</p>
     </div>
 </div>

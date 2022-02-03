@@ -21,14 +21,19 @@
     <div>
         <x-section.title title="Inputs" />
 
-        <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500 dark:text-gray-400">
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
-                The input component helps with forms.
-                When a <b>wire:model</b> is passed and the <b>id</b> or <b>name</b> attribute is not passed,
-                the <b>id</b> receives an <b>md5</b> of the <b>model</b>, and the <b>name</b> receives the exact <b>model</b>.
+                The Input component is very useful to build forms.
+                
             </p>
+            <p>
+            You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work. 
+            </p>
+            <x-code lineNumbers="false" language="html" :code="$wireModelExample" />
         </div>
     </div>
+    
+    <x-box info>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-box>
 
     <div class="space-y-4">
         <x-code-preview
@@ -37,22 +42,11 @@
             id="simple-input"
             language="blade"
             :code="$simpleInputExample">
-            <div class="mx-auto max-w-sm">
+            <div class="max-w-sm mx-auto">
                 <x-input label="Name" placeholder="your name" />
             </div>
         </x-code-preview>
 
-        <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-            <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
-
-            <p class="text-sm text-blue-700 dark:text-blue-400">
-                Tip: You can use <b>error</b> component to show error message
-            </p>
-        </div>
-
-        <x-code language="blade" :code='<<<EOT
-        <x-error name="model" />
-        EOT' />
     </div>
 
     <x-code-preview
@@ -61,7 +55,7 @@
         id="input-hint"
         language="blade"
         :code="$hintInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input label="Name" placeholder="your name" hint="Inform your full name" />
         </div>
     </x-code-preview>
@@ -72,7 +66,7 @@
         id="input-corner-hint"
         language="blade"
         :code="$cornerHintInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input label="Name" placeholder="your name" corner-hint="Ex: John" />
         </div>
     </x-code-preview>
@@ -83,7 +77,7 @@
         id="input-icon"
         language="blade"
         :code="$iconInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input icon="user" label="Name" placeholder="your name" />
         </div>
     </x-code-preview>
@@ -94,7 +88,7 @@
         id="input-right-icon"
         language="blade"
         :code="$rightIconInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input right-icon="user" label="Name" placeholder="your name" />
         </div>
     </x-code-preview>
@@ -105,7 +99,7 @@
         id="two-icons-input"
         language="blade"
         :code="$twoIconsInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input icon="user" right-icon="pencil" label="Name" placeholder="your name" />
         </div>
     </x-code-preview>
@@ -116,18 +110,12 @@
         id="input-prefix"
         language="blade"
         :code="$prefixInputExample">
-        <div class="mx-auto max-w-sm">
-            <x-input label="Name" placeholder="your name" prefix="$" />
+        <div class="max-w-sm mx-auto">
+            <x-input class="!pl-[6.5rem]" label="Website" placeholder="your-website.com" prefix="https://www." />
         </div>
     </x-code-preview>
-
-    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-        <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
-
-        <p class="text-sm text-blue-700 dark:text-blue-400">
-            Tip: You can use <b>pl-x</b> class to control the left padding on your input
-        </p>
-    </div>
+    
+    <x-box info>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-box>
 
     <x-code-preview
         title="Input Suffix"
@@ -135,7 +123,7 @@
         id="input-suffix"
         language="blade"
         :code="$suffixInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input class="pr-28" label="Email" placeholder="your email" suffix="@mail.com" />
         </div>
     </x-code-preview>
@@ -146,12 +134,12 @@
         id="input-prepend"
         language="blade"
         :code="$prependInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input label="Name" placeholder="your name" class="pl-12">
                 <x-slot name="prepend">
                     <div class="absolute inset-y-0 left-0 flex items-center p-0.5">
                         <x-button
-                            class="rounded-l-md h-full"
+                            class="h-full rounded-l-md"
                             icon="sort-ascending"
                             primary
                             flat
@@ -169,12 +157,12 @@
         id="input-append"
         language="blade"
         :code="$appendInputExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-input label="Name" placeholder="your name">
                 <x-slot name="append">
                     <div class="absolute inset-y-0 right-0 flex items-center p-0.5">
                         <x-button
-                            class="rounded-r-md h-full"
+                            class="h-full rounded-r-md"
                             icon="sort-ascending"
                             primary
                             flat
@@ -188,7 +176,7 @@
 
     <div id="input-options">
         <x-section.title href="#input-options" title="Input Options" />
-        <x-options-table class="mt-2 mb-6 w-full" :available="false">
+        <x-options-table class="w-full mt-2 mb-6" :available="false">
             <x-option-table-row prop="label"      required="false" default="none" type="string" />
             <x-option-table-row prop="hint"       required="false" default="none" type="string" />
             <x-option-table-row prop="cornerHint" required="false" default="none" type="string" />

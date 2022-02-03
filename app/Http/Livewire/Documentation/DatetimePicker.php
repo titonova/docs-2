@@ -57,8 +57,8 @@ class DatetimePicker extends Component
         label="Appointment Date"
         placeholder="Appointment Date"
         wire:model="model"
-        :min="now()->subDays(7)->hours(12)->minutes(12)"
-        :max="now()->addDays(7)->hours(12)->minutes(12)"
+        :min="now()->subDays(7)->hours(12)->minutes(30)"
+        :max="now()->addDays(7)->hours(12)->minutes(30)"
     />
     HTML;
 

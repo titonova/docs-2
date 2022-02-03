@@ -10,4 +10,6 @@ test('Routes: "Getting Started" ', function ($route) {
     yield 'docs.colors';
     yield 'docs.customization';
     yield 'docs.contributing';
+    yield 'docs.troubleshooting';
+    yield 'docs.livewire-usage';
 });

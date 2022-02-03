@@ -1,26 +1,31 @@
 <div class="space-y-10">
     <x-section.title title="Components Customization" />
 
-    <div class="mt-5 mb-2 prose xl:max-w-3xl xl:mb-8 text-gray-500">
+    <div class="mt-5 mb-2 prose text-gray-500 xl:max-w-3xl xl:mb-8">
         <p>
-            You can disable/rename/extends all wireui components. <br>
-            Just publish the wireui config. <br>
-            Rename the alias key with your preferred name.
+            You can disable, rename or extend all the WireUI components.
         </p>
+        <p>
+            To perform customizations, you must publish the WireUI config. Run the command:
+        </p>
+            <x-code line-numbers='false' language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
+
+        <p>
+           Then, open the file <x-mark>config/wireui.php</x-mark> and rename the alias key with your preferred name.
+            <br/><br/>
+           After saving, you must clear the View Cache, run the command:  
+        </p>
+
+        <x-code line-numbers='false' language="shell" code="php artisan view:clear" />
     </div>
 
+    <x-box info>Tip: It's advisable to run this command always after you make changes.</x-box>
+    
     <div>
-        Publish the wireui config
-        <x-code language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
-    </div>
 
-    <div>
-        See customizations example <br>
-        PS: After changing it, clear the view cache
-        <span class="text-indigo-600">"php artisan view:clear"</span>
+       <p>The example below shows some customizations:</p>
+        <br/>
         <x-code language="php">
-config/wireui.php
-
 ...
 'components' => [
     // rename the component

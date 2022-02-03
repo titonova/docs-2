@@ -41,15 +41,10 @@
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
             <p class="mt-6 mb-1">Now add the component to layout</p>
+
             <x-code language="html" :code="$addComponentExample" />
-
-            <div class="flex items-center p-4 mt-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700">
-                <x-icon name="information-circle" class="shrink-0 w-5 h-5 text-blue-400" />
-
-                <p class="text-sm text-blue-700 dark:text-blue-400">
-                    Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals
-                </p>
-            </div>
+            <br/>
+            <x-box info>Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals </x-box>
         </div>
     </div>
 
@@ -329,7 +324,7 @@
 
             <div>
                 <b>Icons</b>
-                <x-code language="text" code="success | error | info | warning | question" />
+                <x-code copy='false' lineNumbers='false' language="text" code="success | error | info | warning | question" />
             </div>
 
             <div>
@@ -375,7 +370,7 @@
             }
         }
     }">
-        <x-section.title href="#playground" title="Playground" />
+        <x-section.title href="#playground" title="🪁 Playground" />
 
         <x-card class="space-y-4">
             <div>

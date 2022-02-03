@@ -12,13 +12,26 @@
         </x-summary>
     </x-slot>
 
+    <div>
+        <x-section.title title="Cards" />
+
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+            <p>
+                Cards are often used to display content in a container, restricting it to a single subject. Each card may also contain actions like menu or buttons.
+            </p>
+            <p>
+                Using cards makes the page easy to read, scan and scroll through.
+            </p>
+        </div>
+    </div>
+    
     <x-code-preview
         title="Simple Card"
         href="#simple-card"
         id="simple-card"
         language="html"
         :code="$simpleCard">
-        <div class="flex gap-4 justify-center">
+        <div class="flex justify-center gap-4">
             <x-card>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
             </x-card>
@@ -31,7 +44,7 @@
         id="card-title"
         language="html"
         :code="$cardTitle">
-        <div class="flex gap-4 justify-center">
+        <div class="flex justify-center gap-4">
             <x-card title="Lorem Ipsum is simply!">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
             </x-card>
@@ -44,7 +57,7 @@
         id="action-slot"
         language="html"
         :code="$actionSlot">
-        <div class="flex gap-4 justify-center">
+        <div class="flex justify-center gap-4">
             <x-card title="Lorem Ipsum is simply!">
                 <x-slot name="action">
                     <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
@@ -62,7 +75,7 @@
         id="footer-slot"
         language="html"
         :code="$footerSlot">
-        <div class="flex gap-4 justify-center">
+        <div class="flex justify-center gap-4">
             <x-card title="Lorem Ipsum is simply!">
                 <x-slot name="action">
                     <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
@@ -72,7 +85,7 @@
                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
 
                 <x-slot name="footer">
-                    <div class="flex justify-between items-center">
+                    <div class="flex items-center justify-between">
                         <x-button label="Delete" flat negative />
                         <x-button label="Save" primary />
                     </div>
@@ -83,7 +96,7 @@
 
     <div id="card-options">
         <x-section.title href="#card-options" title="Card Options" />
-            <x-options-table class="mt-2 mb-6 w-full" :available="false">
+            <x-options-table class="w-full mt-2 mb-6" :available="false">
             <x-option-table-row prop="padding" required="false" default="px-2 py-5 md:px-4" type="string" />
             <x-option-table-row prop="shadow"  required="false" default="shadow-md"  type="string" />
             <x-option-table-row prop="rounded" required="false" default="rounded-lg" type="string" />

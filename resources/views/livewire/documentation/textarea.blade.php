@@ -9,12 +9,15 @@
     <div id="textarea">
         <x-section.title title="Textarea" />
 
-        <div class="mt-4 prose xl:max-w-3xl xl:mb-8 text-gray-500 dark:text-gray-400">
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
-                The textarea component helps with forms.
-                When a <b>wire:model</b> is passed and the <b>id</b> or <b>name</b> attribute is not passed,
-                the <b>id</b> receives an <b>md5</b> of the <b>model</b>, and the <b>name</b> receives the exact <b>model</b>.
+                The Textarea component is very useful to build forms.
+                
             </p>
+            <p>
+                You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work. 
+            </p>
+            <x-code line-numbers="false" language="html" :code="$wireModelExample" />
         </div>
     </div>
 
@@ -24,17 +27,17 @@
         id="simple-textarea"
         language="html"
         :code="$simpleExample">
-        <div class="mx-auto max-w-sm">
+        <div class="max-w-sm mx-auto">
             <x-textarea label="Annotations" placeholder="write your annotations" />
         </div>
     </x-code-preview>
 
     <div id="textarea-options" class="dark:text-gray-400">
         <x-section.title href="#textarea-options" title="Textarea Options" />
-        <p>
-            The textarea component has all
-            <a class="text-indigo-700" href="{{ route('docs.inputs') }}#input-options">input</a>
-            options and slots
-        </p>
+        <div class="mt-5">
+            <p>
+                The textarea component has all <a class="font-semibold text-center text-teal-600 underline" href="{{ route('docs.inputs') }}#input-options">Inputs</a> options and slots.
+            </p>
+        </div>
     </div>
 </div>
