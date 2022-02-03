@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoad', () => {
-    const browserDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const preferDark = JSON.parse(window.localStorage.getItem('dark'))
+  const preferDark = JSON.parse(window.localStorage.getItem('dark'))
+  const browserDark = window.matchMedia('(prefers-color-scheme: dark)').matches && preferDark !== null
 
-    if ((preferDark !== null && browserDark) || preferDark) {
-        document.body.classList.add('dark')
-    }
+  if (browserDark || preferDark === true) {
+    document.body.classList.add('dark')
+  }
 })
