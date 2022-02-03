@@ -298,6 +298,29 @@
             <x-option-table-row prop="warning"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="info"      required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="dark"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="white"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="black"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="slate"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="gray"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="zinc"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="neutral"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="stone"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="red"       required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="orange"    required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="amber"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="lime"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="green"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="emerald"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="teal"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="cyan"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="sky"       required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="blue"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="indigo"    required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="violet"    required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="purple"    required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="fuchsia"   required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="pink"      required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="rose"      required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="color"     required="false" default="none"  type="string"  available="default colors + all tailwind colors" />
 
             <x-option-table-row prop="rounded" required="false" default="false" type="boolean" available="boolean" />
