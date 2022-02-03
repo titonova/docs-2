@@ -29,7 +29,7 @@ x-init="function() {
         name="sun"
     />
 
-    <x-toggle x-model="dark" id="dark-mode" />
+    <x-toggle x-model="dark" id="dark-mode-toggle.{{ $this->id }}" />
 
     <x-icon
         class="w-5 h-5 cursor-pointer text-gray-700 dark:text-secondary-200"
