@@ -20,7 +20,7 @@
 
     <div id="buttons">
         <x-section.title title="Buttons" />
-        <div class="mt-5 prose xl:mb-8 text-gray-500">
+        <div class="mt-5 prose text-gray-500 xl:mb-8">
             <p>
                 The button component has multiples styles and options to customize.
                 A simple API to use button component with icons and any colors
@@ -190,15 +190,7 @@
         </div>
     </x-code-preview>
 
-    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-        <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
-
-        <p class="text-sm text-blue-700 dark:text-blue-400">
-            You can show a spinner loading when an action if fired <br>
-            You can pass <b>wire:target</b> value into <b>spinner</b> prop
-            If no value is give, all loading effects will be applied
-        </p>
-    </div>
+    <x-box info>You can show a spinner loading when an action if fired <br> You can pass <b>wire:target</b> value into <b>spinner</b> prop If no value is give, all loading effects will be applied</x-box>
 
     <x-code-preview
         title="Loading Spinner"
@@ -206,7 +198,7 @@
         id="loading-spinner"
         language="html"
         :code="$loadingSpinnerExample">
-        <div class="flex gap-4 items-center">
+        <div class="flex items-center gap-4">
             <x-button wire:click="$refresh" spinner primary label="Save without target" />
 
             <x-button wire:click="sleeping" spinner="sleeping" primary label="Save with target" />
@@ -217,7 +209,7 @@
 
     <div id="button-options">
         <x-section.title href="#button-options" title="Button Options" />
-        <x-options-table class="mt-2 mb-6 w-full">
+        <x-options-table class="w-full mt-2 mb-6">
             <x-option-table-row prop="xs"        required="false" default="false" type="boolean" available="true|false" />
             <x-option-table-row prop="md"        required="false" default="false" type="boolean" available="true|false" />
             <x-option-table-row prop="lg"        required="false" default="false" type="boolean" available="true|false" />
@@ -241,8 +233,8 @@
             <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
 
-        <label class="mb-1 text-gray-700 font-semibold">Colors</label>
-        <x-code language="js" :code="<<<EOT
+        <label class="mb-1 font-semibold text-gray-700">Colors</label>
+        <x-code copy="false" line-numbers="false" language="js" :code="<<<EOT
         primary|secondary|positive|negative|warning|info|dark
         EOT" />
     </div>

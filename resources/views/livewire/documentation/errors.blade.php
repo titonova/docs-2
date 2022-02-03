@@ -14,11 +14,17 @@
     <div>
         <x-section.title id="errors" href="#errors" title="Errors" />
 
-        <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500 dark:text-gray-400">
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
-                Use the <b>errors</b> component to show all validation errors or choose which ones to show
+               The <b>Errors</b> component is useful for displaying errors in a friendly way. 
+            </p>
+            <p>
+               We can find this component often combined with the <a class="font-semibold text-center text-teal-600" href="{{ route('docs.inputs') }}">Inputs</a> component to report validation errors.
             </p>
         </div>
+
+        <x-box info>Tip: You can customize the default error messages in the language translation files.</x-box>
+
     </div>
 
     <x-code-preview
@@ -27,7 +33,7 @@
         id="all-errors"
         language="html"
         :code="$simpleExample">
-        <div class="mx-auto max-w-lg">
+        <div class="max-w-lg mx-auto">
             <x-errors />
         </div>
     </x-code-preview>
@@ -38,7 +44,7 @@
         id="filtered-errors"
         language="html"
         :code="$filterExample">
-        <div class="mx-auto max-w-lg">
+        <div class="max-w-lg mx-auto">
             <x-errors only="name|email" />
         </div>
     </x-code-preview>
@@ -50,25 +56,17 @@
             id="custom-title"
             language="html"
             :code="$titleExample">
-            <div class="mx-auto max-w-lg">
+            <div class="max-w-lg mx-auto">
                 <x-errors title="We found {errors} validation error(s)" />
             </div>
         </x-code-preview>
 
-        <div class="flex items-start gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-blue-50 dark:bg-secondary-700 p-4">
-            <x-icon name="information-circle" class="h-5 w-5 shrink-0 text-blue-400" />
-
-            <p class="text-sm text-blue-700 dark:text-blue-400">
-                Tip: The key <b>{errors}</b> will be replaced by errors count
-                <br>
-                Tip: You can customize the default error title in lang translation
-            </p>
-        </div>
+        <x-box info>Tip: The key <b>{errors}</b> will be replaced with the number of error messages.</x-box>
     </div>
 
     <div id="errors-options">
         <x-section.title href="#errors-options" title="Errors Options" />
-        <x-options-table class="mt-2 mb-6 w-full" :available="false">
+        <x-options-table class="w-full mt-2 mb-6" :available="false">
             <x-option-table-row prop="title" required="false" default="[...]" type="string" />
             <x-option-table-row prop="only"  required="false" default="none" type="string|array" />
         </x-options-table>

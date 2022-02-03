@@ -18,6 +18,7 @@ Route::get('/', Home::class)->name('home');
 
 Route::get('docs',                 Documentation\GetStarted::class)->name('docs');
 Route::get('docs/get-started',     Documentation\GetStarted::class)->name('docs.get-started');
+Route::get('docs/troubleshooting', Documentation\Troubleshooting::class)->name('docs.troubleshooting');
 Route::get('docs/heroicons',       Documentation\Heroicons::class)->name('docs.heroicons');
 Route::get('docs/notifications',   Documentation\Notifications::class)->name('docs.notifications');
 Route::get('docs/hooks',           Documentation\Hooks::class)->name('docs.hooks');
@@ -43,3 +44,4 @@ Route::get('docs/changelog',       Documentation\Changelog::class)->name('docs.c
 Route::get('docs/colors',          Documentation\Colors::class)->name('docs.colors');
 Route::get('docs/customization',   Documentation\Customization::class)->name('docs.customization');
 Route::get('docs/contributing',    Documentation\Contributing::class)->name('docs.contributing');
+Route::get('docs/livewire-usage',  Documentation\LivewireUsage::class)->name('docs.livewire-usage');

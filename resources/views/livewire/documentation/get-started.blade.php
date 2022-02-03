@@ -56,7 +56,7 @@
 
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p id="installing-package">1. Run the following command to add WireUI to your project:</p>
-            <x-code language="shell" code="composer require wireui/wireui" />
+            <x-code lineNumbers="false" language="shell" code="composer require wireui/wireui" />
 
             <p>2. Add the WireUI <wireui:scripts /> tag above Alpinejs script tag in your page layout:<br/>
 
@@ -66,7 +66,7 @@
 
             <x-code language="html" :code="$directiveExample" />
 
-            <p>3. Add the following settings to your Tailwindcss config (tailwind.config.js).</p>
+            <p>3. Add the following settings to your Tailwindcss config file, <x-mark>tailwind.config.js</x-mark>:</p>
             <x-code language="js" :code="$tailwindConfigExample" />
         </div>
     </div>
@@ -80,7 +80,7 @@
                 but you can publish the files and customize them to your preference.
             </p>
 
-            <x-code language="bash" :code="<<<EOT
+            <x-code lineNumbers="false" language="bash" :code="<<<EOT
             php artisan vendor:publish --tag='wireui.config'
             php artisan vendor:publish --tag='wireui.resources'
             php artisan vendor:publish --tag='wireui.lang'

@@ -7,7 +7,7 @@
     </x-slot>
 
     <x-section.title id="heroicons" href="heroicons" title="Heroicons" />
-    <div class="mt-5 prose max-w-none text-gray-500">
+    <div class="mt-5 prose text-gray-500 max-w-none">
         <p>
             All <a class="text-indigo-600 no-underline" href="{{ config('links.heroicons') }}">Heroicons</a>
             icons are available using the component:
@@ -19,13 +19,15 @@
         EOT' />
 
         <p>You can publish the icon configuration and define what will be the default style</p>
-        <x-code language="bash" code="php artisan vendor:publish --tag='wireui.config'" />
+        <x-code lineNumbers='false' language="bash" code="php artisan vendor:publish --tag='wireui.config'" />
 
         <p>Or use an environment variable for that</p>
         <x-code language="bash" code="WIREUI_ICONS_STYLE=solid" />
+        <br/>
     </div>
 
     <x-section.title id="options" href="options" title="Options" />
+    
     <x-options-table class="mt-10">
         <x-option-table-row prop="name"  required="true"  default="none"    type="string" available="all heroicons" />
         <x-option-table-row prop="style" required="false" default="outline" type="string" available="outline|solid" />

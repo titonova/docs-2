@@ -10,7 +10,15 @@
             <x-summary.header href="#toggle-options" label="Toggle Options" />
         </x-summary>
     </x-slot>
+    <div>
+        <x-section.title title="Toggle" />
 
+        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+            <p>
+                Toggles allow the user to switch states, for instance: Enable or disable a feature.
+            </p>
+        </div>
+    </div>
     <x-code-preview
         title="Simple Toggle"
         href="#simple-toggle"
@@ -49,7 +57,7 @@
 
     <div id="toggle-options">
         <x-section.title href="#toggle-options" title="Toggle Options" />
-        <x-options-table class="mt-2 mb-6 w-full" :available="false">
+        <x-options-table class="w-full mt-2 mb-6" :available="false">
             <x-option-table-row prop="id"         required="false" default="none" type="string" />
             <x-option-table-row prop="name"       required="false" default="none" type="string" />
             <x-option-table-row prop="label"      required="false" default="none" type="string" />
