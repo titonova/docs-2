@@ -20,27 +20,27 @@
     <div></div>
 
     <x-section.title id="hooks" href="#hooks" title="Available Hooks" />
-    <x-code language="js" :code="<<<EOT
-    Wireui.hook('load', () => console.log('wireui is ready to use'))
+    <x-code language="js">
+        Wireui.hook('load', () => console.log('wireui is ready to use'))
 
-    Wireui.hook('notifications:load', () => {
-        \$wireui.notify({
-            title: 'Profile saved!',
-            description: 'Your profile was successfull saved',
-            icon: 'success'
+        Wireui.hook('notifications:load', () => {
+            \$wireui.notify({
+                title: 'Profile saved!',
+                description: 'Your profile was successfull saved',
+                icon: 'success'
+            })
         })
-    })
 
-    Wireui.hook('dialog:load', () => {
-        \$wireui.dialog({
-            title: 'Profile saved!',
-            description: 'Your profile was successfull saved',
-            icon: 'success'
+        Wireui.hook('dialog:load', () => {
+            \$wireui.dialog({
+                title: 'Profile saved!',
+                description: 'Your profile was successfull saved',
+                icon: 'success'
+            })
         })
-    })
 
-    Or custom dialog hook
+        Or custom dialog hook
 
-    Wireui.hook('dialog:custom:load', () => {})
-    EOT" />
+        Wireui.hook('dialog:custom:load', () => {})
+    </x-code>
 </div>

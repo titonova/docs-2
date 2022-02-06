@@ -57,7 +57,7 @@
             </p>
         </div>
 
-        <x-code language="php" :code="$customInputExample" />
+        <x-code language="php" :contents="$customInputExample" />
     </div>
 
     <div id="input-options">

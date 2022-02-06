@@ -1,6 +1,6 @@
 # WireUI - Docs
 
-Page for [WireUI](https://github.com/wireui/wireui) documentation. 
+Page for [WireUI](https://github.com/wireui/wireui) documentation.
 
 Visit at: [https://livewire-wireui.com/](https://livewire-wireui.com/)
 
@@ -12,7 +12,7 @@ Thank you for your interest in contributing! 😊
 
 Please follow the steps below to run this project locally:
 
-### Get started 🚀 
+### Get started 🚀
 
 #### Requirements
 
@@ -78,13 +78,14 @@ You are welcome to explore the code in `resources/views/livewire/` folder to vie
 
 Code snippets should always be included using the `<x-code>` tag.
 
-The mandatory attributes are `language`, for the code language and the `code`, for the code itself.
+The mandatory attributes are `language`, for the code language and the `contents`, for the code itself. Or use a `slot` instead of the `contents` attribute.
+
 
 For example:
 
 ```php
 //...
-<x-code language="bash" :code="<<<EOT
+<x-code language="bash" :contents="<<<EOT
 php artisan vendor:publish --tag='wireui.config'
 php artisan vendor:publish --tag='wireui.resources'
 php artisan vendor:publish --tag='wireui.lang'
@@ -93,10 +94,10 @@ EOT" />
 
 A copy button is loaded by default, to suppress the button, add the attribute: `copy="false"`.
 
-Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `line-number="false`.
+Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `:options="['lineNumbers' => false]".
 
 ```php
-<x-code copy="false" line-numbers="false" language="shell" :code="Command exit with error error code xyz...." />
+<x-code copy="false" :options="['lineNumbers' => false]" language="shell" :contents="Command exit with error error code xyz...." />
 ```
 
 <br/>

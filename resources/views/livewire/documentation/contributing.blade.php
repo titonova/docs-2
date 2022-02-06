@@ -10,7 +10,11 @@
     <ul class="space-y-5">
         <li>
             <p>Create a new laravel project</p>
-            <x-code language="shell" code="composer create-project laravel/laravel wireui" />
+            <x-code
+                language="shell"
+                :options="['lineNumbers' => false]"
+                contents="composer create-project laravel/laravel wireui"
+            />
         </li>
 
 
@@ -26,17 +30,25 @@
 
         <li>
             <p>Clone the wireui into the root of the project</p>
-            <x-code language="shell" code="git clone git@github.com:wireui/wireui.git" />
+            <x-code
+                language="shell"
+                :options="['lineNumbers' => false]"
+                contents="git clone git@github.com:wireui/wireui.git"
+            />
         </li>
 
         <li>
             <p>Add this code into the composer.json</p>
-            <x-code language="json" :code="$repository" />
+            <x-code language="json" :contents="$repository" />
         </li>
 
         <li>
             <p>Require the wireui</p>
-            <x-code language="shell" code="composer require wireui/wireui" />
+            <x-code
+                language="shell"
+                :options="['lineNumbers' => false]"
+                contents="composer require wireui/wireui"
+            />
         </li>
     </ul>
 </div>

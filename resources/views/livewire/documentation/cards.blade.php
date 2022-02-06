@@ -24,7 +24,7 @@
             </p>
         </div>
     </div>
-    
+
     <x-code-preview
         title="Simple Card"
         href="#simple-card"

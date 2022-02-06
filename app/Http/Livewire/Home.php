@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Home extends Component
 {
-    public $navbarLinks = [];
+    public array $navbarLinks = [];
 
     public function mount()
     {

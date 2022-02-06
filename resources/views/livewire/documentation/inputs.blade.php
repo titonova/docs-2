@@ -21,18 +21,18 @@
     <div>
         <x-section.title title="Inputs" />
 
-        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+        <div class="mt-5 prose text-gray-500 xl:max-w-4xl xl:mb-8 dark:text-gray-400">
             <p>
                 The Input component is very useful to build forms.
-                
+
             </p>
             <p>
-            You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work. 
+            You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work.
             </p>
-            <x-code lineNumbers="false" language="html" :code="$wireModelExample" />
+            <x-code :options="['lineNumbers' => false]" language="html" :contents="$wireModelExample" />
         </div>
     </div>
-    
+
     <x-box info>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-box>
 
     <div class="space-y-4">
@@ -46,7 +46,6 @@
                 <x-input label="Name" placeholder="your name" />
             </div>
         </x-code-preview>
-
     </div>
 
     <x-code-preview
@@ -114,7 +113,7 @@
             <x-input class="!pl-[6.5rem]" label="Website" placeholder="your-website.com" prefix="https://www." />
         </div>
     </x-code-preview>
-    
+
     <x-box info>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-box>
 
     <x-code-preview

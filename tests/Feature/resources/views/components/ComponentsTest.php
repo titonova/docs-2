@@ -1,7 +1,7 @@
 <?php
 
 test('x-code renders with Torchlight', function () {
-    $view = $this->blade('<x-code language="shell" code="composer require wireui/wireui" />');
+    $view = $this->blade('<x-code language="shell" contents="composer require wireui/wireui" />');
 
     $view->assertSeeInOrder([
         '<pre >',

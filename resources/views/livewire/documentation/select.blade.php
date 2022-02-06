@@ -167,6 +167,6 @@
 
         <div id="select-events">
             <x-section.title href="#select-events" title="Select Events" />
-            <x-code language="html" :code="$selectEvents" />
+            <x-code language="html" :contents="$selectEvents" />
         </div>
 </div>

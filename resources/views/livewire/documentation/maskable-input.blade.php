@@ -43,9 +43,7 @@
             </ul>
         </div>
 
-        <x-code
-            language="js"
-            :code="<<<EOT
+        <x-code language="js">
             {
                 '#': { pattern: /\d/ },
                 'X': { pattern: /[0-9a-zA-Z]/ },
@@ -57,8 +55,7 @@
                 'm': { pattern: /[0-5][0-9]/ },
                 '!': { escape: true }
             }
-            EOT"
-        />
+        </x-code>
     </div>
 
     <x-code-preview
@@ -115,7 +112,7 @@
             </p>
         </div>
 
-        <x-code language="php" :code="$customInputExample" />
+        <x-code language="php" :contents="$customInputExample" />
     </div>
 
     <div id="input-options">

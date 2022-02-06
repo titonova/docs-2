@@ -16,7 +16,7 @@
 
         <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
-               The <b>Errors</b> component is useful for displaying errors in a friendly way. 
+               The <b>Errors</b> component is useful for displaying errors in a friendly way.
             </p>
             <p>
                We can find this component often combined with the <a class="font-semibold text-center text-teal-600" href="{{ route('docs.inputs') }}">Inputs</a> component to report validation errors.

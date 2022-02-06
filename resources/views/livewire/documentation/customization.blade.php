@@ -8,45 +8,53 @@
         <p>
             To perform customizations, you must publish the WireUI config. Run the command:
         </p>
-            <x-code line-numbers='false' language="shell" code="php artisan vendor:publish --tag='wireui.config'" />
+            <x-code
+                language="shell"
+                :options="['lineNumbers' => false]"
+                contents="php artisan vendor:publish --tag='wireui.config'"
+            />
 
         <p>
            Then, open the file <x-mark>config/wireui.php</x-mark> and rename the alias key with your preferred name.
             <br/><br/>
-           After saving, you must clear the View Cache, run the command:  
+           After saving, you must clear the View Cache, run the command:
         </p>
 
-        <x-code line-numbers='false' language="shell" code="php artisan view:clear" />
+        <x-code
+            language="shell"
+            :options="['lineNumbers' => false]"
+            contents="php artisan view:clear"
+        />
     </div>
 
     <x-box info>Tip: It's advisable to run this command always after you make changes.</x-box>
-    
+
     <div>
 
        <p>The example below shows some customizations:</p>
         <br/>
         <x-code language="php">
-...
-'components' => [
-    // rename the component
-    'input'              => [
-        'class' => Components\Input::class,
-        'alias' => 'form.input', // rename this alias
-    ],
+            ...
+            'components' => [
+                // rename the component
+                'input'              => [
+                    'class' => Components\Input::class,
+                    'alias' => 'form.input', // rename this alias
+                ],
 
-    // disable the component
-    // 'textarea'           => [
-    //     'class' => Components\Textarea::class,
-    //     'alias' => 'textarea',
-    // ],
+                // disable the component
+                // 'textarea'           => [
+                //     'class' => Components\Textarea::class,
+                //     'alias' => 'textarea',
+                // ],
 
-    // extends the component
-    'button'             => [
-        'class' => App\Views\Components\MyButton::class,
-        'alias' => 'button',
-    ],
-]
-...
+                // extends the component
+                'button'             => [
+                    'class' => App\Views\Components\MyButton::class,
+                    'alias' => 'button',
+                ],
+            ]
+            ...
         </x-code>
     </div>
 </div>
