@@ -247,7 +247,7 @@
             <h3 class="mt-3 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Icon
             </h3>
-            <x-code copy='false' :options="['lineNumbers' => false ]" language="ts" contents="'success'|'error'|'info'|'warning'|'question'" />
+            <x-code copy='false' :line-numbers="false" language="ts" contents="'success'|'error'|'info'|'warning'|'question'" />
 
             <h3 class="mt-4 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Action
@@ -327,7 +327,7 @@ icon: 'success',
                 You can customize notification layout and styles publishing resources
             </p>
 
-            <x-code :options="['lineNumbers' => false]" language="bash" contents="php artisan vendor:publish --tag='wireui.resources'" />
+            <x-code :line-numbers="false" language="bash" contents="php artisan vendor:publish --tag='wireui.resources'" />
         </div>
     </div>
 </div>

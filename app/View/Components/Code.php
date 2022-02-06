@@ -20,12 +20,17 @@ class Code extends CodeComponent
         array $postProcessors = [],
         ?string $torchlightId = null,
         bool $noCopy = false,
-        array $options = [],
+        bool $lineNumbers = true,
+        array $options = []
     ) {
         parent::__construct($language, $theme, $contents, $swap, $postProcessors, $torchlightId);
 
         $this->noCopy  = $noCopy;
         $this->options = $options;
+
+        if (!$lineNumbers) {
+            $this->options['lineNumbers'] = false;
+        }
     }
 
     private function makePreAttributes(): string

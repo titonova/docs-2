@@ -10,7 +10,7 @@
         </p>
             <x-code
                 language="shell"
-                :options="['lineNumbers' => false]"
+                :line-numbers="false"
                 contents="php artisan vendor:publish --tag='wireui.config'"
             />
 
@@ -22,7 +22,7 @@
 
         <x-code
             language="shell"
-            :options="['lineNumbers' => false]"
+            :line-numbers="false"
             contents="php artisan view:clear"
         />
     </div>

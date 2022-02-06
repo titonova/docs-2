@@ -58,7 +58,7 @@
             <p id="installing-package">1. Run the following command to add WireUI to your project:</p>
             <x-code
                 language="shell"
-                :options="['lineNumbers' => false ]"
+                :line-numbers="false"
                 contents="composer require wireui/wireui"
             />
 
@@ -84,7 +84,7 @@
                 but you can publish the files and customize them to your preference.
             </p>
 
-            <x-code language="bash" :options="['lineNumbers' => false ]">
+            <x-code language="bash" :line-numbers="false">
                 php artisan vendor:publish --tag='wireui.config'
                 php artisan vendor:publish --tag='wireui.resources'
                 php artisan vendor:publish --tag='wireui.lang'

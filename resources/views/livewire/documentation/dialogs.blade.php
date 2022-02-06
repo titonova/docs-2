@@ -324,7 +324,7 @@
 
             <div>
                 <b>Icons</b>
-                <x-code :options="[ 'lineNumbers' => false ]" language="text" no-copy>
+                <x-code :line-numbers="false" language="text" no-copy>
                     success | error | info | warning | question
                 </x-code>
             </div>

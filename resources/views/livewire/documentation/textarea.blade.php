@@ -17,7 +17,7 @@
             <p>
                 You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work.
             </p>
-            <x-code :options="['lineNumbers' => false]" language="html" :contents="$wireModelExample" />
+            <x-code :line-numbers="false" language="html" :contents="$wireModelExample" />
         </div>
     </div>
 

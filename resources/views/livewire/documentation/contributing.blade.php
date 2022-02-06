@@ -12,7 +12,7 @@
             <p>Create a new laravel project</p>
             <x-code
                 language="shell"
-                :options="['lineNumbers' => false]"
+                :line-numbers="false"
                 contents="composer create-project laravel/laravel wireui"
             />
         </li>
@@ -32,7 +32,7 @@
             <p>Clone the wireui into the root of the project</p>
             <x-code
                 language="shell"
-                :options="['lineNumbers' => false]"
+                :line-numbers="false"
                 contents="git clone git@github.com:wireui/wireui.git"
             />
         </li>
@@ -46,7 +46,7 @@
             <p>Require the wireui</p>
             <x-code
                 language="shell"
-                :options="['lineNumbers' => false]"
+                :line-numbers="false"
                 contents="composer require wireui/wireui"
             />
         </li>

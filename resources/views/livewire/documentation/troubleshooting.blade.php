@@ -41,7 +41,7 @@
 
             <p>2. Run the command below to clear Laravel's cache:</p>
 
-            <x-code :options="['lineNumbers' => false]" language="shell" contents="php artisan optimize:clear" />
+            <x-code :line-numbers="false" language="shell" contents="php artisan optimize:clear" />
         </div>
     </div>
 
@@ -54,7 +54,7 @@
             </p>
             <p>Error:</p>
 
-            <x-code copy="false" :options="['lineNumbers' => false]" language="shell" :contents="$tailwindFormsError" />
+            <x-code no-copy :line-numbers="false" language="shell" :contents="$tailwindFormsError" />
 
             <p>Solution:</p>
 

@@ -85,19 +85,19 @@ For example:
 
 ```php
 //...
-<x-code language="bash" :contents="<<<EOT
-php artisan vendor:publish --tag='wireui.config'
-php artisan vendor:publish --tag='wireui.resources'
-php artisan vendor:publish --tag='wireui.lang'
-EOT" />
+<x-code language="bash">
+    php artisan vendor:publish --tag='wireui.config'
+    php artisan vendor:publish --tag='wireui.resources'
+    php artisan vendor:publish --tag='wireui.lang'
+</x-code>
 ```
 
 A copy button is loaded by default, to suppress the button, add the attribute: `copy="false"`.
 
-Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `:options="['lineNumbers' => false]".
+Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `:line-numbers="false".
 
 ```php
-<x-code copy="false" :options="['lineNumbers' => false]" language="shell" :contents="Command exit with error error code xyz...." />
+<x-code no-copy :line-numbers="false" language="shell" :contents="Command exit with error error code xyz...." />
 ```
 
 <br/>
