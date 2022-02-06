@@ -44,7 +44,10 @@
 
             <x-code language="html" :contents="$addComponentExample" no-copy />
             <br/>
-            <x-box info>Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals </x-box>
+            <x-alerts.info>
+                Tip: The <b>dialog</b> has all <b>modal</b> options.
+                You can define globals or individuals
+            </x-alerts.info>
         </div>
     </div>
 

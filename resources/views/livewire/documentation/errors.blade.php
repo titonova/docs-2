@@ -23,8 +23,9 @@
             </p>
         </div>
 
-        <x-box info>Tip: You can customize the default error messages in the language translation files.</x-box>
-
+        <x-alerts.info>
+            Tip: You can customize the default error messages in the language translation files.
+        </x-alerts.info>
     </div>
 
     <x-code-preview
@@ -61,7 +62,9 @@
             </div>
         </x-code-preview>
 
-        <x-box info>Tip: The key <b>{errors}</b> will be replaced with the number of error messages.</x-box>
+        <x-alerts.info>
+            Tip: The key <b>{errors}</b> will be replaced with the number of error messages.
+        </x-alerts.info>
     </div>
 
     <div id="errors-options">

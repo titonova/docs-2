@@ -33,7 +33,11 @@
         </div>
     </div>
 
-    <x-box info>Tip: You can use the <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a> to display validation error messages for your input.</x-box>
+    <x-alerts.info>
+        Tip: You can use the
+        <a class="text-indigo-700 underline" href="{{ route('docs.errors') }}#input-options">Errors component</a>
+        to display validation error messages for your input.
+    </x-alerts.info>
 
     <div class="space-y-4">
         <x-code-preview
@@ -114,7 +118,9 @@
         </div>
     </x-code-preview>
 
-    <x-box info>Tip: You can use <b>pl-x</b> class to control the left padding on your input.</x-box>
+    <x-alerts.info>
+        Tip: You can use <b>pl-x</b> class to control the left padding on your input.
+    </x-alerts.info>
 
     <x-code-preview
         title="Input Suffix"

@@ -99,7 +99,9 @@
         </x-modal.card>
     </x-code-preview>
 
-    <x-box info>Tip: You can use global function <b>$openModal('myModal')</b> to open modal from your Javascript code.</x-box>
+    <x-alerts.info>
+        Tip: You can use global function <b>$openModal('myModal')</b> to open modal from your Javascript code.
+    </x-alerts.info>
 
     <div id="modal-options">
         <x-section.title href="#modal-options" title="Modal Options" />

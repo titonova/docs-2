@@ -27,7 +27,9 @@
         />
     </div>
 
-    <x-box info>Tip: It's advisable to run this command always after you make changes.</x-box>
+    <x-alerts.info>
+        Tip: It's advisable to run this command always after you make changes.
+    </x-alerts.info>
 
     <div>
 
