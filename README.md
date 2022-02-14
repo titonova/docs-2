@@ -120,18 +120,17 @@ Run `npm install` to install all to install all dependencies.
 
 #### Boxes
 
-Sometimes it's crucial to highlight information such as a mandatory step or a compatibility issue. In these situations, situations, you should use the `<x-box attention>` tag, which will produce a yellow "attention" box.
+Sometimes it's crucial to highlight information such as a mandatory step or a compatibility issue. In these situations, situations, you should use the `<x-alerts.warning>` tag, which will produce a yellow "attention" box.
 
 For example:
 
 ```php
-<x-box attention>If you are using FooJS 1.0, you must configure bar=null before update.</x-box>
+<x-alerts.warning>If you are using FooJS 1.0, you must configure bar=null before update.</x-alerts.warning>
 ```
-
-In addition, if you need to provide a friendly message, a tip, or extra information, you should use of the `<x-box info>` tag, which produces a blue info box.
+In addition, if you need to provide a friendly message, a tip, or extra information, you should use of the `<x-alerts.info>` tag, which produces a blue info box.
 
 ```php
-<x-box info>Read more about supported formats <a href="#formats">here</a>.</x-box>
+<x-alerts.info>Read more about supported formats <a href="#formats">here.</a></x-alerts.info>
 ```
 
 <br/>
