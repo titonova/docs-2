@@ -10,6 +10,11 @@ abstract class TestCase extends Testing\TestCase
 {
     use CreatesApplication;
 
+    /**
+     * Fake the Torchlight component.
+     * This function is similar to original torchlight test in package.
+     * @see https://github.com/torchlight-api/torchlight-laravel/blob/main/tests/BaseTest.php#L49
+     */
     public function fakeTorchlight(): void
     {
         Http::fake([
