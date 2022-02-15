@@ -1,6 +1,12 @@
 <?php
 
+beforeEach(function () {
+    /** @var Tests\TestCase $this */
+    $this->fakeTorchlight();
+});
+
 test('Routes: "Getting Started" ', function ($route) {
+    /** @var Tests\TestCase $this */
     $this->get(route($route))
         ->assertOK();
 })->with(function () {

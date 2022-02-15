@@ -1,6 +1,12 @@
 <?php
 
+beforeEach(function () {
+    /** @var Tests\TestCase $this */
+    $this->fakeTorchlight();
+});
+
 test('Routes: "Form"', function ($route) {
+    /** @var Tests\TestCase $this */
     $this->get(route($route))
         ->assertOK();
 })->with(function () {
