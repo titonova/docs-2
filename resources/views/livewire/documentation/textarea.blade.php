@@ -9,15 +9,15 @@
     <div id="textarea">
         <x-section.title title="Textarea" />
 
-        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+        <div class="mt-5 prose text-gray-500 xl:max-w-4xl xl:mb-8 dark:text-gray-400">
             <p>
                 The Textarea component is very useful to build forms.
-                
+
             </p>
             <p>
-                You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work. 
+                You can set the attribute <x-mark>wire:model</x-mark> to automatically have the attributes <x-mark>id</x-mark> set to the MD5 of the model and <x-mark>name</x-mark> to the exact model. You must NOT pass the attributes id and name for this to work.
             </p>
-            <x-code line-numbers="false" language="html" :code="$wireModelExample" />
+            <x-code :line-numbers="false" language="html" :contents="$wireModelExample" />
         </div>
     </div>
 

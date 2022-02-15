@@ -36,16 +36,16 @@
 
                 <br> <br> if you prefer to not enable jit mode, follow below steps:
                 <br> - add wireui styles
-                <x-code language="html" :code="$stylesExample" />
+                <x-code language="html" :contents="$stylesExample" />
 
                 <br> - disable jit mode in your <b>tailwind.config.js</b>
-                <x-code language="js" :code="<<<EOT
-                module.exports = {
-                    ...
-                    mode: 'default',
-                    ...
-                }
-                EOT" />
+                <x-code language="js">
+                    module.exports = {
+                        ...
+                        mode: 'default',
+                        ...
+                    }
+                </x-code>
             </x-changelog.card>
 
             <x-changelog.card
@@ -104,23 +104,23 @@
                 - Follow <a src="https://alpinejs.dev/upgrade-guide" class="text-blue-500">alpinejs upgrade guide</a>
                 <br> - move wireui scripts to scripts above alpine.js as an example below
 
-                <x-code language="html" :code="$upgradeGuide" />
+                <x-code language="html" :contents="$upgradeGuide" />
 
                 <p class="mt-2">
                     Change your tailwindcss content config
                 </p>
-                <x-code language="js" :code="<<<EOT
-                module.exports = {
-                    ...
-                    content: [
+                <x-code language="js">
+                    module.exports = {
                         ...
-                        './vendor/ph7jack/wireui/resources/**/*.blade.php',
-                        './vendor/ph7jack/wireui/ts/**/*.ts',
-                        './vendor/ph7jack/wireui/src/View/**/*.php'
-                    ],
-                    ...
-                }
-                EOT"/>
+                        content: [
+                            ...
+                            './vendor/ph7jack/wireui/resources/**/*.blade.php',
+                            './vendor/ph7jack/wireui/ts/**/*.ts',
+                            './vendor/ph7jack/wireui/src/View/**/*.php'
+                        ],
+                        ...
+                    }
+                </x-code>
             </x-changelog.card>
 
             <x-changelog.card

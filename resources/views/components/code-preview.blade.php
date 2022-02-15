@@ -21,7 +21,7 @@
             <button class="focus:outline-none overflow-hidden rounded-md p-1 sm:px-2 transition-colors duration-200 ease-in flex items-center"
                 :class="{
                     'bg-white dark:bg-secondary-700 text-teal-500': !showCode,
-                    'text-gray-400'        :  showCode
+                    'text-gray-400': showCode
                 }"
                 type="button"
                 x-on:click="showCode = false">
@@ -53,7 +53,7 @@
             {{ $slot }}
        </div>
        <div x-cloak x-show="showCode">
-           <x-code :language="$language" :code="$code" />
+           <x-code :language="$language" :contents="$code" />
        </div>
     </div>
 </div>

@@ -16,15 +16,16 @@
 
         <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
-               The <b>Errors</b> component is useful for displaying errors in a friendly way. 
+               The <b>Errors</b> component is useful for displaying errors in a friendly way.
             </p>
             <p>
                We can find this component often combined with the <a class="font-semibold text-center text-teal-600" href="{{ route('docs.inputs') }}">Inputs</a> component to report validation errors.
             </p>
         </div>
 
-        <x-box info>Tip: You can customize the default error messages in the language translation files.</x-box>
-
+        <x-alerts.info>
+            Tip: You can customize the default error messages in the language translation files.
+        </x-alerts.info>
     </div>
 
     <x-code-preview
@@ -61,7 +62,9 @@
             </div>
         </x-code-preview>
 
-        <x-box info>Tip: The key <b>{errors}</b> will be replaced with the number of error messages.</x-box>
+        <x-alerts.info>
+            Tip: The key <b>{errors}</b> will be replaced with the number of error messages.
+        </x-alerts.info>
     </div>
 
     <div id="errors-options">

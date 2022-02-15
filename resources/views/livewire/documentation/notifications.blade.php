@@ -39,7 +39,7 @@
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
             <p class="mt-6 mb-1">Now add the component to layout</p>
-            <x-code language="html" :code="$addComponentNotificationExample" />
+            <x-code language="html" :contents="$addComponentNotificationExample" />
         </div>
     </div>
 
@@ -48,7 +48,7 @@
         <p class="mt-5 mb-1 text-gray-500">
             Notifications can be created directly via JavaScript
         </p>
-        <x-code language="js" :code="$javascriptNotificationExample" />
+        <x-code language="js" :contents="$javascriptNotificationExample" />
     </div>
 
     <div id="livewire-notification">
@@ -56,7 +56,7 @@
         <p class="mt-5 mb-1 text-gray-500">
             Notifications can be created directly from Livewire Component
         </p>
-        <x-code language="php" :code="$livewireNotificationExample" />
+        <x-code language="php" :contents="$livewireNotificationExample" />
     </div>
 
     <div id="alert-notifications">
@@ -103,13 +103,13 @@
         </div>
 
         <p class="mt-4 mb-1 text-gray-500">The options needed to create such a notification are:</p>
-        <x-code language="ts" :code="<<<EOT
-        {
-            title: 'Notification Title',
-            description: 'It can be nullable too',
-            icon: 'success'
-        }
-        EOT" />
+        <x-code language="ts">
+            {
+                title: 'Notification Title',
+                description: 'It can be nullable too',
+                icon: 'success'
+            }
+        </x-code>
     </div>
 
     <div id="confirm-notifications">
@@ -146,15 +146,17 @@
         </div>
 
         <p class="mt-4 mb-1 text-gray-500">You can create a confirmation notification by the blade</p>
-        <x-code language="html" :code="$bladeConfirmExample" />
+        <x-code language="html" :contents="$bladeConfirmExample" />
         <br/>
-        <x-box attention>This directive does not work on blade component, like <b>x-button</b></x-box>
+        <x-alerts.warning>
+            This directive does not work on blade component, like <b>x-button</b>
+        </x-alerts.warning>
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>
-        <x-code language="php" :code="$livewireConfirmExample" />
+        <x-code language="php" :contents="$livewireConfirmExample" />
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via javascript</p>
-        <x-code language="js" :code="$javascriptConfirmExample" />
+        <x-code language="js" :contents="$javascriptConfirmExample" />
     </div>
 
     <div id="notification-events">
@@ -179,40 +181,40 @@
         <p class="mb-1 text-gray-500">
             You can create events via javascript using closure
         </p>
-        <x-code language="js" :code="<<<EOT
-        {
-            onClose:   () => alert('onClose is fired'),
-            onDismiss: () => alert('onDismiss is fired'),
-            onTimeout: () => alert('onTimeout is fired'),
-        }
-        EOT" />
+        <x-code language="js">
+            {
+                onClose:   () => alert('onClose is fired'),
+                onDismiss: () => alert('onDismiss is fired'),
+                onTimeout: () => alert('onTimeout is fired'),
+            }
+        </x-code>
 
         <p class="mt-6 mb-1 text-gray-500">
             Or use the events to call actions on the Livewire Component,
             in which case the component ID is required
         </p>
-        <x-code language="js" :code="<<<EOT
-        window.\$wireui.notify({
-            ...
-            onClose: {
-                method: 'firedEvent',
-                params: 'onClose'
-            },
-            onDismiss: {
-                method: 'firedEvent',
-                params: { event: 'onDismiss'}
-            },
-            onTimeout: {
-                method: 'firedEvent',
-                params: ['onTimeout', 'more value']
-            },
-        }, livewireComponentId)
-        EOT" />
+        <x-code language="js">
+            window.\$wireui.notify({
+                ...
+                onClose: {
+                    method: 'firedEvent',
+                    params: 'onClose'
+                },
+                onDismiss: {
+                    method: 'firedEvent',
+                    params: { event: 'onDismiss'}
+                },
+                onTimeout: {
+                    method: 'firedEvent',
+                    params: ['onTimeout', 'more value']
+                },
+            }, livewireComponentId)
+        </x-code>
 
         <p class="mt-6 mb-1 text-gray-500">
             Events can also be used for notifications created by the Livewire Component
         </p>
-        <x-code language="php" :code="$phpEventsExample" />
+        <x-code language="php" :contents="$phpEventsExample" />
     </div>
 
     <div id="notification-options">
@@ -247,33 +249,34 @@
             <h3 class="mt-3 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Icon
             </h3>
-            <x-code copy='false' lineNumbers='false' language="ts" code="'success'|'error'|'info'|'warning'|'question'" />
+            <x-code copy='false' :line-numbers="false" language="ts" contents="'success'|'error'|'info'|'warning'|'question'" />
 
             <h3 class="mt-4 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Action
             </h3>
-            <x-code language="ts" :code="<<<EOT
-            {
-                label: string
-                style?: string
-                solid?: boolean
-                url?: string
-                execute?: closure
-                method?: string
-                params?: any
-            }
-            EOT" />
+            <x-code language="ts">
+                {
+                    label: string
+                    style?: string
+                    solid?: boolean
+                    url?: string
+                    execute?: closure
+                    method?: string
+                    params?: any
+                }
+            </x-code>
 
             <h3 class="mt-4 mb-1 text-sm font-semibold text-gray-500 uppercase">
                 Notification Event
             </h3>
-            <x-code language="ts" :code="<<<EOT
-            {
-                url?: string
-                method?: string
-                params?: any
-            }
-            EOT" />
+
+            <x-code language="js">
+                {
+                    url?: string
+                    method?: string
+                    params?: any
+                }
+            </x-code>
         </div>
     </div>
 
@@ -326,7 +329,7 @@ icon: 'success',
                 You can customize notification layout and styles publishing resources
             </p>
 
-            <x-code line-numbers='false' language="bash" code="php artisan vendor:publish --tag='wireui.resources'" />
+            <x-code :line-numbers="false" language="bash" contents="php artisan vendor:publish --tag='wireui.resources'" />
         </div>
     </div>
 </div>

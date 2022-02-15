@@ -42,9 +42,12 @@
         <div class="mt-5 text-gray-500">
             <p class="mt-6 mb-1">Now add the component to layout</p>
 
-            <x-code language="html" :code="$addComponentExample" />
+            <x-code language="html" :contents="$addComponentExample" no-copy />
             <br/>
-            <x-box info>Tip: The <b>dialog</b> has all <b>modal</b> options. You can define globals or individuals </x-box>
+            <x-alerts.info>
+                Tip: The <b>dialog</b> has all <b>modal</b> options.
+                You can define globals or individuals
+            </x-alerts.info>
         </div>
     </div>
 
@@ -53,7 +56,7 @@
         <p class="mt-5 mb-1 text-gray-500">
             Dialogs can be created directly via JavaScript
         </p>
-        <x-code language="js" :code="$javascriptExample" />
+        <x-code language="js" :contents="$javascriptExample" />
     </div>
 
     <div id="livewire-dialog">
@@ -61,7 +64,7 @@
         <p class="mt-5 mb-1 text-gray-500">
             Dialogs can be created directly from Livewire Component
         </p>
-        <x-code language="php" :code="$livewireExample" />
+        <x-code language="php" :contents="$livewireExample" />
     </div>
 
     <div id="alert-dialog">
@@ -107,13 +110,13 @@
         </div>
 
         <p class="mt-4 mb-1 text-gray-500">The options needed to create such a notification are:</p>
-        <x-code language="ts" :code="<<<EOT
+        <x-code language="js">
         {
             title: 'Notification Title',
             description: 'It can be nullable too',
             icon: 'success'
         }
-        EOT" />
+        </x-code>
     </div>
 
     <div id="confirm-dialog">
@@ -150,10 +153,10 @@
         </div>
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>
-        <x-code language="php" :code="$livewireConfirmExample" />
+        <x-code language="php" :contents="$livewireConfirmExample" />
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via javascript</p>
-        <x-code language="js" :code="$javascriptConfirmExample" />
+        <x-code language="js" :contents="$javascriptConfirmExample" />
     </div>
 
     <div id="confirm-directive">
@@ -167,10 +170,10 @@
         </div>
 
         <p class="mt-4 mb-1 text-gray-500">You use it in alpinejs component</p>
-        <x-code language="html" :code="$confirmDirectiveAlpineJs" />
+        <x-code language="html" :contents="$confirmDirectiveAlpineJs" />
 
         <p class="mt-6 mb-1 text-gray-500">And use it in pure html</p>
-        <x-code language="html" :code="$confirmDirectiveHtml" />
+        <x-code language="html" :contents="$confirmDirectiveHtml" />
     </div>
 
     <div id="dialog-events">
@@ -195,40 +198,40 @@
         <p class="mb-1 text-gray-500">
             You can create events via javascript using closure
         </p>
-        <x-code language="js" :code="<<<EOT
-        {
-            onClose:   () => alert('onClose is fired'),
-            onDismiss: () => alert('onDismiss is fired'),
-            onTimeout: () => alert('onTimeout is fired'),
-        }
-        EOT" />
+        <x-code language="js">
+            {
+                onClose:   () => alert('onClose is fired'),
+                onDismiss: () => alert('onDismiss is fired'),
+                onTimeout: () => alert('onTimeout is fired'),
+            }
+        </x-code>
 
         <p class="mt-6 mb-1 text-gray-500">
             Or use the events to call actions on the Livewire Component,
             in which case the component ID is required
         </p>
-        <x-code language="js" :code="<<<EOT
-        window.\$wireui.dialog({
-            ...
-            onClose: {
-                method: 'firedEvent',
-                params: 'onClose'
-            },
-            onDismiss: {
-                method: 'firedEvent',
-                params: { event: 'onDismiss'}
-            },
-            onTimeout: {
-                method: 'firedEvent',
-                params: ['onTimeout', 'more value']
-            },
-        }, livewireComponentId)
-        EOT" />
+        <x-code language="js">
+            window.\$wireui.dialog({
+                ...
+                onClose: {
+                    method: 'firedEvent',
+                    params: 'onClose'
+                },
+                onDismiss: {
+                    method: 'firedEvent',
+                    params: { event: 'onDismiss'}
+                },
+                onTimeout: {
+                    method: 'firedEvent',
+                    params: ['onTimeout', 'more value']
+                },
+            }, livewireComponentId)
+        </x-code>
 
         <p class="mt-6 mb-1 text-gray-500">
             Events can also be used for notifications created by the Livewire Component
         </p>
-        <x-code language="php" :code="$phpEventsExample" />
+        <x-code language="php" :contents="$phpEventsExample" />
     </div>
 
     <div x-data="{ name: '', setName(event) { this.name = event.detail } }" x-on:set-name="setName" class="space-y-4" id="custom-dialog">
@@ -270,7 +273,7 @@
             Show Custom confirm dialog
         </x-button>
 
-        <x-code language="blade" :code="$customConfirmDialog" />
+        <x-code language="blade" :contents="$customConfirmDialog" />
     </div>
 
     <div id="dialog-options">
@@ -292,52 +295,54 @@
         <div class="space-y-4">
             <div>
                 <b>Button</b>
-                <x-code language="ts" :code="<<<EOT
-                Button {
-                    label: string
-                    color?: Color
-                    size?: Size
-                    rounded?: boolean
-                    squared?: boolean
-                    bordered?: boolean
-                    flat?: boolean
-                    icon?: string
-                    rightIcon?: string
-                }
-                EOT" />
+                <x-code language="ts">
+                    Button {
+                        label: string
+                        color?: Color
+                        size?: Size
+                        rounded?: boolean
+                        squared?: boolean
+                        bordered?: boolean
+                        flat?: boolean
+                        icon?: string
+                        rightIcon?: string
+                    }
+                </x-code>
             </div>
 
             <div>
                 <b>Action options</b>
-                <x-code language="ts" :code="<<<EOT
-                Color = 'primary' | 'secondary' | 'positive' | 'negative' |
-                        'warning' | 'info' | 'dark'
-                ActionOptions extends Button {
-                    label?: string
-                    method?: string
-                    params?: any
-                    url?: string
-                    execute?: CallableFunction
-                }
-                EOT" />
+                <x-code language="ts">
+                    Color = 'primary' | 'secondary' | 'positive' | 'negative' |
+                            'warning' | 'info' | 'dark'
+                    ActionOptions extends Button {
+                        label?: string
+                        method?: string
+                        params?: any
+                        url?: string
+                        execute?: CallableFunction
+                    }
+                </x-code>
             </div>
 
             <div>
                 <b>Icons</b>
-                <x-code copy='false' lineNumbers='false' language="text" code="success | error | info | warning | question" />
+                <x-code :line-numbers="false" language="text" no-copy>
+                    success | error | info | warning | question
+                </x-code>
             </div>
 
             <div>
                 <b>Events</b>
-                <x-code language="text" :code="<<<EOT
-                onClose | onDismiss | onTimeout
+                <x-code language="text">
+                    onClose | onDismiss | onTimeout
 
-                EventOptions {
-                    method?: string
-                    params?: any
-                    url?: string
-                }
-                EOT" />
+                    EventOptions {
+                        method?: string
+                        params?: any
+                        url?: string
+                    }
+                </x-code>
             </div>
         </div>
     </div>

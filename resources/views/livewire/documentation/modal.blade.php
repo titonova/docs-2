@@ -99,7 +99,9 @@
         </x-modal.card>
     </x-code-preview>
 
-    <x-box info>Tip: You can use global function <b>$openModal('myModal')</b> to open modal from your Javascript code.</x-box>
+    <x-alerts.info>
+        Tip: You can use global function <b>$openModal('myModal')</b> to open modal from your Javascript code.
+    </x-alerts.info>
 
     <div id="modal-options">
         <x-section.title href="#modal-options" title="Modal Options" />
@@ -129,7 +131,7 @@
     <div class="my-4"></div>
 
     <x-section.title href="#modal-events" title="Modal Events" />
-    <x-code language="html" :code="$modalEvents" />
+    <x-code language="html" :contents="$modalEvents" />
 
     <div class="mt-6">
         <x-section.title id="customize-default" href="#customize-default" title="Customize Default" />
@@ -140,14 +142,14 @@
             wireui config or put in env file your modal preferences
         </p>
 
-        <x-code language="php" :code="<<<EOT
-        'modal' => [
-            'zIndex'   => env('WIREUI_MODAL_Z_INDEX', 'z-50'),
-            'maxWidth' => env('WIREUI_MODAL_MAX_WIDTH', '2xl'),
-            'spacing'  => env('WIREUI_MODAL_SPACING', 'p-4'),
-            'align'    => env('WIREUI_MODAL_ALIGN', 'start'),
-            'blur'     => env('WIREUI_MODAL_BLUR', false),
-        ],
-        EOT" />
+        <x-code language="php">
+            'modal' => [
+                'zIndex'   => env('WIREUI_MODAL_Z_INDEX', 'z-50'),
+                'maxWidth' => env('WIREUI_MODAL_MAX_WIDTH', '2xl'),
+                'spacing'  => env('WIREUI_MODAL_SPACING', 'p-4'),
+                'align'    => env('WIREUI_MODAL_ALIGN', 'start'),
+                'blur'     => env('WIREUI_MODAL_BLUR', false),
+            ],
+        </x-code>
     </div>
 </div>

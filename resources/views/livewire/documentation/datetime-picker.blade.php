@@ -152,10 +152,11 @@
         </div>
 
         <x-options-table class="mt-2 mb-6 w-full">
-            <x-option-table-row prop="without-tips"     required="false" default="false" type="boolean" available="--" />
-            <x-option-table-row prop="without-timezone" required="false" default="false" type="boolean" available="--" />
-            <x-option-table-row prop="without-time"     required="false" default="false" type="boolean" available="--" />
-            <x-option-table-row prop="interval"         required="false" default="10" type="string|number" available="--" />
+            <x-option-table-row prop="clearable"        required="false" default="true"  type="boolean" available="boolean" />
+            <x-option-table-row prop="without-tips"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="without-timezone" required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="without-time"     required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="interval"         required="false" default="10" type="string|number" available="boolean" />
             <x-option-table-row prop="time-format"      required="false" default="12" type="string"        available="12|24" />
             <x-option-table-row prop="timezone"         required="false" default="UTC" type="string" available="All js available timezones" />
             <x-option-table-row prop="user-timezone"    required="false" default="real user timezone" type="string" available="All js available timezones" />

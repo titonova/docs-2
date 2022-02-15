@@ -22,7 +22,7 @@ class GetStarted extends Component
     public string $directiveExample = <<<HTML
         ...
         @wireUiScripts
-        <script src="//unpkg.com/alpinejs"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
         ...
     HTML;
 
@@ -31,7 +31,7 @@ class GetStarted extends Component
         <head>
             ...
             <wireui:scripts />
-            <script src="//unpkg.com/alpinejs"></script>
+            <script src="//unpkg.com/alpinejs" defer></script>
         </head>
     </html>
     HTML;

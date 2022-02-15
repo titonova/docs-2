@@ -1,15 +1,17 @@
 <?php
 
-use PhpCsFixer\Config;
-use PhpCsFixer\Finder;
+use PhpCsFixer\{Config, Finder};
 
 $rules = [
-    'align_multiline_comment' => false,
-    'array_indentation'       => true,
-    'array_syntax'            => ['syntax' => 'short'],
-    'binary_operator_spaces'  => [
-        'default'   => 'align_single_space_minimal',
-        'operators' => ['=>' => 'align_single_space'],
+    '@PSR2'                       => true,
+    'group_import'                => true,
+    'align_multiline_comment'     => false,
+    'single_import_per_statement' => false,
+    'array_indentation'           => true,
+    'array_syntax'                => ['syntax' => 'short'],
+    'binary_operator_spaces'      => [
+        'default'   => 'align_single_space',
+        'operators' => ['=>' => 'align_single_space_minimal'],
     ],
     'blank_line_after_namespace'   => true,
     'blank_line_after_opening_tag' => false,
@@ -20,8 +22,10 @@ $rules = [
         'position_after_control_structures'           => 'same',
         'position_after_functions_and_oop_constructs' => 'next',
     ],
-    'cast_spaces'                 => ['space' => 'none'],
-    'class_attributes_separation' => true,
+    'lowercase_cast'              => true,
+    'no_short_bool_cast'          => true,
+    'cast_spaces'                 => ['space' => 'single'],
+    'class_attributes_separation' => ['elements' => ['property' => 'one', 'method' => 'one']],
     'no_unused_imports'           => true,
     'class_keyword_remove'        => false,
     'combine_consecutive_issets'  => false,
@@ -65,6 +69,7 @@ $rules = [
     'whitespace_after_comma_in_array'             => true,
     'trim_array_spaces'                           => true,
     'unary_operator_spaces'                       => true,
+    'php_unit_method_casing'                      => false,
 ];
 
 $finder = Finder::create();
@@ -73,13 +78,8 @@ $finder->in([
     __DIR__ . '/app',
 ]);
 
-$config = new Config();
-
-$config->setIndent('    ');
-
-$config
+return (new Config())
+    ->setIndent('    ')
     ->setRiskyAllowed(false)
     ->setRules($rules)
     ->setFinder($finder);
-
-return $config;

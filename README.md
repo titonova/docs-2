@@ -1,6 +1,6 @@
 # WireUI - Docs
 
-Page for [WireUI](https://github.com/wireui/wireui) documentation. 
+Page for [WireUI](https://github.com/wireui/wireui) documentation.
 
 Visit at: [https://livewire-wireui.com/](https://livewire-wireui.com/)
 
@@ -12,7 +12,7 @@ Thank you for your interest in contributing! 😊
 
 Please follow the steps below to run this project locally:
 
-### Get started 🚀 
+### Get started 🚀
 
 #### Requirements
 
@@ -78,25 +78,26 @@ You are welcome to explore the code in `resources/views/livewire/` folder to vie
 
 Code snippets should always be included using the `<x-code>` tag.
 
-The mandatory attributes are `language`, for the code language and the `code`, for the code itself.
+The mandatory attributes are `language`, for the code language and the `contents`, for the code itself. Or use a `slot` instead of the `contents` attribute.
+
 
 For example:
 
 ```php
 //...
-<x-code language="bash" :code="<<<EOT
-php artisan vendor:publish --tag='wireui.config'
-php artisan vendor:publish --tag='wireui.resources'
-php artisan vendor:publish --tag='wireui.lang'
-EOT" />
+<x-code language="bash">
+    php artisan vendor:publish --tag='wireui.config'
+    php artisan vendor:publish --tag='wireui.resources'
+    php artisan vendor:publish --tag='wireui.lang'
+</x-code>
 ```
 
 A copy button is loaded by default, to suppress the button, add the attribute: `copy="false"`.
 
-Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `line-number="false`.
+Likewise, line numbers are displayed by default. To remove the numbers, add the attribute: `:line-numbers="false".
 
 ```php
-<x-code copy="false" line-numbers="false" language="shell" :code="Command exit with error error code xyz...." />
+<x-code no-copy :line-numbers="false" language="shell" :contents="Command exit with error error code xyz...." />
 ```
 
 <br/>
@@ -119,18 +120,17 @@ Run `npm install` to install all to install all dependencies.
 
 #### Boxes
 
-Sometimes it's crucial to highlight information such as a mandatory step or a compatibility issue. In these situations, situations, you should use the `<x-box attention>` tag, which will produce a yellow "attention" box.
+Sometimes it's crucial to highlight information such as a mandatory step or a compatibility issue. In these situations, situations, you should use the `<x-alerts.warning>` tag, which will produce a yellow "attention" box.
 
 For example:
 
 ```php
-<x-box attention>If you are using FooJS 1.0, you must configure bar=null before update.</x-box>
+<x-alerts.warning>If you are using FooJS 1.0, you must configure bar=null before update.</x-alerts.warning>
 ```
-
-In addition, if you need to provide a friendly message, a tip, or extra information, you should use of the `<x-box info>` tag, which produces a blue info box.
+In addition, if you need to provide a friendly message, a tip, or extra information, you should use of the `<x-alerts.info>` tag, which produces a blue info box.
 
 ```php
-<x-box info>Read more about supported formats <a href="#formats">here</a>.</x-box>
+<x-alerts.info>Read more about supported formats <a href="#formats">here.</a></x-alerts.info>
 ```
 
 <br/>

@@ -123,7 +123,7 @@
                     <a href="{{ route('home') }}" class="text-2xl text-teal-600 font-extrabold">
                         WireUI
                     </a>
-                    <a href="{{ config('links.wireui') }}" class="inline-flex items-center shadow-sm text-gray-400">
+                    <a href="{{ config('links.wireui') }}" class="inline-flex items-center shadow-sm text-secondary-400">
                         <x-icons.github-solid class="lg:w-7 lg:h-7" />
                     </a>
                 </div>
@@ -133,7 +133,7 @@
                         @foreach ($sidebarMenu as $link)
                             @isset($link['header'])
                                 <li class="mt-2">
-                                    <span class="flex font-medium text-sm text-gray-400 px-3 mt-3 uppercase">
+                                    <span class="flex font-medium text-sm text-secondary-400 px-3 mt-3 uppercase">
                                         {{ $link['header'] }}
                                     </span>
                                 </li>
@@ -144,8 +144,8 @@
                                         'flex items-center h-12 px-4 rounded-lg text-gray-600 transition-colors ease-in-out duration-300',
                                         'font-medium hover:text-gray-900 hover:underline',
                                         'mt-1 font-medium shadow-md border dark:border-0 bg-slate-50' => $link['active'],
-                                        'dark:bg-secondary-700 text-gray-900 dark:text-secondary-200'    => $link['active'],
-                                        'dark:text-gray-500' => !$link['active'],
+                                        'dark:bg-secondary-700 text-gray-900 dark:text-secondary-200' => $link['active'],
+                                        'dark:text-secondary-400/70' => !$link['active'],
                                     ])
                                     href="{{ $link['route'] }}"
                                     @isset($link['target'])
@@ -165,7 +165,7 @@
         </div>
 
         <main class="pt-16 flex flex-col sm:pt-18 lg:pt-0 lg:col-span-9 xl:col-span-8 xl:m-2 xl:p-4 xl:rounded-xl xl:border
-                     xl:shadow-soft bg-white dark:bg-secondary-900 dark:border-secondary-600 dark:shadow-none
+                     xl:shadow-soft bg-white dark:bg-secondary-900 dark:border-secondary-700 dark:shadow-none
                      lg:dark:border-2 xl:dark:my-4"
             style="min-height: 98vh">
             <div class="p-4 sm:px-6 grow">
@@ -174,14 +174,14 @@
 
             <!-- footer -->
             <footer class="mt-5">
-                <div class="mx-auto pt-6 md:flex md:items-center md:justify-between">
+                <div class="mx-auto pt-6 pb-6 px-3 sm:px-5 lg:px-4 lg:pb-4 xl:px-0 xl:pb-0 md:flex md:items-center md:justify-between">
                     <div class="flex justify-center space-x-6 md:order-2">
                         <a href="{{ config('links.wireui') }}" class="text-gray-400 hover:text-gray-500">
                             <span class="sr-only">GitHub</span>
                             <x-icons.github class="h-6 w-6" />
                         </a>
                     </div>
-                    <div class="mt-4 md:mt-0 md:order-1 text-sm text-gray-600">
+                    <div class="text-center sm:text-left mt-4 md:mt-0 md:order-1 text-sm text-gray-600">
                         Code highlighting provided by
                         <a href="https://torchlight.dev" target="_blank" class="text-center font-semibold text-teal-600">
                             Torchlight
