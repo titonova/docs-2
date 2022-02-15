@@ -10,6 +10,7 @@
                 <x-summary.item href="#circle-buttons"  label="Circle Buttons" />
                 <x-summary.item href="#button-icons"    label="Button With Icons" />
                 <x-summary.item href="#button-sizes"    label="Button Sizes" />
+                <x-summary.item href="#button-link"     label="Button Link" />
                 <x-summary.item href="#loading-spinner" label="Loading Spinner" />
             </x-summary.header>
 
@@ -245,6 +246,22 @@
         </div>
     </x-code-preview>
 
+    <x-code-preview
+        title="Button Link"
+        href="#button-link"
+        id="button-link"
+        language="html"
+        :code="$buttonLinkCode">
+        <div>
+            <x-button
+                href="https://google.com"
+                target="_blank"
+                label="Go to Google"
+                teal
+            />
+        </div>
+    </x-code-preview>
+
     <x-alerts.info>
         You can show a spinner loading when an action if fired
         <br> You can pass <b>wire:target</b> value into <b>spinner</b>
@@ -318,18 +335,19 @@
             <x-option-table-row prop="fuchsia"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="pink"      required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="rose"      required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="color"     required="false" default="none"  type="string"  available="default colors + all tailwind colors" />
+            <x-option-table-row prop="color"     required="false" default="null"  type="string"  available="default colors + all tailwind colors" />
 
             <x-option-table-row prop="rounded" required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="squared" required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="flat"    required="false" default="false" type="boolean" available="boolean" />
 
-            <x-option-table-row prop="label"     required="false" default="none" type="string" available="*" />
-            <x-option-table-row prop="icon"      required="false" default="none" type="string" available="all heroicons" />
-            <x-option-table-row prop="rightIcon" required="false" default="none" type="string" available="all heroicons" />
-            <x-option-table-row prop="spinner"   required="false" default="none" type="boolean|string" available="*" />
+            <x-option-table-row prop="label"     required="false" default="null" type="string" available="*" />
+            <x-option-table-row prop="icon"      required="false" default="null" type="string" available="all heroicons" />
+            <x-option-table-row prop="rightIcon" required="false" default="null" type="string" available="all heroicons" />
+            <x-option-table-row prop="spinner"   required="false" default="null" type="boolean|string" available="*" />
+            <x-option-table-row prop="href"      required="false" default="null" type="string" available="all links" />
 
-            <x-option-table-row prop="loadingDelay" required="false" default="none" type="string" available="shortest|shorter|short|long|longer|longest" />
+            <x-option-table-row prop="loadingDelay" required="false" default="null" type="string" available="shortest|shorter|short|long|longer|longest" />
         </x-options-table>
     </div>
 

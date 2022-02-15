@@ -165,6 +165,15 @@ class Buttons extends Component
     <x-button lg icon="x" negative label="Large Button" />
     HTML;
 
+    public string $buttonLinkCode = <<<HTML
+    <x-button
+        href="https://google.com"
+        target="_blank"
+        label="Go to Google"
+        teal
+    />
+    HTML;
+
     public string $loadingSpinnerCode = <<<HTML
     <x-button.circle wire:click="save" teal icon="check" spinner />
     <x-button wire:click="save" spinner primary label="Save without target" />
