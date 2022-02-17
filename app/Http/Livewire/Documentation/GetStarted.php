@@ -8,10 +8,10 @@ use Livewire\Component;
 class GetStarted extends Component
 {
     public const REQUIREMENTS = [
-        'PHP 7.4.x | 8.x'                 => 'https://www.php.net',
+        'PHP 8.x'                         => 'https://www.php.net',
         'Composer'                        => 'https://getcomposer.org',
-        'Laravel 8.x'                     => 'https://laravel.com',
-        'Livewire 2.5 or above'           => 'https://laravel-livewire.com',
+        'Laravel 9.x'                     => 'https://laravel.com',
+        'Livewire 2.10+'                  => 'https://laravel-livewire.com',
         'Alpine.js 3.x'                   => 'https://alpinejs.dev',
         'Tailwindcss 3.x'                 => 'https://tailwindcss.com',
         '@tailwindcss/aspect-ratio 0.4.x' => 'https://tailwindcss.com/docs/plugins#forms',

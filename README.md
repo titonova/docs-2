@@ -16,7 +16,7 @@ Please follow the steps below to run this project locally:
 
 #### Requirements
 
--   PHP 7.4+
+-   PHP 8.x
 -   [Composer](https://getcomposer.org)
 -   [Yarn](https://yarnpkg.com)
 -   A valid [Torchlight](https://torchlight.dev) token (free for non-profit open-source projects).
