@@ -7,8 +7,8 @@ jobs:
   rollback: 
     runs-on: ubuntu-latest
     env:
-      RELEASES_PATH: /var/www/livewire-wireui.com/releases
-      CURRENT_RELEASE_PATH: /var/www/livewire-wireui.com/releases/current
+      RELEASES_PATH: /var/www/v0.livewire-wireui.com/releases
+      CURRENT_RELEASE_PATH: /var/www/v0.livewire-wireui.com/releases/current
  
     steps:
       - name: Rollback Release
