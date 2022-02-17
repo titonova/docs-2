@@ -1,36 +1,38 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The WireUI Docs.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "WireUI",
+        "Blade",
+        "Livewire"
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
-        "friendsofphp/php-cs-fixer": "^3.5",
+        "php": "^8.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.80",
+        "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
-        "sentry/sentry-laravel": "^2.10",
-        "torchlight/torchlight-laravel": "^0.5.7",
-        "wireui/wireui": "^0.17.0"
+        "sentry/sentry-laravel": "^2.11",
+        "torchlight/torchlight-laravel": "^0.5.11",
+        "wireui/wireui": "^1.0"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
-        "laravel/sail": "^1.0.1",
+        "friendsofphp/php-cs-fixer": "^3.6",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^5.10",
+        "nunomaduro/collision": "^6.1",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
         "pestphp/pest-plugin-livewire": "^1.0",
         "pestphp/pest-plugin-parallel": "^1.0",
-        "phpunit/phpunit": "^9.5.10"
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
     },
     "autoload": {
         "psr-4": {

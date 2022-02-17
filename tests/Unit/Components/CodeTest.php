@@ -19,8 +19,8 @@ class CodeTest extends TestCase
     public function it_should_make_the_code_blocks()
     {
         $this->blade('<x-code language="php">echo "hello world";</x-code>')
-            ->assertSee('<pre >##PRE_TL_COMPONENT##<code __torchlight-block', escape: false)
-            ->assertSee('</code>##POST_TL_COMPONENT##</pre>', escape: false);
+            ->assertSee('<pre >##PRE_TL_COMPONENT##', escape: false)
+            ->assertSee('##POST_TL_COMPONENT##</pre>', escape: false);
     }
 
     /** @test */

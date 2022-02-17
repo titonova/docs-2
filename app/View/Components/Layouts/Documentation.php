@@ -16,135 +16,133 @@ class Documentation extends Component
     public function getSidebarMenu(): array
     {
         return collect([
-            
             [
-                'header'    => 'Getting Started',
-                'label'     => 'Installation',
-                'route'     => route('docs.get-started'),
-            ], 
-            [
-                'label'     => 'Troubleshooting',
-                'route'     => route('docs.troubleshooting'),
-            ], 
-            [
-                'header'    => 'Form Components',
-                'label'     => 'Inputs',
-                'route'     => route('docs.inputs'),
-            ], 
-            [
-                'label'     => 'Textarea',
-                'route'     => route('docs.textarea'),
-            ], 
-            [
-                'label'     => 'Errors',
-                'route'     => route('docs.errors'),
+                'header' => 'Getting Started',
+                'label'  => 'Installation',
+                'route'  => route('docs.get-started'),
             ],
             [
-                'label'     => 'Cards',
-                'route'     => route('docs.cards'),
-            ], 
-            [
-                'label'     => 'Buttons',
-                'route'     => route('docs.buttons'),
-            ], 
-            [
-                'label'     => 'Toggle',
-                'route'     => route('docs.toggle'),
-            ], 
-            [
-                'label'     => 'Checkbox',
-                'route'     => route('docs.checkbox'),
-            ], 
-            [
-                'label'     => 'Radio',
-                'route'     => route('docs.radio'),
-            ], 
-            [
-                'header'    => 'Table',
-                'label'     => 'PowerGrid',
-                'route'     => 'https://github.com/Power-Components/livewire-powergrid',
-                'target'    => '_blank',
-            ], 
-            [
-                'header'    => 'Livewire components',
-                'label'     => 'Usage',
-                'route'     => route('docs.livewire-usage'),
+                'label' => 'Troubleshooting',
+                'route' => route('docs.troubleshooting'),
             ],
             [
-                'label'     => 'Select',
-                'route'     => route('docs.select'),
-            ], 
+                'header' => 'Form Components',
+                'label'  => 'Inputs',
+                'route'  => route('docs.inputs'),
+            ],
             [
-                'label'     => 'Maskable Inputs',
-                'route'     => route('docs.maskable-inputs'),
-            ], 
+                'label' => 'Textarea',
+                'route' => route('docs.textarea'),
+            ],
             [
-                'label'     => 'Currency Input',
-                'route'     => route('docs.currency-input'),
-            ], 
+                'label' => 'Errors',
+                'route' => route('docs.errors'),
+            ],
             [
-                'label'     => 'Datetime Picker',
-                'route'     => route('docs.datetime-picker'),
-            ], 
+                'label' => 'Cards',
+                'route' => route('docs.cards'),
+            ],
             [
-                'label'     => 'Time Picker',
-                'route'     => route('docs.time-picker'),
-            ], 
+                'label' => 'Buttons',
+                'route' => route('docs.buttons'),
+            ],
             [
-                'label'     => 'Phone Input',
-                'route'     => route('docs.phone-input'),
-            ], 
+                'label' => 'Toggle',
+                'route' => route('docs.toggle'),
+            ],
             [
-                'label'     => 'Native Select',
-                'route'     => route('docs.native-select'),
-            ], 
+                'label' => 'Checkbox',
+                'route' => route('docs.checkbox'),
+            ],
             [
-                'header'    => 'Actions',
-                'label'     => 'Notifications',
-                'route'     => route('docs.notifications'),
-            ], 
+                'label' => 'Radio',
+                'route' => route('docs.radio'),
+            ],
             [
-                'label'     => 'Dialogs',
-                'route'     => route('docs.dialogs'),
-            ], 
+                'header' => 'Table',
+                'label'  => 'PowerGrid',
+                'route'  => 'https://github.com/Power-Components/livewire-powergrid',
+                'target' => '_blank',
+            ],
             [
-                'label'     => 'Hooks',
-                'route'     => route('docs.hooks'),
-            ], 
+                'header' => 'Livewire components',
+                'label'  => 'Usage',
+                'route'  => route('docs.livewire-usage'),
+            ],
             [
-                'header'    => 'UI Components',
-                'label'     => 'Icons',
-                'route'     => route('docs.heroicons'),
-            ], 
+                'label' => 'Select',
+                'route' => route('docs.select'),
+            ],
             [
-                'label'     => 'Dropdown',
-                'route'     => route('docs.dropdown'),
-            ], 
+                'label' => 'Maskable Inputs',
+                'route' => route('docs.maskable-inputs'),
+            ],
             [
-                'label'     => 'Modal',
-                'route'     => route('docs.modal'),
+                'label' => 'Currency Input',
+                'route' => route('docs.currency-input'),
+            ],
+            [
+                'label' => 'Datetime Picker',
+                'route' => route('docs.datetime-picker'),
+            ],
+            [
+                'label' => 'Time Picker',
+                'route' => route('docs.time-picker'),
+            ],
+            [
+                'label' => 'Phone Input',
+                'route' => route('docs.phone-input'),
+            ],
+            [
+                'label' => 'Native Select',
+                'route' => route('docs.native-select'),
+            ],
+            [
+                'header' => 'Actions',
+                'label'  => 'Notifications',
+                'route'  => route('docs.notifications'),
+            ],
+            [
+                'label' => 'Dialogs',
+                'route' => route('docs.dialogs'),
+            ],
+            [
+                'label' => 'Hooks',
+                'route' => route('docs.hooks'),
+            ],
+            [
+                'header' => 'UI Components',
+                'label'  => 'Icons',
+                'route'  => route('docs.heroicons'),
+            ],
+            [
+                'label' => 'Dropdown',
+                'route' => route('docs.dropdown'),
+            ],
+            [
+                'label' => 'Modal',
+                'route' => route('docs.modal'),
             ],
 
             /***************** ********************/
             [
-                'header'    => 'Customize',
-                'label'     => 'Colors',
-                'route'     => route('docs.colors'),
-            ], 
+                'header' => 'Customize',
+                'label'  => 'Colors',
+                'route'  => route('docs.colors'),
+            ],
             [
-                'label'     => 'Components',
-                'route'     => route('docs.customization'),
-            ], 
-
+                'label' => 'Components',
+                'route' => route('docs.customization'),
+            ],
             [
-                'header'    => 'WireUI Project',
-                'label'     => 'Changelog',
-                'route'     => route('docs.changelog'),
-            ], 
+                'header' => 'WireUI Project',
+                'label'  => 'Changelog',
+                'route'  => route('docs.changelog'),
+            ],
             [
-                'label'     => 'Contribution Guide',
-                'route'     => route('docs.contributing'),
-            ], 
+                'label' => 'Contribution Guide',
+                'route' => route('docs.contributing'),
+            ],
         ])->map(function (array $link) {
             $route = data_get($link, 'route');
 
