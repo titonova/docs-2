@@ -109,6 +109,10 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="flex justify-end mt-2">
+                    <livewire:switch-version />
+                </div>
             </div>
 
             <!-- only to fit mobile sidebar -->
