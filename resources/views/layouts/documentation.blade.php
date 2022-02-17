@@ -158,8 +158,9 @@
                     </ul>
                 </div>
 
-                <div class="flex justify-center py-2">
+                <div class="flex justify-between py-2">
                     <livewire:toggle-dark-mode />
+                    <livewire:switch-version />
                 </div>
             </nav>
         </div>
