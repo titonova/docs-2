@@ -7,6 +7,17 @@ use Livewire\Component;
 
 class Select extends Component
 {
+    public string $asyncSearch = <<<HTML
+    <x-select
+        label="Search a User"
+        wire:model="model"
+        placeholder="Select some user"
+        :async-data="route('users.index')"
+        option-label="name"
+        option-value="id"
+    />
+    HTML;
+
     public string $simpleOptions = <<<HTML
     <x-select
         label="Select Status"
@@ -61,10 +72,10 @@ class Select extends Component
         placeholder="Select relator"
         wire:model.defer="model"
     >
-        <x-select.user-option img="https://via.placeholder.com/500" label="People 1" value="1" />
-        <x-select.user-option img="https://via.placeholder.com/500" label="People 2" value="2" />
-        <x-select.user-option img="https://via.placeholder.com/500" label="People 3" value="3" />
-        <x-select.user-option img="https://via.placeholder.com/500" label="People 4" value="4" />
+        <x-select.user-option src="https://via.placeholder.com/500" label="People 1" value="1" />
+        <x-select.user-option src="https://via.placeholder.com/500" label="People 2" value="2" />
+        <x-select.user-option src="https://via.placeholder.com/500" label="People 3" value="3" />
+        <x-select.user-option src="https://via.placeholder.com/500" label="People 4" value="4" />
     </x-select>
     HTML;
 
@@ -79,6 +90,8 @@ class Select extends Component
         ...
     </x-select>
     HTML;
+
+    public $asyncSearchUser = null;
 
     public $model = null;
 
