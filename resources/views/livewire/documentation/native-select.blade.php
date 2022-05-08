@@ -27,14 +27,13 @@
         id="simple-options"
         language="html"
         :code="$simpleOptions">
-        <div class="flex flex-wrap gap-4">
-            <x-native-select
-                label="Select Status"
-                placeholder="Select one status"
-                :options="['Active', 'Pending', 'Stuck', 'Done']"
-                wire:model.defer="model"
-            />
-        </div>
+        <x-native-select
+            class="sm:max-w-xs"
+            label="Select Status"
+            placeholder="Select one status"
+            :options="['Active', 'Pending', 'Stuck', 'Done']"
+            wire:model.defer="model"
+        />
     </x-code-preview>
 
     <x-code-preview
@@ -43,20 +42,19 @@
         id="custom-options"
         language="html"
         :code="$customOptions">
-        <div class="flex flex-wrap gap-4">
-            <x-native-select
-                label="Select Status"
-                :options="[
-                    ['name' => 'Active',  'id' => 1],
-                    ['name' => 'Pending', 'id' => 2],
-                    ['name' => 'Stuck',   'id' => 3],
-                    ['name' => 'Done',    'id' => 4],
-                ]"
-                option-label="name"
-                option-value="id"
-                wire:model.defer="model"
-            />
-        </div>
+        <x-native-select
+            class="sm:max-w-xs"
+            label="Select Status"
+            :options="[
+                ['name' => 'Active',  'id' => 1],
+                ['name' => 'Pending', 'id' => 2],
+                ['name' => 'Stuck',   'id' => 3],
+                ['name' => 'Done',    'id' => 4],
+            ]"
+            option-label="name"
+            option-value="id"
+            wire:model.defer="model"
+        />
     </x-code-preview>
 
     <x-code-preview
@@ -65,26 +63,24 @@
         id="slot-options"
         language="html"
         :code="$slotOptions">
-        <div class="flex flex-wrap gap-4">
-            <x-native-select label="Select Status" wire:model.defer="model">
-                <option>Active</option>
-                <option>Pending</option>
-                <option>Stuck</option>
-                <option>Done</option>
-            </x-native-select>
-        </div>
+        <x-native-select class="sm:max-w-xs" label="Select Status" wire:model.defer="model">
+            <option>Active</option>
+            <option>Pending</option>
+            <option>Stuck</option>
+            <option>Done</option>
+        </x-native-select>
     </x-code-preview>
 
     <div id="native-select-options">
         <x-section.title href="#native-select-options" title="Native Select Options" />
         <x-options-table class="mt-2 mb-6 w-full" :available="false">
-            <x-option-table-row prop="label"            required="false" default="none" type="string" />
-            <x-option-table-row prop="placeholder"      required="false" default="none" type="string" />
-            <x-option-table-row prop="option-value"     required="false" default="none" type="string" />
-            <x-option-table-row prop="option-label"     required="false" default="none" type="string" />
-            <x-option-table-row prop="option-key-label" required="false" default="false" type="boolean" />
+            <x-option-table-row prop="label"            required="false" default="none"  type="string" />
+            <x-option-table-row prop="placeholder"      required="false" default="none"  type="string" />
+            <x-option-table-row prop="option-value"     required="false" default="none"  type="string" />
+            <x-option-table-row prop="option-label"     required="false" default="none"  type="string" />
+            <x-option-table-row prop="flip-options"     required="false" default="false" type="boolean" />
             <x-option-table-row prop="option-key-value" required="false" default="false" type="boolean" />
-            <x-option-table-row prop="options"          required="false" default="none" type="Collection|array" />
+            <x-option-table-row prop="options"          required="false" default="none"  type="Collection|array|null" />
         </x-options-table>
     </div>
 </div>
