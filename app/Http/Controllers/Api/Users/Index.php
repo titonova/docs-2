@@ -25,6 +25,11 @@ class Index extends Controller
                 fn (Builder $query) => $query->whereIn('id', $request->selected),
                 fn (Builder $query) => $query->limit(10)
             )
-            ->get();
+            ->get()
+            ->map(function (User $user) {
+                $user->profile_image = "https://picsum.photos/300?id={$user->id}";
+
+                return $user;
+            });
     }
 }
