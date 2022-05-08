@@ -35,6 +35,14 @@ class Documentation extends Component
                 'route' => route('docs.textarea'),
             ],
             [
+                'label' => 'Native Select',
+                'route' => route('docs.native-select'),
+            ],
+            [
+                'label' => 'Select',
+                'route' => route('docs.select'),
+            ],
+            [
                 'label' => 'Errors',
                 'route' => route('docs.errors'),
             ],
@@ -70,10 +78,6 @@ class Documentation extends Component
                 'route'  => route('docs.livewire-usage'),
             ],
             [
-                'label' => 'Select',
-                'route' => route('docs.select'),
-            ],
-            [
                 'label' => 'Maskable Inputs',
                 'route' => route('docs.maskable-inputs'),
             ],
@@ -92,10 +96,6 @@ class Documentation extends Component
             [
                 'label' => 'Phone Input',
                 'route' => route('docs.phone-input'),
-            ],
-            [
-                'label' => 'Native Select',
-                'route' => route('docs.native-select'),
             ],
             [
                 'header' => 'Actions',
