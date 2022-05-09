@@ -13,7 +13,7 @@ class Index extends Controller
     public function __invoke(Request $request): Collection
     {
         return User::query()
-            ->select('id', 'name')
+            ->select('id', 'name', 'email')
             ->orderBy('name')
             ->when(
                 $request->search,

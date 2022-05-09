@@ -20,8 +20,9 @@ class IndexTest extends TestCase
             ->assertStatus(200)
             ->assertJsonCount(1)
             ->assertJsonFragment([
-                'id'   => $user->id,
-                'name' => $user->name,
+                'id'    => $user->id,
+                'name'  => $user->name,
+                'email' => $user->email,
             ]);
     }
 
@@ -35,8 +36,9 @@ class IndexTest extends TestCase
             ->assertStatus(200)
             ->assertJsonCount(1)
             ->assertJsonFragment([
-                'id'   => $user->id,
-                'name' => $user->name,
+                'id'    => $user->id,
+                'name'  => $user->name,
+                'email' => $user->email,
             ]);
     }
 }
