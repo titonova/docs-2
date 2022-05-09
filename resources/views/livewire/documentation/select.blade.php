@@ -137,6 +137,28 @@
     </x-code-preview>
 
     <x-code-preview
+        title="Option With Description"
+        href="#option-with-description"
+        id="option-with-description"
+        language="html"
+        :code="$optionWithDescription">
+        <x-select
+            class="sm:max-w-xs"
+            label="Order Status"
+            placeholder="Select one status"
+            :options="[
+                ['name' => 'Active',  'id' => 1, 'description' => 'The status is active'],
+                ['name' => 'Pending', 'id' => 2, 'description' => 'The status is pending'],
+                ['name' => 'Stuck',   'id' => 3, 'description' => 'The status is stuck'],
+                ['name' => 'Done',    'id' => 4, 'description' => 'The status is done'],
+            ]"
+            option-label="name"
+            option-value="id"
+            wire:model.defer="model"
+        />
+    </x-code-preview>
+
+    <x-code-preview
         title="Slot Options"
         href="#slot-options"
         id="slot-options"
@@ -161,59 +183,77 @@
         id="customizable-options"
         language="html"
         :code="$customizableOptions">
-        <x-select
-            class="sm:max-w-xs"
-            label="Select Relator"
-            placeholder="Select relator"
-            wire:model.defer="model"
-        >
-            <x-select.user-option :src="asset('assets/images/andre.jpeg')" label="André Luiz" value="1" />
-            <x-select.user-option :src="asset('assets/images/fernando.jpeg')" label="Fernando Gunther" value="2" />
-            <x-select.user-option :src="asset('assets/images/keithyellen.jpg')" label="Keithyellen Huhn" value="3" />
-            <x-select.user-option :src="asset('assets/images/pedro.jpg')" label="Pedro Henrique" value="4" />
-        </x-select>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:max-w-lg">
+            <x-select
+                label="Select Relator"
+                placeholder="Select relator"
+                wire:model.defer="model"
+            >
+                <x-select.user-option :src="asset('assets/images/andre.jpeg')" label="André Luiz" value="1" />
+                <x-select.user-option :src="asset('assets/images/fernando.jpeg')" label="Fernando Gunther" value="2" />
+                <x-select.user-option :src="asset('assets/images/keithyellen.jpg')" label="Keithyellen Huhn" value="3" />
+                <x-select.user-option :src="asset('assets/images/pedro.jpg')" label="Pedro Henrique" value="4" />
+            </x-select>
+
+            <x-select
+                label="Search a User"
+                wire:model.defer="asyncSearchUser"
+                placeholder="Select some user"
+                :async-data="route('api.users.index')"
+                :template="[
+                    'name'   => 'user-option',
+                    'config' => ['src' => 'profile_image']
+                ]"
+                option-label="name"
+                option-value="id"
+                option-description="name"
+            />
+        </div>
     </x-code-preview>
 
     <div id="select-options">
         <x-section.title href="#select-options" title="Select Options" />
         <x-options-table class="mt-2 mb-6 w-full">
-            <x-option-table-row prop="label"            required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="placeholder"      required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="option-value"     required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="option-label"     required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="options"          required="false" default="none"     type="Collection|array" available="*" />
-            <x-option-table-row prop="flip-options"     required="false" default="false"    type="boolean" />
-            <x-option-table-row prop="option-key-value" required="false" default="false"    type="boolean" />
-            <x-option-table-row prop="clearable"        required="false" default="true"     type="boolean" available="boolean" />
-            <x-option-table-row prop="searchable"       required="false" default="true"     type="boolean" available="boolean" />
-            <x-option-table-row prop="multiselect"      required="false" default="false"    type="boolean" available="boolean" />
-            <x-option-table-row prop="icon"             required="false" default="none"     type="string"  available="all heroicons" />
-            <x-option-table-row prop="rightIcon"        required="false" default="selector" type="string"  available="all heroicons" />
-            <x-option-table-row prop="async-data        required="false" default="none"     type="string"  available="all endpoints" />
-            <x-option-table-row prop="empty-message     required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
-            <x-option-table-row prop="template"         required="false" default="select.option" type="string" available="select.option|select.user-option" />
+            <x-option-table-row prop="label"              required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="placeholder"        required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-value"       required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-label"       required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-description" required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="options"            required="false" default="none"     type="Collection|array" available="*" />
+            <x-option-table-row prop="flip-options"       required="false" default="false"    type="boolean" />
+            <x-option-table-row prop="option-key-value"   required="false" default="false"    type="boolean" />
+            <x-option-table-row prop="clearable"          required="false" default="true"     type="boolean" available="boolean" />
+            <x-option-table-row prop="searchable"         required="false" default="true"     type="boolean" available="boolean" />
+            <x-option-table-row prop="multiselect"        required="false" default="false"    type="boolean" available="boolean" />
+            <x-option-table-row prop="icon"               required="false" default="none"     type="string"  available="all heroicons" />
+            <x-option-table-row prop="rightIcon"          required="false" default="selector" type="string"  available="all heroicons" />
+            <x-option-table-row prop="async-data          required="false" default="none"     type="string"  available="all endpoints" />
+            <x-option-table-row prop="template"           required="false" default="default"  type="string|array" available="default|user-option" />
+            <x-option-table-row prop="empty-message       required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
         </x-options-table>
 
         <div id="default-option">
             <x-section.title href="#default-option" title="Default Option" />
             <x-options-table class="mt-2 mb-6 w-full" :available="false">
-                <x-option-table-row prop="label"    required="false" default="none"  type="string|null" />
-                <x-option-table-row prop="value"    required="true"  default="none"  type="ayn" />
-                <x-option-table-row prop="readonly" required="false" default="false" type="boolean" />
-                <x-option-table-row prop="disabled" required="false" default="false" type="boolean" />
-                <x-option-table-row prop="option"   required="false" default="none"  type="Model|stdClass|array|null" />
+                <x-option-table-row prop="description" required="false" default="none"  type="string" />
+                <x-option-table-row prop="label"       required="false" default="none"  type="string|null" />
+                <x-option-table-row prop="value"       required="true"  default="none"  type="ayn" />
+                <x-option-table-row prop="readonly"    required="false" default="false" type="boolean" />
+                <x-option-table-row prop="disabled"    required="false" default="false" type="boolean" />
+                <x-option-table-row prop="option"      required="false" default="none"  type="Model|stdClass|array|null" />
             </x-options-table>
         </div>
 
         <div id="user-option">
             <x-section.title href="#user-option" title="User Option" />
             <x-options-table class="mt-2 mb-6 w-full" :available="false">
-                <x-option-table-row prop="label"    required="true"  default="none"  type="string|null" />
-                <x-option-table-row prop="value"    required="true"  default="none"  type="any" />
-                <x-option-table-row prop="readonly" required="false" default="false" type="boolean" />
-                <x-option-table-row prop="disabled" required="false" default="false" type="boolean" />
-                <x-option-table-row prop="src"      required="true"  default="none"  type="string|null" />
-                <x-option-table-row prop="option"   required="true" default="none"  type="Model|stdClass|array|null" />
+                <x-option-table-row prop="description" required="false" default="none"  type="string" />
+                <x-option-table-row prop="label"       required="true"  default="none"  type="string|null" />
+                <x-option-table-row prop="value"       required="true"  default="none"  type="any" />
+                <x-option-table-row prop="readonly"    required="false" default="false" type="boolean" />
+                <x-option-table-row prop="disabled"    required="false" default="false" type="boolean" />
+                <x-option-table-row prop="src"         required="true"  default="none"  type="string|null" />
+                <x-option-table-row prop="option"      required="true"  default="none"  type="Model|stdClass|array|null" />
             </x-options-table>
         </div>
 

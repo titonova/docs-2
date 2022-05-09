@@ -53,6 +53,22 @@ class Select extends Component
     />
     HTML;
 
+    public string $optionWithDescription = <<<HTML
+    <x-select
+        label="Select Status"
+        placeholder="Select one status"
+        :options="[
+            ['name' => 'Active',  'id' => 1, 'description' => 'The status is active'],
+            ['name' => 'Pending', 'id' => 2, 'description' => 'The status is pending'],
+            ['name' => 'Stuck',   'id' => 3, 'description' => 'The status is stuck'],
+            ['name' => 'Done',    'id' => 4, 'description' => 'The status is done'],
+        ]"
+        option-label="name"
+        option-value="id"
+        wire:model.defer="model"
+    />
+    HTML;
+
     public string $slotOptions = <<<HTML
     <x-select
         label="Select Status"
@@ -67,16 +83,31 @@ class Select extends Component
     HTML;
 
     public string $customizableOptions = <<<HTML
-    <x-select
-        label="Select Relator"
-        placeholder="Select relator"
-        wire:model.defer="model"
-    >
-        <x-select.user-option src="https://via.placeholder.com/500" label="People 1" value="1" />
-        <x-select.user-option src="https://via.placeholder.com/500" label="People 2" value="2" />
-        <x-select.user-option src="https://via.placeholder.com/500" label="People 3" value="3" />
-        <x-select.user-option src="https://via.placeholder.com/500" label="People 4" value="4" />
-    </x-select>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:max-w-lg">
+        <x-select
+            label="Select Relator"
+            placeholder="Select relator"
+            wire:model.defer="model"
+        >
+            <x-select.user-option src="https://via.placeholder.com/500" label="People 1" value="1" />
+            <x-select.user-option src="https://via.placeholder.com/500" label="People 2" value="2" />
+            <x-select.user-option src="https://via.placeholder.com/500" label="People 3" value="3" />
+            <x-select.user-option src="https://via.placeholder.com/500" label="People 4" value="4" />
+        </x-select>
+
+        <x-select
+            label="Search a User"
+            wire:model.defer="asyncSearchUser"
+            placeholder="Select some user"
+            :async-data="route('api.users.index')"
+            :template="[
+                'name'   => 'user-option',
+                'config' => ['src' => 'profile_image']
+            ]"
+            option-label="name"
+            option-value="id"
+        />
+    </div>
     HTML;
 
     public string $selectEvents = <<<HTML

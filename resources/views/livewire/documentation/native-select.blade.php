@@ -58,6 +58,28 @@
     </x-code-preview>
 
     <x-code-preview
+        title="Option With Description"
+        href="#option-with-description"
+        id="option-with-description"
+        language="html"
+        :code="$customOptions">
+        <x-native-select
+            class="sm:max-w-xs"
+            label="Order Status"
+            placeholder="Select one status"
+            :options="[
+                ['name' => 'Active',  'id' => 1, 'description' => 'The status is active'],
+                ['name' => 'Pending', 'id' => 2, 'description' => 'The status is pending'],
+                ['name' => 'Stuck',   'id' => 3, 'description' => 'The status is stuck'],
+                ['name' => 'Done',    'id' => 4, 'description' => 'The status is done'],
+            ]"
+            option-label="name"
+            option-value="id"
+            wire:model.defer="model"
+        />
+    </x-code-preview>
+
+    <x-code-preview
         title="Slot Options"
         href="#slot-options"
         id="slot-options"
