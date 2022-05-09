@@ -106,6 +106,7 @@ class Select extends Component
             ]"
             option-label="name"
             option-value="id"
+            option-description="email"
         />
     </div>
     HTML;

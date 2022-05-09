@@ -206,7 +206,7 @@
                 ]"
                 option-label="name"
                 option-value="id"
-                option-description="name"
+                option-description="email"
             />
         </div>
     </x-code-preview>
