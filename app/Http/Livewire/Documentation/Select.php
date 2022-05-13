@@ -123,7 +123,9 @@ class Select extends Component
     </x-select>
     HTML;
 
-    public $asyncSearchUser = null;
+    public $asyncSearchUser = [];
+
+    public $asyncSearchRelator = null;
 
     public $model = null;
 
