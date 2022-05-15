@@ -43,6 +43,7 @@
             :async-data="route('api.users.index')"
             option-label="name"
             option-value="id"
+            multiselect
         />
     </x-code-preview>
 
@@ -197,7 +198,7 @@
 
             <x-select
                 label="Search a User"
-                wire:model.defer="asyncSearchUser"
+                wire:model.defer="asyncSearchRelator"
                 placeholder="Select some user"
                 :async-data="route('api.users.index')"
                 :template="[
