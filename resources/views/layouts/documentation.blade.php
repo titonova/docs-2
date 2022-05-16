@@ -174,11 +174,25 @@
                      lg:dark:border-2 xl:dark:my-4"
             style="min-height: 98vh">
             <div class="p-4 sm:px-6 grow">
+                <div class="xl:hidden mb-8">
+                    @isset($summary)
+                        {{ $summary }}
+                    @endisset
+                </div>
+
                 {{ $slot }}
             </div>
 
             <!-- footer -->
             <footer class="mt-5">
+                <div class="xl:hidden py-12 border-y">
+                    <h3 class="text-center mb-6 text-sm uppercase font-semibold text-gray-500">
+                        Sponsors
+                    </h3>
+
+                    <livewire:sponsors />
+                </div>
+
                 <div class="mx-auto pt-6 pb-6 px-3 sm:px-5 lg:px-4 lg:pb-4 xl:px-0 xl:pb-0 md:flex md:items-center md:justify-between">
                     <div class="flex justify-center space-x-6 md:order-2">
                         <a href="{{ config('links.wireui') }}" class="text-gray-400 hover:text-gray-500">
@@ -199,7 +213,7 @@
         <aside class="hidden xl:block xl:col-span-2">
             <div class="sticky top-4">
                 <div class="xl:mx-auto">
-                    <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500 hidden xl:flex">
+                    <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500">
                         Page Sections
                     </h3>
 
@@ -207,8 +221,8 @@
                         {{ $summary }}
                     @endisset
 
-                    <div class="mt-6">
-                        <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500 hidden xl:flex">
+                    <div class="mt-6 pr-2 2xl:pr-0">
+                        <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500">
                             Sponsors
                         </h3>
 
