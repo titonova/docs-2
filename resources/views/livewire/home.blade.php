@@ -299,6 +299,7 @@
         </div>
     </div>
 
+    <livewire:home.sponsors />
     <livewire:home.form />
 
     <x-layouts.footer />
