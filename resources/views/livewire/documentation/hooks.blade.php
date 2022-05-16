@@ -24,7 +24,7 @@
         Wireui.hook('load', () => console.log('wireui is ready to use'))
 
         Wireui.hook('notifications:load', () => {
-            \$wireui.notify({
+            $wireui.notify({
                 title: 'Profile saved!',
                 description: 'Your profile was successfull saved',
                 icon: 'success'
@@ -32,7 +32,7 @@
         })
 
         Wireui.hook('dialog:load', () => {
-            \$wireui.dialog({
+            $wireui.dialog({
                 title: 'Profile saved!',
                 description: 'Your profile was successfull saved',
                 icon: 'success'
