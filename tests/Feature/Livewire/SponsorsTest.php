@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Home\Sponsors;
+use App\Http\Livewire\Sponsors;
 use Livewire\Testing\TestableLivewire;
 
 use function Pest\Livewire\livewire;

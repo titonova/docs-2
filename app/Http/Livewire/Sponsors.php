@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Home;
+namespace App\Http\Livewire;
 
 use Livewire\Component;
 
@@ -20,6 +20,6 @@ class Sponsors extends Component
 
     public function render()
     {
-        return view('livewire.home.sponsors');
+        return view('livewire.sponsors');
     }
 }

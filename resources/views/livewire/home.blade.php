@@ -299,7 +299,16 @@
         </div>
     </div>
 
-    <livewire:home.sponsors />
+    <div class="relative flex items-center min-h-[40vh] py-8 sm:py-24 lg:py-32">
+        <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <h3 class="text-2xl font-semibold tracking-wider text-teal-600 mb-12">
+                Sponsors
+            </h3>
+
+            <livewire:sponsors />
+        </div>
+    </div>
+
     <livewire:home.form />
 
     <x-layouts.footer />
