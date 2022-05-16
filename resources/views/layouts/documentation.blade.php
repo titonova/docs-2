@@ -206,6 +206,14 @@
                     @isset($summary)
                         {{ $summary }}
                     @endisset
+
+                    <div class="mt-6">
+                        <h3 class="text-sm uppercase mb-1 font-semibold text-gray-500 hidden xl:flex">
+                            Sponsors
+                        </h3>
+
+                        <livewire:sponsors />
+                    </div>
                 </div>
             </div>
         </aside>
