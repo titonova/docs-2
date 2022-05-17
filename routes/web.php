@@ -19,6 +19,7 @@ Route::get('/', Home::class)->name('home');
 Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('/', Documentation\GetStarted::class)->name('index');
     Route::get('get-started', Documentation\GetStarted::class)->name('get-started');
+    Route::get('css-utilities', Documentation\CssUtilities::class)->name('css-utilities');
     Route::get('troubleshooting', Documentation\Troubleshooting::class)->name('troubleshooting');
     Route::get('heroicons', Documentation\Heroicons::class)->name('heroicons');
     Route::get('notifications', Documentation\Notifications::class)->name('notifications');

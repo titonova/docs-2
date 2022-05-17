@@ -22,6 +22,10 @@ class Documentation extends Component
                 'route'  => route('docs.get-started'),
             ],
             [
+                'label' => 'CSS Utilities',
+                'route' => route('docs.css-utilities'),
+            ],
+            [
                 'label' => 'Troubleshooting',
                 'route' => route('docs.troubleshooting'),
             ],
