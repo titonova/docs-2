@@ -57,7 +57,12 @@ class Notifications extends Component
             );
 
             // or use a full syntax
-            \$this->notification()->notify([
+            \$this->notification([
+                'title'       => 'Profile saved!',
+                'description' => 'Your profile was successfull saved',
+                'icon'        => 'success'
+            ]);
+            \$this->notification()->send([
                 'title'       => 'Profile saved!',
                 'description' => 'Your profile was successfull saved',
                 'icon'        => 'success'
@@ -163,7 +168,7 @@ class Notifications extends Component
         public function save(): void
         {
             ...
-            \$this->notification()->notify([
+            \$this->notification([
                 ...
 
                 'onClose' => [
