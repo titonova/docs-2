@@ -93,7 +93,7 @@ class Dialogs extends Component
             ]);
 
             // use a full syntax
-            \$this->dialog()->confirm([
+            \$this->dialog([
                 'title'       => 'Are you Sure?',
                 'description' => 'Save the information?',
                 'icon'        => 'question',
@@ -165,7 +165,7 @@ class Dialogs extends Component
         public function save(): void
         {
             ...
-            \$this->dialog()->show([
+            \$this->dialog([
                 ...
 
                 'onClose' => [
