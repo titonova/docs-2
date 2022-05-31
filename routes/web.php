@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class)->name('home');
-Route::get('/dev', Dev::class)->name('dev');
 
 Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('/', Documentation\GetStarted::class)->name('index');
