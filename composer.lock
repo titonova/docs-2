@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "271f2d4ba62c677720ae9589da9716a6",
+    "content-hash": "92b2dfa4af71245bbebca9a2de0f46e1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6660,16 +6660,16 @@
         },
         {
             "name": "wireui/wireui",
-            "version": "v1.3.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wireui/wireui.git",
-                "reference": "550b0b5b44c4d078807f172d321d9f70d7f758de"
+                "reference": "2469a922db5d2e21d6c84d3c04a70162df20a6c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/550b0b5b44c4d078807f172d321d9f70d7f758de",
-                "reference": "550b0b5b44c4d078807f172d321d9f70d7f758de",
+                "url": "https://api.github.com/repos/wireui/wireui/zipball/2469a922db5d2e21d6c84d3c04a70162df20a6c8",
+                "reference": "2469a922db5d2e21d6c84d3c04a70162df20a6c8",
                 "shasum": ""
             },
             "require": {
@@ -6722,9 +6722,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v1.3.0"
+                "source": "https://github.com/wireui/wireui/tree/v1.5.0"
             },
-            "time": "2022-05-19T06:19:32+00:00"
+            "time": "2022-05-31T05:10:14+00:00"
         }
     ],
     "packages-dev": [
