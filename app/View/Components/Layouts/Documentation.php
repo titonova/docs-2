@@ -47,6 +47,10 @@ class Documentation extends Component
                 'route' => route('docs.select'),
             ],
             [
+                'label' => 'Color Picker',
+                'route' => route('docs.color-picker'),
+            ],
+            [
                 'label' => 'Errors',
                 'route' => route('docs.errors'),
             ],

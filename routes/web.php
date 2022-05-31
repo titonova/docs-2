@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\{Documentation, Home};
+use App\Http\Livewire\{Dev, Documentation, Home};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class)->name('home');
+Route::get('/dev', Dev::class)->name('dev');
 
 Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('/', Documentation\GetStarted::class)->name('index');
@@ -33,6 +34,7 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('dropdown', Documentation\Dropdown::class)->name('dropdown');
     Route::get('datetime-picker', Documentation\DatetimePicker::class)->name('datetime-picker');
     Route::get('time-picker', Documentation\TimePicker::class)->name('time-picker');
+    Route::get('color-picker', Documentation\ColorPicker::class)->name('color-picker');
     Route::get('cards', Documentation\Cards::class)->name('cards');
     Route::get('native-select', Documentation\NativeSelect::class)->name('native-select');
     Route::get('select', Documentation\Select::class)->name('select');
