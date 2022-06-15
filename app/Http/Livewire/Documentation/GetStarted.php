@@ -14,7 +14,7 @@ class GetStarted extends Component
         'Livewire 2.10+'                  => 'https://laravel-livewire.com',
         'Alpine.js 3.x'                   => 'https://alpinejs.dev',
         'Tailwindcss 3.x'                 => 'https://tailwindcss.com',
-        '@tailwindcss/aspect-ratio 0.4.x' => 'https://tailwindcss.com/docs/plugins#forms',
+        '@tailwindcss/aspect-ratio 0.4.x' => 'https://tailwindcss.com/docs/plugins#aspect-ratio',
         '@tailwindcss/forms 0.4.x'        => 'https://tailwindcss.com/docs/plugins#forms',
         '@tailwindcss/typography 0.5.x'   => 'https://tailwindcss.com/docs/plugins#typography',
     ];
