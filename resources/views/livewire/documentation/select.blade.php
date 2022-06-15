@@ -14,6 +14,7 @@
             <x-summary.header href="#default-option" label="Default Option" />
             <x-summary.header href="#user-option" label="User Option" />
             <x-summary.header href="#select-events" label="Select Events" />
+            <x-summary.header href="#select-slots" label="Select Slots" />
         </x-summary>
     </x-slot>
 
@@ -83,6 +84,26 @@
             </a>
         </b>
     </x-alerts.info>
+
+    <div>
+        You can customize the asyncData prop to change the http method and add more data to the request.
+        <x-code language="ts">
+            export type AsyncDataConfig = {
+                api: string | null
+                method: string
+                params: any
+            }
+        </x-code>
+
+        <br />
+
+        How to Customize the async-data?
+        <br />
+        <b>
+            The queryString params will be merged with the asyncData params
+        </b>
+        <x-code language="html" :contents="$asyncDataMethods" />
+   </div>
 
     <x-code-preview
         title="Simple Options"
@@ -228,7 +249,7 @@
             <x-option-table-row prop="multiselect"        required="false" default="false"    type="boolean" available="boolean" />
             <x-option-table-row prop="icon"               required="false" default="none"     type="string"  available="all heroicons" />
             <x-option-table-row prop="rightIcon"          required="false" default="selector" type="string"  available="all heroicons" />
-            <x-option-table-row prop="async-data          required="false" default="none"     type="string"  available="all endpoints" />
+            <x-option-table-row prop="async-data"         required="false" default="none"     type="string|AsyncDataConfig"  available="all endpoints" />
             <x-option-table-row prop="template"           required="false" default="default"  type="string|array" available="default|user-option" />
             <x-option-table-row prop="empty-message       required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
         </x-options-table>
@@ -261,6 +282,13 @@
         <div id="select-events">
             <x-section.title href="#select-events" title="Select Events" />
             <x-code language="html" :contents="$selectEvents" />
+        </div>
+
+        <br>
+
+        <div id="select-slots">
+            <x-section.title href="#select-slots" title="Select Slots" />
+            <x-code language="html" :contents="$selectSlots" />
         </div>
     </div>
 </div>

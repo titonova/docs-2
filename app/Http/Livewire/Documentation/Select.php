@@ -123,7 +123,29 @@ class Select extends Component
     </x-select>
     HTML;
 
-    public $asyncSearchUser = [];
+    public string $asyncDataMethods = <<<HTML
+    <x-select ... :async-data="route('api.users.index', ['foo' => 'bar'])" />
+
+    OR
+
+    <x-select ...  :async-data="[
+        'api' => route('api.users.index'),
+        'method' => 'POST', // default is GET
+        'params' => ['ble' => 'baz'] // default is []
+    ]" />
+    HTML;
+
+    public string $selectSlots = <<<HTML
+    <x-slot name="beforeOptions">
+        // html code
+    </x-slot>
+
+    <x-slot name="afterOptions">
+        // html code
+    </x-slot>
+    HTML;
+
+    public $asyncSearchUser = [1];
 
     public $asyncSearchRelator = null;
 
