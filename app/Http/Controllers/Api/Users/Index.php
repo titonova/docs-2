@@ -22,7 +22,7 @@ class Index extends Controller
                     ->orWhere('email', 'like', "%{$request->search}%")
             )
             ->when(
-                $request->selected,
+                $request->exists('selected'),
                 fn (Builder $query) => $query->whereIn('id', $request->selected),
                 fn (Builder $query) => $query->limit(10)
             )
