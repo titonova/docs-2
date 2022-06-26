@@ -7,6 +7,7 @@
                 <x-summary.item href="#display-format" label="Custom Display Format" />
                 <x-summary.item href="#without-timezone" label="Without Timezone" />
                 <x-summary.item href="#min-max-dates" label="Min & Max dates" />
+                <x-summary.item href="#min-max-times" label="Min & Max times" />
             </x-summary.header>
 
             <x-summary.header href="#datetime-picker-options" label="Datetime Picker Options" />
@@ -68,8 +69,8 @@
         id="display-format"
         language="html"
         :code="$displayFormatExample">
-        <div class="flex justify-center">
-            <div class="sm:max-w-md sm:px-16">
+        <div class="flex justify-start">
+            <div class="sm:max-w-md ssm:px-16">
                 <span class="dark:text-gray-400">Model: {{ $displayFormat }}</span>
                 <x-datetime-picker
                     id="displayFormat"
@@ -88,8 +89,8 @@
         id="without-timezone"
         language="html"
         :code="$withoutTimezoneExample">
-        <div class="flex justify-center">
-            <div class="sm:max-w-md sm:px-16">
+        <div class="flex justify-end">
+            <div class="sm:max-w-md ssm:px-16">
                 <span class="dark:text-gray-400">Model: {{ $withoutTimezone }}</span>
                 <x-datetime-picker
                     id="withoutTimezone"
@@ -136,6 +137,27 @@
                     wire:model="mixAndMaxDates"
                     :min="now()->subDays(7)->hours(12)->minutes(30)"
                     :max="now()->addDays(7)->hours(12)->minutes(30)"
+                />
+            </div>
+        </div>
+    </x-code-preview>
+
+    <x-code-preview
+        title="Min & Max Times"
+        href="#min-max-times"
+        id="min-max-times"
+        language="html"
+        :code="$mixAndMaxTimesExample">
+        <div class="flex justify-center">
+            <div class="sm:max-w-md sm:px-16">
+                <x-datetime-picker
+                    id="min-max-times-input"
+                    without-timezone
+                    label="Appointment Date"
+                    placeholder="Appointment Date"
+                    wire:model.defer="mixAndMaxTimes"
+                    min-time="08:00"
+                    max-time="18:00"
                 />
             </div>
         </div>
