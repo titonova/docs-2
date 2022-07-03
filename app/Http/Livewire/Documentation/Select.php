@@ -10,9 +10,9 @@ class Select extends Component
     public string $asyncSearch = <<<HTML
     <x-select
         label="Search a User"
-        wire:model="model"
+        wire:model.defer="model"
         placeholder="Select some user"
-        :async-data="route('users.index')"
+        :async-data="route('api.users.index')"
         option-label="name"
         option-value="id"
     />
@@ -143,6 +143,28 @@ class Select extends Component
     <x-slot name="afterOptions">
         // html code
     </x-slot>
+    HTML;
+
+    public string $afterOptionsSlot = <<<HTML
+    <x-select
+        label="Search a User"
+        wire:model.defer="model"
+        placeholder="Select some user"
+        :async-data="route('api.users.index')"
+        option-label="name"
+        option-value="id"
+        hide-empty-message
+    >
+        <x-slot name="afterOptions" class="p-2 flex justify-center" x-show="displayOptions.length === 0">
+            <x-button
+                x-on:click="close"
+                primary
+                flat
+                full>
+                <span x-html="`Create user <b>\${search}</b>`"></span>
+            </x-button>
+        </x-slot>
+    </x-select>
     HTML;
 
     public $asyncSearchUser = [1];

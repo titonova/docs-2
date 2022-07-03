@@ -14,6 +14,7 @@
             <x-summary.header href="#default-option" label="Default Option" />
             <x-summary.header href="#user-option" label="User Option" />
             <x-summary.header href="#select-events" label="Select Events" />
+            <x-summary.header href="#after-options-slot" label="After Options Slot" />
             <x-summary.header href="#select-slots" label="Select Slots" />
         </x-summary>
     </x-slot>
@@ -44,7 +45,6 @@
             :async-data="route('api.users.index')"
             option-label="name"
             option-value="id"
-            multiselect
         />
     </x-code-preview>
 
@@ -251,7 +251,8 @@
             <x-option-table-row prop="rightIcon"          required="false" default="selector" type="string"  available="all heroicons" />
             <x-option-table-row prop="async-data"         required="false" default="none"     type="string|AsyncDataConfig"  available="all endpoints" />
             <x-option-table-row prop="template"           required="false" default="default"  type="string|array" available="default|user-option" />
-            <x-option-table-row prop="empty-message       required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
+            <x-option-table-row prop="empty-message"      required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
+            <x-option-table-row prop="hide-empty-message" required="false" default="false"    type="boolean" available="boolean" />
         </x-options-table>
 
         <div id="default-option">
@@ -285,6 +286,40 @@
         </div>
 
         <br>
+
+        <x-code-preview
+            title="After Options Slot"
+            href="#after-options-slot"
+            id="after-options-slot"
+            language="html"
+            :code="$afterOptionsSlot"
+        >
+            <x-select
+                class="sm:max-w-xs"
+                label="Search a User"
+                wire:model.defer="asyncSearchUser"
+                placeholder="Select some user"
+                :async-data="route('api.users.index')"
+                option-label="name"
+                option-value="id"
+                hide-empty-message
+            >
+                <x-slot name="afterOptions" class="p-2 flex justify-center" x-show="displayOptions.length === 0">
+                    <x-button
+                        x-on:click="
+                            close;
+                            $wireui.notify({ title: 'Not implemented yet', icon: 'info' })
+                        "
+                        primary
+                        flat
+                        full>
+                        <span x-html="`Create user <b>${search}</b>`"></span>
+                    </x-button>
+                </x-slot>
+            </x-select>
+        </x-code-preview>
+
+        <br />
 
         <div id="select-slots">
             <x-section.title href="#select-slots" title="Select Slots" />

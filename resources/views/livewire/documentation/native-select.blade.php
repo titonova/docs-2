@@ -96,13 +96,15 @@
     <div id="native-select-options">
         <x-section.title href="#native-select-options" title="Native Select Options" />
         <x-options-table class="mt-2 mb-6 w-full" :available="false">
-            <x-option-table-row prop="label"            required="false" default="none"  type="string" />
-            <x-option-table-row prop="placeholder"      required="false" default="none"  type="string" />
-            <x-option-table-row prop="option-value"     required="false" default="none"  type="string" />
-            <x-option-table-row prop="option-label"     required="false" default="none"  type="string" />
-            <x-option-table-row prop="flip-options"     required="false" default="false" type="boolean" />
-            <x-option-table-row prop="option-key-value" required="false" default="false" type="boolean" />
-            <x-option-table-row prop="options"          required="false" default="none"  type="Collection|array|null" />
+            <x-option-table-row prop="label"              required="false" default="none"  type="string" />
+            <x-option-table-row prop="placeholder"        required="false" default="none"  type="string" />
+            <x-option-table-row prop="option-value"       required="false" default="none"  type="string" />
+            <x-option-table-row prop="option-label"       required="false" default="none"  type="string" />
+            <x-option-table-row prop="flip-options"       required="false" default="false" type="boolean" />
+            <x-option-table-row prop="option-key-value"   required="false" default="false" type="boolean" />
+            <x-option-table-row prop="options"            required="false" default="none"  type="Collection|array|null" />
+            <x-option-table-row prop="empty-message"      required="false" default="__('wireui::messages.empty_options')" type="string" />
+            <x-option-table-row prop="hide-empty-message" required="false" default="false" type="boolean" />
         </x-options-table>
     </div>
 </div>
