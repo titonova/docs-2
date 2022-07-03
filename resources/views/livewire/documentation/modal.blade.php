@@ -61,6 +61,11 @@
         </x-modal>
     </x-code-preview>
 
+    <x-alerts.info>
+        Tip: If your project have a custom main element that handle the scroll, you can use the
+        <b>main-container</b> attribute in your main element to block the scroll when the modal is opened
+    </x-alerts.info>
+
     <x-code-preview
         title="Modal Card"
         href="#modal-card"
@@ -69,7 +74,7 @@
         :code="$modalCardExample">
         <x-button label="Open" onclick="$openModal('cardModal')" primary />
 
-        <x-modal.card title="Edit Customer" blur wire:model.defer="cardModal">
+        <x-modal.card title="Edit Customer" blur show name="myModal" swire:model.defer="cardModal">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <x-input label="Name" placeholder="Your full name" />
                 <x-input label="Phone" placeholder="USA phone" />
@@ -106,10 +111,13 @@
     <div id="modal-options">
         <x-section.title href="#modal-options" title="Modal Options" />
         <x-options-table class="mt-2 mb-6 w-full">
+            <x-option-table-row prop="name"       required="false" default="none" type="string" available="*" />
             <x-option-table-row prop="z-index"    required="false" default="z-50" type="string" available="all z-index" />
-            <x-option-table-row prop="max-width"  required="false" default="2xl" type="string" available="sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl" />
-            <x-option-table-row prop="spacing"    required="false" default="p-4" type="string" available="all paddings" />
-            <x-option-table-row prop="blur"       required="false" default="none" type="string" available="sm|md|lg|xl|2xl|3xl" />
+            <x-option-table-row prop="max-width"  required="false" default="2xl"  type="string" available="sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl" />
+            <x-option-table-row prop="spacing"    required="false" default="p-4"  type="string" available="all paddings" />
+            <x-option-table-row prop="align"      required="false" default="start" type="string" available="start|center|end" />
+            <x-option-table-row prop="blur"       required="false" default="none"  type="string" available="sm|md|lg|xl|2xl|3xl" />
+            <x-option-table-row prop="show"       required="false" default="none"  type="boolean" available="true|false" />
         </x-options-table>
     </div>
 
