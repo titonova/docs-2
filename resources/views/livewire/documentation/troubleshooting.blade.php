@@ -23,7 +23,6 @@
         <x-section.title href="#version-update" title="Version Update" />
 
         <div class="mt-5 prose text-gray-500 max-w-none">
-            <p>The <a class="text-indigo-700 underline" href="{{ route('docs.changelog') }}#input-options">Changelog</a> page contains information about all recent versions, list of changes and the <x-mark>Upgrade Guide</x-mark>, with all the steps that must be taken after a version update.
             <p>If you have recently updated WireUI and are facing issues, make sure to read the specific information for your version before proceeding in this section.</p>
             <p>To stay informed about WireUI's latest news, follow the author <a class="text-indigo-700 underline" href="https://twitter.com/ph7jack" target="_blank">@ph7jack</a> on Twitter. </p>
         </div>
