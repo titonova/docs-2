@@ -340,6 +340,7 @@
             <x-option-table-row prop="rounded" required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="squared" required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="flat"    required="false" default="false" type="boolean" available="boolean" />
+            <x-option-table-row prop="full"    required="false" default="false" type="boolean" available="boolean" />
 
             <x-option-table-row prop="label"     required="false" default="null" type="string" available="*" />
             <x-option-table-row prop="icon"      required="false" default="null" type="string" available="all heroicons" />
