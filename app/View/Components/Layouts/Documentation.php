@@ -143,11 +143,6 @@ class Documentation extends Component
                 'route' => route('docs.customization'),
             ],
             [
-                'header' => 'WireUI Project',
-                'label'  => 'Changelog',
-                'route'  => route('docs.changelog'),
-            ],
-            [
                 'label' => 'Contribution Guide',
                 'route' => route('docs.contributing'),
             ],

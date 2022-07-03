@@ -43,7 +43,6 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('modal', Documentation\Modal::class)->name('modal');
     Route::get('dialogs', Documentation\Dialogs::class)->name('dialogs');
     Route::get('textarea', Documentation\Textarea::class)->name('textarea');
-    Route::get('changelog', Documentation\Changelog::class)->name('changelog');
     Route::get('colors', Documentation\Colors::class)->name('colors');
     Route::get('customization', Documentation\Customization::class)->name('customization');
     Route::get('contributing', Documentation\Contributing::class)->name('contributing');
