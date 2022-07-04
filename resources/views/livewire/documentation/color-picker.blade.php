@@ -5,6 +5,7 @@
                 <x-summary.item href="#default-colors" label="Default Colors" />
                 <x-summary.item href="#tailwind-colors" label="Tailwind Colors" />
                 <x-summary.item href="#custom-colors" label="Custom Colors" />
+                <x-summary.item href="#color-name-as-value" label="Color name as value" />
             </x-summary.header>
 
             <x-summary.header href="#component-options" label="Component Options" />
@@ -169,10 +170,24 @@
         </div>
     </x-code-preview>
 
+    <x-code-preview
+        title="Color name as value"
+        href="#color-name-as-value"
+        id="color-name-as-value"
+        language="html"
+        :code="$colorNameAsValueExample">
+        <x-color-picker
+            class="sm:max-w-xs"
+            label="Select a Color"
+            placeholder="Select the book color"
+            color-name-as-value
+        />
+    </x-code-preview>
+
     <div id="component-options">
         <x-section.title href="#component-options" title="Component Options" />
 
-        <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
+        <div wire:click="$refresh" class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8 dark:text-gray-400">
             <p>
                 The Color Picker component receives all options from the <a href="{{ route('docs.inputs') }}#input-options">input component</a>,
                 except the prefix, icon and the slots prepend and append.

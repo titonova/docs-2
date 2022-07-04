@@ -45,6 +45,14 @@ class ColorPicker extends Component
         />
     HTML;
 
+    public string $colorNameAsValueExample = <<<HTML
+    <x-color-picker
+        label="Select a Color"
+        placeholder="Select the book color"
+        color-name-as-value
+    />
+    HTML;
+
     public function render()
     {
         return view('livewire.documentation.color-picker')->layout(Documentation::class);
