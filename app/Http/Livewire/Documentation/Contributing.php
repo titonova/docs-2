@@ -10,9 +10,9 @@ class Contributing extends Component
     public $repository = <<<JSON
     {
         "repositories": {
-            "local": {
+            "wireui/wireui": {
                 "type": "path",
-                "url": "./wireui"
+                "url": "../wireui"
             }
         }
     }
