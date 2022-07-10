@@ -26,8 +26,8 @@ class GetStarted extends Component
         ...
 
         Sometimes you need to pass extra html attributes to script tag, like the nonce attribute
-        @wireUiScripts({ "nonce": "csp-token" })
-        @wireUiScripts({ "nonce": "csp-token", "foo": true })
+        @wireUiScripts(['nonce': 'csp-token'])
+        @wireUiScripts(['nonce': 'csp-token', 'foo' => true])
     HTML;
 
     public string $scriptsExample = <<<HTML
