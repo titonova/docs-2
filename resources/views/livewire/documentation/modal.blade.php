@@ -74,7 +74,7 @@
         :code="$modalCardExample">
         <x-button label="Open" onclick="$openModal('cardModal')" primary />
 
-        <x-modal.card title="Edit Customer" blur show name="myModal" swire:model.defer="cardModal">
+        <x-modal.card title="Edit Customer" blur show name="myModal" wire:model.defer="cardModal">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <x-input label="Name" placeholder="Your full name" />
                 <x-input label="Phone" placeholder="USA phone" />
