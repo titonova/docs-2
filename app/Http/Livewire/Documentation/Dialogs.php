@@ -93,7 +93,7 @@ class Dialogs extends Component
             ]);
 
             // use a full syntax
-            \$this->dialog([
+            \$this->dialog()->confirm([
                 'title'       => 'Are you Sure?',
                 'description' => 'Save the information?',
                 'icon'        => 'question',
@@ -139,6 +139,11 @@ class Dialogs extends Component
             );
 
             // or use a full syntax
+            \$this->dialog([
+                'title'       => 'Profile saved!',
+                'description' => 'Your profile was successfull saved',
+                'icon'        => 'success'
+            ]);
             \$this->dialog()->show([
                 'title'       => 'Profile saved!',
                 'description' => 'Your profile was successfull saved',
