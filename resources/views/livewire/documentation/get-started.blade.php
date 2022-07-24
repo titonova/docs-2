@@ -39,12 +39,20 @@
         <div class="mt-3 prose text-gray-500 max-w-none">
             <ul>
                 @foreach ($this::REQUIREMENTS as $label => $link)
-                    <li class="group flex items-center" wire:key="requirements.{{ $loop->index }}">
-                        <a href="{{ $link }}" target="_blank" class="font-semibold no-underline text-teal-600">
-                            {{ $label }}
-                        </a>
+                    <li wire:key="requirements.{{ $loop->index }}">
+                        <div class="flex items-center group">
+                            <a href="{{ $link }}" target="_blank" class="font-semibold no-underline text-teal-600">
+                                {{ $label }}
+                            </a>
 
-                        <x-icon name="arrow-right" class="w-4 h-4 ml-2 hidden group-hover:flex text-teal-600" />
+                            <x-icon
+                                name="arrow-right"
+                                class="
+                                    w-4 h-4 ml-2 transition-all ease-in-out duration-150
+                                    opacity-0 group-hover:opacity-100 text-teal-600
+                                "
+                            />
+                        </div>
                     </li>
                 @endforeach
             </ul>
