@@ -10,7 +10,7 @@ class GetStarted extends Component
     public const REQUIREMENTS = [
         'PHP 8.x'                         => 'https://www.php.net',
         'Composer'                        => 'https://getcomposer.org',
-        'Laravel 9.x'                     => 'https://laravel.com',
+        'Laravel 8.x | 9.x'               => 'https://laravel.com',
         'Livewire 2.10+'                  => 'https://laravel-livewire.com',
         'Alpine.js 3.x'                   => 'https://alpinejs.dev',
         'Tailwindcss 3.x'                 => 'https://tailwindcss.com',
