@@ -14,9 +14,16 @@ class Notifications extends Component
     <html>
         <body>
             <x-notifications />
-            or
+
+            or with attributes
+
             <x-notifications z-index="z-50" />
-            ...
+            <x-notifications position="top-left" />
+            <x-notifications position="top-center" />
+            <x-notifications position="top-right" /> this is the default
+            <x-notifications position="bottom-left" />
+            <x-notifications position="bottom-center" />
+            <x-notifications position="bottom-right" />
         </body>
     </html>
     HTML;
