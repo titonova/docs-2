@@ -124,6 +124,10 @@ class Documentation extends Component
                 'route'  => route('docs.heroicons'),
             ],
             [
+                'label' => 'Avatar',
+                'route' => route('docs.avatar'),
+            ],
+            [
                 'label' => 'Dropdown',
                 'route' => route('docs.dropdown'),
             ],

@@ -30,6 +30,7 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('phone-input', Documentation\PhoneInput::class)->name('phone-input');
     Route::get('buttons', Documentation\Buttons::class)->name('buttons');
     Route::get('currency-input', Documentation\CurrencyInput::class)->name('currency-input');
+    Route::get('avatar', Documentation\Avatar::class)->name('avatar');
     Route::get('dropdown', Documentation\Dropdown::class)->name('dropdown');
     Route::get('datetime-picker', Documentation\DatetimePicker::class)->name('datetime-picker');
     Route::get('time-picker', Documentation\TimePicker::class)->name('time-picker');
