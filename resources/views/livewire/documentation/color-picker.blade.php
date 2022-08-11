@@ -84,9 +84,8 @@
 
         <x-code language="js">
             import Alpine from 'alpinejs'
-            import resolveConfig from 'tailwindcss/resolveConfig'
             // update with your Tailwind config path
-            import tailwindConfig from '@/tailwind.config.js'
+            import { theme } from '@/tailwind.config.js'
 
             // array of duplicated colors to exclude
             const excludeColors = [
@@ -99,10 +98,9 @@
             ]
 
             const makeColors = () => {
-                const config = resolveConfig(tailwindConfig)
-                const rawColors = config?.theme?.colors ?? {}
+                const tailwindColors = theme.extend.colors ?? {}
 
-                const colors = Object.entries(rawColors).flatMap(([name, values]) => {
+                const colors = Object.entries(tailwindColors).flatMap(([name, values]) => {
                     if (typeof values === 'string' || excludeColors.includes(name)) {
                         return []
                     }

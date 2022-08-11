@@ -43,6 +43,7 @@
             wire:model.defer="asyncSearchUser"
             placeholder="Select some user"
             :async-data="route('api.users.index')"
+            always-fetch
             option-label="name"
             option-value="id"
         />
@@ -92,6 +93,7 @@
                 api: string | null
                 method: string
                 params: any
+                alwaysFetch: boolean
             }
         </x-code>
 
@@ -250,6 +252,7 @@
             <x-option-table-row prop="icon"               required="false" default="none"     type="string"  available="all heroicons" />
             <x-option-table-row prop="rightIcon"          required="false" default="selector" type="string"  available="all heroicons" />
             <x-option-table-row prop="async-data"         required="false" default="none"     type="string|AsyncDataConfig"  available="all endpoints" />
+            <x-option-table-row prop="always-fetch"       required="false" default="none"     type="string" available="true|false" />
             <x-option-table-row prop="template"           required="false" default="default"  type="string|array" available="default|user-option" />
             <x-option-table-row prop="empty-message"      required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
             <x-option-table-row prop="hide-empty-message" required="false" default="false"    type="boolean" available="boolean" />
