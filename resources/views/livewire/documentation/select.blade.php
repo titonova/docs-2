@@ -43,7 +43,6 @@
             wire:model.defer="asyncSearchUser"
             placeholder="Select some user"
             :async-data="route('api.users.index')"
-            always-fetch
             option-label="name"
             option-value="id"
         />
