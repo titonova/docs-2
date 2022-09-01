@@ -1,13 +1,13 @@
 <div>
     <x-section.title title="Contribution Guide" />
 
-    <p class="mt-5 mb-2 prose xl:max-w-3xl xl:mb-8 text-gray-500">
+    <p class="mt-5 mb-2 prose xl:max-w-3xl xl:mb-8 text-gray-500 dark:text-gray-400">
         You can contribute to the project by making a pull request on GitHub.
         <br /> This guide will help you get started with contributing to the project.
         <br /> I'm happy with your contribution.
     </p>
 
-    <ul class="space-y-5">
+    <ul class="space-y-5 dark:text-gray-400">
         <li>
             <p>Create a new laravel project</p>
             <x-code
