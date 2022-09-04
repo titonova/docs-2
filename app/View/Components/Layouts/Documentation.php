@@ -35,6 +35,10 @@ class Documentation extends Component
                 'route'  => route('docs.inputs'),
             ],
             [
+                'label' => 'Password Input',
+                'route' => route('docs.inputs.password'),
+            ],
+            [
                 'label' => 'Textarea',
                 'route' => route('docs.textarea'),
             ],
