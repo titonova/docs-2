@@ -229,7 +229,7 @@
             <x-option-table-row prop="timeout" required="false" default="8500" type="int" />
             <x-option-table-row prop="dense" required="false" default="none" type="boolean" />
             <x-option-table-row prop="rightButtons" required="false" default="false" type="boolean" />
-            <x-option-table-row prop="progressBar" required="false" default="true" type="boolean" />
+            <x-option-table-row prop="progressbar" required="false" default="true" type="boolean" />
             <x-option-table-row prop="params" required="false" default="none" type="any" />
             <x-option-table-row prop="method" required="false" default="none" type="string" />
             <x-option-table-row prop="emit" required="false" default="none" type="string" />
