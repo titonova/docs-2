@@ -26,6 +26,7 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('hooks', Documentation\Hooks::class)->name('hooks');
     Route::get('inputs', Documentation\Inputs::class)->name('inputs');
     Route::get('inputs-password', Documentation\PasswordInput::class)->name('inputs.password');
+    Route::get('inputs-number', Documentation\NumberInput::class)->name('inputs.number');
     Route::get('errors', Documentation\Errors::class)->name('errors');
     Route::get('maskable-inputs', Documentation\MaskableInput::class)->name('maskable-inputs');
     Route::get('phone-input', Documentation\PhoneInput::class)->name('phone-input');
