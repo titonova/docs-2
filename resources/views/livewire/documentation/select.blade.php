@@ -85,8 +85,12 @@
         </b>
     </x-alerts.info>
 
-    <div>
-        You can customize the asyncData prop to change the http method and add more data to the request.
+
+    <div class="mt-3 prose text-gray-500 max-w-none">
+        <p>
+            You can customize the asyncData prop to change the http method and add more data to the request.
+        </p>
+
         <x-code language="ts">
             export type AsyncDataConfig = {
                 api: string | null
@@ -96,13 +100,13 @@
             }
         </x-code>
 
-        <br />
 
-        How to Customize the async-data?
-        <br />
-        <b>
+        <b>How to Customize the async-data?</b>
+
+        <p>
             The queryString params will be merged with the asyncData params
-        </b>
+        </p>
+
         <x-code language="html" :contents="$asyncDataMethods" />
    </div>
 

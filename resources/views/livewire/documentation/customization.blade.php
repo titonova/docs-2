@@ -33,7 +33,7 @@
 
     <div>
 
-       <p>The example below shows some customizations:</p>
+       <p class="text-gray-500">The example below shows some customizations:</p>
         <br/>
         <x-code language="php">
             ...

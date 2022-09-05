@@ -29,7 +29,7 @@
             </div>
         </x-code-preview>
 
-        <p>
+        <p class="dark:text-gray-400">
             See more about the <x-mark>x-hold</x-mark> directive
             <a class="underline" href="https://www.npmjs.com/package/@wireui/alpinejs-hold-directive">here</a>
         </p>

@@ -188,6 +188,6 @@
             <x-option-table-row prop="max"              required="false" default="null" type="Carbon|DateTimeInterface|string|timestamp|null" available="All Suported Carbon::parse dates" />
         </x-options-table>
 
-        <p>Read more about <a class="text-indigo-700 underline" target="_blank" href="https://day.js.org/docs/en/display/format">Dayjs formats</a>.</p>
+        <p class="text-gray-500">Read more about <a class="text-indigo-700 underline" target="_blank" href="https://day.js.org/docs/en/display/format">Dayjs formats</a>.</p>
     </div>
 </div>
