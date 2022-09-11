@@ -116,7 +116,7 @@ class Select extends Component
         ...
         x-on:open="alert('openned select')"
         x-on:close="alert('closed select')"
-        x-on:select="alert('selected/unselected option')"
+        x-on:selected="alert('selected/unselected option')"
         x-on:clear="alert('cleared select')"
     >
         ...
