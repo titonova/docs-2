@@ -241,24 +241,25 @@
     <div id="select-options">
         <x-section.title href="#select-options" title="Select Options" />
         <x-options-table class="mt-2 mb-6 w-full">
-            <x-option-table-row prop="label"              required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="placeholder"        required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="option-value"       required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="option-label"       required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="option-description" required="false" default="none"     type="string" available="*" />
-            <x-option-table-row prop="options"            required="false" default="none"     type="Collection|array" available="*" />
-            <x-option-table-row prop="flip-options"       required="false" default="false"    type="boolean" />
-            <x-option-table-row prop="option-key-value"   required="false" default="false"    type="boolean" />
-            <x-option-table-row prop="clearable"          required="false" default="true"     type="boolean" available="boolean" />
-            <x-option-table-row prop="searchable"         required="false" default="true"     type="boolean" available="boolean" />
-            <x-option-table-row prop="multiselect"        required="false" default="false"    type="boolean" available="boolean" />
-            <x-option-table-row prop="icon"               required="false" default="none"     type="string"  available="all heroicons" />
-            <x-option-table-row prop="rightIcon"          required="false" default="selector" type="string"  available="all heroicons" />
-            <x-option-table-row prop="async-data"         required="false" default="none"     type="string|AsyncDataConfig"  available="all endpoints" />
-            <x-option-table-row prop="always-fetch"       required="false" default="none"     type="string" available="true|false" />
-            <x-option-table-row prop="template"           required="false" default="default"  type="string|array" available="default|user-option" />
-            <x-option-table-row prop="empty-message"      required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
-            <x-option-table-row prop="hide-empty-message" required="false" default="false"    type="boolean" available="boolean" />
+            <x-option-table-row prop="label"                required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="placeholder"          required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-value"         required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-label"         required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="option-description"   required="false" default="none"     type="string" available="*" />
+            <x-option-table-row prop="options"              required="false" default="none"     type="Collection|array" available="*" />
+            <x-option-table-row prop="flip-options"         required="false" default="false"    type="boolean" />
+            <x-option-table-row prop="option-key-value"     required="false" default="false"    type="boolean" />
+            <x-option-table-row prop="clearable"            required="false" default="true"     type="boolean" available="boolean" />
+            <x-option-table-row prop="searchable"           required="false" default="true"     type="boolean" available="boolean" />
+            <x-option-table-row prop="multiselect"          required="false" default="false"    type="boolean" available="boolean" />
+            <x-option-table-row prop="icon"                 required="false" default="none"     type="string"  available="all heroicons" />
+            <x-option-table-row prop="rightIcon"            required="false" default="selector" type="string"  available="all heroicons" />
+            <x-option-table-row prop="async-data"           required="false" default="none"     type="string|AsyncDataConfig"  available="all endpoints" />
+            <x-option-table-row prop="always-fetch"         required="false" default="none"     type="string" available="true|false" />
+            <x-option-table-row prop="template"             required="false" default="default"  type="string|array" available="default|user-option" />
+            <x-option-table-row prop="empty-message"        required="false" default="__('wireui::messages.empty_options')" type="string" available="*" />
+            <x-option-table-row prop="hide-empty-message"   required="false" default="false"    type="boolean" available="boolean" />
+            <x-option-table-row prop="min-items-for-search" required="false" default="11"       type="int" available="*" />
         </x-options-table>
 
         <div id="default-option">
