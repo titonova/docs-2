@@ -131,7 +131,8 @@ class Select extends Component
     <x-select ...  :async-data="[
         'api' => route('api.users.index'),
         'method' => 'POST', // default is GET
-        'params' => ['ble' => 'baz'] // default is []
+        'params' => ['ble' => 'baz'], // default is []
+        'credentials' => 'include' // default is undefined
     ]" />
     HTML;
 
