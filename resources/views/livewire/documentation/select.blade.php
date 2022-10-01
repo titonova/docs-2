@@ -95,7 +95,8 @@
             export type AsyncDataConfig = {
                 api: string | null
                 method: string
-                params: any
+                params: any,
+                credentials?: RequestCredentials,
                 alwaysFetch: boolean
             }
         </x-code>
