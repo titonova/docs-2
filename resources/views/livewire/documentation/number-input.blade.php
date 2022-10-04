@@ -23,7 +23,7 @@
             href="#number-input"
             id="number-input"
             language="blade"
-            :code="$passwordExample">
+            :code="$numberExample">
             <div class="max-w-sm mx-auto">
                 <x-inputs.number label="How many Burgers?" />
             </div>
