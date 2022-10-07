@@ -22,6 +22,7 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('css-utilities', Documentation\CssUtilities::class)->name('css-utilities');
     Route::get('troubleshooting', Documentation\Troubleshooting::class)->name('troubleshooting');
     Route::get('heroicons', Documentation\Heroicons::class)->name('heroicons');
+    Route::get('badges', Documentation\Badges::class)->name('badges');
     Route::get('notifications', Documentation\Notifications::class)->name('notifications');
     Route::get('hooks', Documentation\Hooks::class)->name('hooks');
     Route::get('inputs', Documentation\Inputs::class)->name('inputs');
