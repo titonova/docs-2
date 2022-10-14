@@ -8,8 +8,8 @@ use Livewire\Component;
 
 class NumberInput extends Component
 {
-    public string $passwordExample = <<<HTML
-    <x-inputs.password label="Secret 🙈" value="I love WireUI ❤️" />
+    public string $numberExample = <<<HTML
+    <x-inputs.number label="How many Burgers?" />
     HTML;
 
     public string $holdExample = <<<HTML
