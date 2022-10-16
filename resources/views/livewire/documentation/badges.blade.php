@@ -33,7 +33,7 @@
         id="default-colors"
         language="html"
         :code="$defaultColorsCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge label="Default" />
             <x-badge primary label="Primary" />
             <x-badge secondary label="Secondary" />
@@ -74,7 +74,7 @@
         id="outline-colors"
         language="html"
         :code="$outlineColorsCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge outline label="Default" />
             <x-badge outline primary label="Primary" />
             <x-badge outline secondary label="Secondary" />
@@ -115,7 +115,7 @@
         id="flat-colors"
         language="html"
         :code="$flatColorsCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge flat label="Default" />
             <x-badge flat primary label="Primary" />
             <x-badge flat secondary label="Secondary" />
@@ -156,7 +156,7 @@
         id="rounded-badges"
         language="html"
         :code="$roundedBadgesCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge rounded label="No Color" />
             <x-badge rounded primary label="Primary" />
             <x-badge rounded secondary label="Secondary" />
@@ -174,7 +174,7 @@
         id="squared-badges"
         language="html"
         :code="$squaredBadgesCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge squared label="No Color" />
             <x-badge squared primary label="Primary" />
             <x-badge squared secondary label="Secondary" />
@@ -214,7 +214,7 @@
         id="badge-icons"
         language="html"
         :code="$badgeIconsCode">
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
+        <div>
             <x-badge icon="home" label="Default" />
             <x-badge icon="pencil" primary label="Primary" />
             <x-badge icon="clipboard-list" secondary label="Secondary" />
@@ -233,13 +233,9 @@
         language="html"
         :code="$badgeSizesCode">
         <div class="space-x-2 space-y-2">
-            <x-badge 2xs secondary label="2xs size" />
-            <x-badge xs  primary   label="xs size" />
-            <x-badge sm  positive  label="sm size" />
-            <x-badge     negative  label="default size" />
-            <x-badge md  warning   label="md size" />
-            <x-badge lg  stone     label="lg size" />
-            <x-badge xl  dark      label="xl size" />
+            <x-badge icon="clipboard-list" secondary label="sm size" />
+            <x-badge md icon="clipboard-list" positive label="md size" />
+            <x-badge lg icon="clipboard-list" negative label="lg size" />
         </div>
     </x-code-preview>
 
@@ -261,7 +257,7 @@
             <x-option-table-row prop="md"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="lg"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="xl"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="2xs|xs|sm|default|md|lg|xl" />
+            <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="sm|md|lg" />
 
             <x-option-table-row prop="primary"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="secondary" required="false" default="false" type="boolean" available="boolean" />
