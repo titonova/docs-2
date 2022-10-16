@@ -33,7 +33,7 @@
         id="default-colors"
         language="html"
         :code="$defaultColorsCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge label="Default" />
             <x-badge primary label="Primary" />
             <x-badge secondary label="Secondary" />
@@ -74,7 +74,7 @@
         id="outline-colors"
         language="html"
         :code="$outlineColorsCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge outline label="Default" />
             <x-badge outline primary label="Primary" />
             <x-badge outline secondary label="Secondary" />
@@ -115,7 +115,7 @@
         id="flat-colors"
         language="html"
         :code="$flatColorsCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge flat label="Default" />
             <x-badge flat primary label="Primary" />
             <x-badge flat secondary label="Secondary" />
@@ -156,7 +156,7 @@
         id="rounded-badges"
         language="html"
         :code="$roundedBadgesCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge rounded label="No Color" />
             <x-badge rounded primary label="Primary" />
             <x-badge rounded secondary label="Secondary" />
@@ -174,7 +174,7 @@
         id="squared-badges"
         language="html"
         :code="$squaredBadgesCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge squared label="No Color" />
             <x-badge squared primary label="Primary" />
             <x-badge squared secondary label="Secondary" />
@@ -214,7 +214,7 @@
         id="badge-icons"
         language="html"
         :code="$badgeIconsCode">
-        <div>
+        <div class="flex flex-wrap gap-3">
             <x-badge icon="home" label="Default" />
             <x-badge icon="pencil" primary label="Primary" />
             <x-badge icon="clipboard-list" secondary label="Secondary" />
@@ -232,7 +232,7 @@
         id="badge-sizes"
         language="html"
         :code="$badgeSizesCode">
-        <div class="space-x-2 space-y-2">
+        <div class="flex flex-wrap gap-3">
             <x-badge icon="clipboard-list" secondary label="sm size" />
             <x-badge md icon="clipboard-list" positive label="md size" />
             <x-badge lg icon="clipboard-list" negative label="lg size" />
@@ -251,12 +251,9 @@
         <x-section.title href="#badge-options" title="Badge Options" />
 
         <x-options-table class="w-full mt-2 mb-6">
-            <x-option-table-row prop="2xs"  required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="xs"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="sm"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="md"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="lg"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="xl"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="sm|md|lg" />
 
             <x-option-table-row prop="primary"   required="false" default="false" type="boolean" available="boolean" />
