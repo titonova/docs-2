@@ -232,7 +232,7 @@
         id="badge-sizes"
         language="html"
         :code="$badgeSizesCode">
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-wrap items-center gap-3">
             <x-badge icon="clipboard-list" secondary label="default size" />
             <x-badge md icon="clipboard-list" positive label="md size" />
             <x-badge lg icon="clipboard-list" negative label="lg size" />
