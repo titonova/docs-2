@@ -158,7 +158,7 @@ class Badges extends Component
     HTML;
 
     public string $badgeSizesCode = <<<HTML
-    <x-badge icon="clipboard-list" secondary label="sm size" />
+    <x-badge icon="clipboard-list" secondary label="default size" />
     <x-badge md icon="clipboard-list" positive label="md size" />
     <x-badge lg icon="clipboard-list" negative label="lg size" />
     HTML;

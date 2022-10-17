@@ -233,7 +233,7 @@
         language="html"
         :code="$badgeSizesCode">
         <div class="flex flex-wrap gap-3">
-            <x-badge icon="clipboard-list" secondary label="sm size" />
+            <x-badge icon="clipboard-list" secondary label="default size" />
             <x-badge md icon="clipboard-list" positive label="md size" />
             <x-badge lg icon="clipboard-list" negative label="lg size" />
         </div>
@@ -251,10 +251,9 @@
         <x-section.title href="#badge-options" title="Badge Options" />
 
         <x-options-table class="w-full mt-2 mb-6">
-            <x-option-table-row prop="sm"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="md"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="lg"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="sm|md|lg" />
+            <x-option-table-row prop="md"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="lg"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="size" required="false" default="default" type="string"  available="default|md|lg" />
 
             <x-option-table-row prop="primary"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="secondary" required="false" default="false" type="boolean" available="boolean" />
