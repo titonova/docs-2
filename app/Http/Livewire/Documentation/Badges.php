@@ -163,6 +163,26 @@ class Badges extends Component
     <x-badge lg icon="clipboard-list" negative label="lg size" />
     HTML;
 
+    public string $badgePrependAppendCode = <<<HTML
+    <x-badge flat primary label="Prepend">
+        <x-slot name="prepend">
+            <span class="relative flex w-2 h-2">
+                <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+                <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
+            </span>
+        </x-slot>
+    </x-badge>
+
+    <x-badge flat primary label="Append">
+        <x-slot name="append">
+            <span class="relative flex w-2 h-2">
+                <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+                <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
+            </span>
+        </x-slot>
+    </x-badge>
+    HTML;
+
     public function render()
     {
         return view('livewire.documentation.badges')->layout(Documentation::class);

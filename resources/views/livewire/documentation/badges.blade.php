@@ -2,14 +2,15 @@
     <x-slot name="summary">
         <x-summary>
             <x-summary.header href="#badges" label="Badges">
-                <x-summary.item href="#default-colors"  label="Default Colors" />
-                <x-summary.item href="#outline-colors"  label="Outline Colors" />
-                <x-summary.item href="#flat-colors"     label="Flat Colors" />
-                <x-summary.item href="#rounded-badges" label="Rounded Badges" />
-                <x-summary.item href="#squared-badges" label="Squared Badges" />
-                <x-summary.item href="#circle-badges"  label="Circle Badges" />
-                <x-summary.item href="#badge-icons"    label="Badge With Icons" />
-                <x-summary.item href="#badge-sizes"    label="Badge Sizes" />
+                <x-summary.item href="#default-colors"        label="Default Colors" />
+                <x-summary.item href="#outline-colors"        label="Outline Colors" />
+                <x-summary.item href="#flat-colors"           label="Flat Colors" />
+                <x-summary.item href="#rounded-badges"        label="Rounded Badges" />
+                <x-summary.item href="#squared-badges"        label="Squared Badges" />
+                <x-summary.item href="#circle-badges"         label="Circle Badges" />
+                <x-summary.item href="#badge-icons"           label="Badge With Icons" />
+                <x-summary.item href="#badge-sizes"           label="Badge Sizes" />
+                <x-summary.item href="#badge-prepend-append"  label="Badge Prepend and Append" />
             </x-summary.header>
 
             <x-summary.header href="#badge-options" label="Badge Options" />
@@ -239,6 +240,33 @@
         </div>
     </x-code-preview>
 
+    <x-code-preview
+        title="Badge Prepend and Append"
+        href="#badge-prepend-append"
+        id="badge-prepend-append"
+        language="html"
+        :code="$badgePrependAppendCode">
+        <div class="flex flex-wrap items-center gap-3">
+            <x-badge flat primary label="Prepend">
+                <x-slot name="prepend">
+                    <span class="relative flex w-2 h-2">
+                        <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+                        <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
+                    </span>
+                </x-slot>
+            </x-badge>
+
+            <x-badge flat primary label="Append">
+                <x-slot name="append">
+                    <span class="relative flex w-2 h-2">
+                        <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+                        <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
+                    </span>
+                </x-slot>
+            </x-badge>
+        </div>
+    </x-code-preview>
+
     <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700">
         <x-icon name="exclamation" class="w-5 h-5 text-yellow-400 shrink-0" />
 
@@ -295,6 +323,9 @@
             <x-option-table-row prop="label"     required="false" default="null" type="string" available="*" />
             <x-option-table-row prop="icon"      required="false" default="null" type="string" available="all heroicons" />
             <x-option-table-row prop="rightIcon" required="false" default="null" type="string" available="all heroicons" />
+
+            <x-option-table-row prop="prepend" required="false" default="none" type="slot" available="slot" />
+            <x-option-table-row prop="append"  required="false" default="none" type="slot" available="slot" />
         </x-options-table>
     </div>
 </div>
