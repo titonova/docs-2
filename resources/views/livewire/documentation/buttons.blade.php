@@ -36,7 +36,7 @@
         id="default-colors"
         language="html"
         :code="$defaultColorsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button label="Default" />
             <x-button primary label="Primary" />
             <x-button secondary label="Secondary" />
@@ -77,7 +77,7 @@
         id="outline-colors"
         language="html"
         :code="$outlineColorsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button outline label="Default" />
             <x-button outline primary label="Primary" />
             <x-button outline secondary label="Secondary" />
@@ -118,7 +118,7 @@
         id="flat-colors"
         language="html"
         :code="$flatColorsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button flat label="Default" />
             <x-button flat primary label="Primary" />
             <x-button flat secondary label="Secondary" />
@@ -159,7 +159,7 @@
         id="rounded-buttons"
         language="html"
         :code="$roundedButtonsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button rounded label="No Color" />
             <x-button rounded primary label="Primary" />
             <x-button rounded secondary label="Secondary" />
@@ -177,7 +177,7 @@
         id="squared-buttons"
         language="html"
         :code="$squaredButtonsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button squared label="No Color" />
             <x-button squared primary label="Primary" />
             <x-button squared secondary label="Secondary" />
@@ -217,7 +217,7 @@
         id="button-icons"
         language="html"
         :code="$buttonIconsCode">
-        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button icon="home" label="Default" />
             <x-button icon="pencil" primary label="Primary" />
             <x-button icon="clipboard-list" secondary label="Secondary" />
@@ -285,8 +285,8 @@
         </div>
     </x-code-preview>
 
-    <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700 p-4">
-        <x-icon name="exclamation" class="h-5 w-5 shrink-0 text-yellow-400" />
+    <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700">
+        <x-icon name="exclamation" class="w-5 h-5 text-yellow-400 shrink-0" />
 
         <p class="text-sm text-yellow-700 dark:text-yellow-400">
             The attributes [squared, rounded, right-icon] are not supported in <b>button.circle</b> component
@@ -297,13 +297,13 @@
         <x-section.title href="#button-options" title="Button Options" />
 
         <x-options-table class="w-full mt-2 mb-6">
-            <x-option-table-row prop="2xs"  required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="xs"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="sm"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="md"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="lg"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="xl"   required="false" default="false" type="boolean" available="boolean" />
-            <x-option-table-row prop="size" required="false" default="sm"    type="string"  available="2xs|xs|sm|default|md|lg|xl" />
+            <x-option-table-row prop="2xs"  required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="xs"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="sm"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="md"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="lg"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="xl"   required="false" default="false"   type="boolean" available="boolean" />
+            <x-option-table-row prop="size" required="false" default="default" type="string"  available="2xs|xs|sm|default|md|lg|xl" />
 
             <x-option-table-row prop="primary"   required="false" default="false" type="boolean" available="boolean" />
             <x-option-table-row prop="secondary" required="false" default="false" type="boolean" available="boolean" />
