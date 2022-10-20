@@ -165,20 +165,24 @@ class Badges extends Component
 
     public string $badgePrependAppendCode = <<<HTML
     <x-badge flat primary label="Prepend">
-        <x-slot name="prepend">
-            <span class="relative flex w-2 h-2">
-                <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
-                <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
-            </span>
+        <x-slot name="prepend" class="relative flex items-center w-2 h-2">
+            <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+            <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
         </x-slot>
     </x-badge>
 
     <x-badge flat primary label="Append">
-        <x-slot name="append">
-            <span class="relative flex w-2 h-2">
-                <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
-                <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
-            </span>
+        <x-slot name="append" class="relative flex items-center w-2 h-2">
+            <span class="absolute inline-flex w-full h-full rounded-full opacity-75 bg-cyan-500 animate-ping"></span>
+            <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
+        </x-slot>
+    </x-badge>
+
+    <x-badge flat red label="Laravel">
+        <x-slot name="append" class="relative flex items-center w-2 h-2">
+            <button type="button">
+                <x-icon name="x" class="w-4 h-4" />
+            </button>
         </x-slot>
     </x-badge>
     HTML;
