@@ -12,8 +12,13 @@ class Sponsors extends Component
         return [
             [
                 'label' => 'Hofmann Vratny',
-                'url'   => 'https://www.hofmann-vratny.de/en',
+                'url'   => 'https://www.hofmann-vratny.de/en?ref=wireui',
                 'image' => 'assets/images/sponsors/hofmann-vratny.svg',
+            ],
+            [
+                'label' => 'JetBrains',
+                'url'   => 'https://www.jetbrains.com/community/opensource/#support?ref=wireui',
+                'image' => 'assets/images/sponsors/PhpStorm.svg',
             ],
         ];
     }
