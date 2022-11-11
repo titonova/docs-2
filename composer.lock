@@ -6859,16 +6859,16 @@
         },
         {
             "name": "wireui/wireui",
-            "version": "v1.17.2",
+            "version": "v1.17.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wireui/wireui.git",
-                "reference": "09d107a2e1d111a6e6d9bdc88e3ba45c6a765a5e"
+                "reference": "c3fcd7e7b381ade56a57d5fe71a0280baffef7e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/09d107a2e1d111a6e6d9bdc88e3ba45c6a765a5e",
-                "reference": "09d107a2e1d111a6e6d9bdc88e3ba45c6a765a5e",
+                "url": "https://api.github.com/repos/wireui/wireui/zipball/c3fcd7e7b381ade56a57d5fe71a0280baffef7e2",
+                "reference": "c3fcd7e7b381ade56a57d5fe71a0280baffef7e2",
                 "shasum": ""
             },
             "require": {
@@ -6921,7 +6921,7 @@
             ],
             "support": {
                 "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v1.17.2"
+                "source": "https://github.com/wireui/wireui/tree/v1.17.5"
             },
             "funding": [
                 {
@@ -6929,7 +6929,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-04T04:27:39+00:00"
+            "time": "2022-11-11T00:21:08+00:00"
         }
     ],
     "packages-dev": [
