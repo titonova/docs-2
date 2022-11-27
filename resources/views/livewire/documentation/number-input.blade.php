@@ -50,7 +50,7 @@
 
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                The phone input accepts all
+                The number input accepts all
                 <a class="dark:text-secondary-500" href="{{ route('docs.inputs') }}#input-options">input</a>
                 options and slots
             </p>
