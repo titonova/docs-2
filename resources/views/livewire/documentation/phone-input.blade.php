@@ -53,7 +53,7 @@
 
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                You can create a new input component, just extend the default component.
+                You can create a new input component by just extending the default component.
             </p>
         </div>
 
