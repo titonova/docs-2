@@ -25,7 +25,7 @@
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
                 The Select component has support to render default html select with slot or options prop.
-                Can customize option component for one or all options.
+                You can customize the option component for one or all options.
                 See Examples.
             </p>
         </div>
@@ -52,28 +52,28 @@
         <b>How to Implement the async-search?</b>
 
         <p>
-            The wireui will makes a request with the <x-mark>search</x-mark> <b>parameter(string)</b> when the user type in the input.
-            <br /> When the component is initialized and have any selected value,
-                   the select will send a request with the <x-mark>selected</x-mark> <b>parameter(array)</b> to find the selected option
-            <br /> You are free to create your api as you want, just apply these two scopes: search and selected
+            WireUi will make a request with the <x-mark>search</x-mark> <b>parameter(string)</b> when the user types in the input.
+            <br /> When the component is initialized and has any selected value,
+                   the select will send a request with the <x-mark>selected</x-mark> <b>parameter(array)</b> to find the selected option.
+            <br /> You are free to create your API as you want, just apply these two scopes: search and selected
         </p>
 
         <ul>
-            <li>Create an api that returns an array in the response</li>
+            <li>Create an API that returns an array in the response</li>
             <li>Set the <x-mark>option-label</x-mark> and <x-mark>option-value</x-mark> attributes</li>
             <li>
-                Implement
+                Implement the
                 <a target="_Blank" href="https://github.com/wireui/docs/tree/main/app/Http/Controllers/Api/Users/Index.php#L17">search</a> scope
             </li>
             <li>
-                Implement
+                Implement the
                 <a target="_Blank" href="https://github.com/wireui/docs/tree/main/app/Http/Controllers/Api/Users/Index.php#L23">selected</a> scope
              </li>
         </ul>
     </div>
 
     <x-alerts.info>
-        Tip: See these files to read more about the <b>api</b> implementation.
+        Tip: See these files to read more about the <b>API</b> implementation.
         <br>
         <b>
             <a class="underline" target="_Blank" href="https://github.com/wireui/docs/tree/main/app/Http/Controllers/Api/Users/Index.php">

@@ -13,7 +13,7 @@
         <x-section.title id="inputs" title="Password Input" />
 
         <div class="mt-5 prose text-gray-500 xl:max-w-4xl xl:mb-8 dark:text-gray-400">
-            This component will add an toggle button to see/hide the password value
+            This component will add a toggle button to show/hide the password value
         </div>
     </div>
 

@@ -62,7 +62,7 @@
     </x-code-preview>
 
     <x-alerts.info>
-        Tip: If your project have a custom main element that handle the scroll, you can use the
+        Tip: If your project have a custom main element that handles the scroll, you can use the
         <b>main-container</b> attribute in your main element to block the scroll when the modal is opened
     </x-alerts.info>
 
@@ -105,7 +105,7 @@
     </x-code-preview>
 
     <x-alerts.info>
-        Tip: You can use global function <b>$openModal('myModal')</b> to open modal from your Javascript code.
+        Tip: You can use the global function <b>$openModal('myModal')</b> to open modal from your JavaScript code.
     </x-alerts.info>
 
     <div id="modal-options">
@@ -147,7 +147,7 @@
         <p class="py-3 dark:text-secondary-400">
             You can
             <a class="text-indigo-700 dark:text-teal-600" href="{{ route('docs.get-started') }}#publishing">publish</a>
-            wireui config or put in env file your modal preferences
+            the WireUI config or put in the .env file your modal preferences
         </p>
 
         <x-code language="php">

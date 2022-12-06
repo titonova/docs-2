@@ -24,7 +24,7 @@
 
         <div class="mt-5 prose text-secondary-500 xl:mb-8">
             <p>
-                The button component has multiples styles and options to customize.
+                The button component has multiple styles and options to customize.
                 A simple API to use button component with icons and any colors
             </p>
         </div>
@@ -263,9 +263,9 @@
     </x-code-preview>
 
     <x-alerts.info>
-        You can show a spinner loading when an action if fired
+        You can show a spinner loading when an action if fired.
         <br> You can pass <b>wire:target</b> value into <b>spinner</b>
-        prop If no value is give, all loading effects will be applied
+        prop. If no value is given, all loading effects will be applied.
     </x-alerts.info>
 
     <x-code-preview
@@ -289,7 +289,7 @@
         <x-icon name="exclamation" class="w-5 h-5 text-yellow-400 shrink-0" />
 
         <p class="text-sm text-yellow-700 dark:text-yellow-400">
-            The attributes [squared, rounded, right-icon] are not supported in <b>button.circle</b> component
+            The attributes [squared, rounded, right-icon] are not supported in the <b>button.circle</b> component
         </p>
     </div>
 

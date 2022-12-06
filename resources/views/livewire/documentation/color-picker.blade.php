@@ -75,7 +75,7 @@
         <x-section.title title="Tailwind Colors" href="#tailwind-colors" />
 
         <x-alerts.info class="my-5">
-            Sometimes you want to use the Tailwind colors from your Tailwind CSS config, just use the below code to generate the new colors.
+            If you want to use the Tailwind colors from your Tailwind CSS config, just use the code below to generate the new colors.
             If you are using TypeScript see
             <b class="text-teal-600">
                 <a href="https://github.com/wireui/wireui/blob/e3e3aff647b306ec1883c7dabec208daaa475d46/ts/components/color-picker/colors.ts" target="_blank">this file</a>

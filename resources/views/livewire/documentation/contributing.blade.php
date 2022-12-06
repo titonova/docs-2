@@ -20,11 +20,11 @@
 
         <li class="flex flex-col space-y-5">
             <a target="_blank" href="https://laravel-livewire.com/docs/2.x/installation">
-                Install the livewire
+                Install Livewire
             </a>
 
             <a target="_blank" href="https://tailwindcss.com/docs/guides/laravel">
-                Install the tailwindcss
+                Install the Tailwind CSS
             </a>
         </li>
 
@@ -43,7 +43,7 @@
         </li>
 
         <li>
-            <p>Require the wireui</p>
+            <p>Require WireUI</p>
             <x-code
                 language="shell"
                 :line-numbers="false"

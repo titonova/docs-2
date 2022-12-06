@@ -22,12 +22,12 @@
         <div class="mt-5 prose text-gray-500 xl:max-w-3xl xl:mb-8">
             <div class="mt-5 prose text-gray-500 max-w-none xl:mb-8">
                 <p>
-                    The WireUI dialog API is designed to show alerts and dialog confirmation.
-                    Dialogs use livewire events to work.
+                    The WireUI dialog API is designed to show alerts and dialog confirmations.
+                    Dialogs use Livewire events to work.
                     You can customize a dialog however you like.
                 </p>
                 <p>
-                    Example case use:
+                    Example use case:
                 </p>
                 <ul>
                     <li>Alert succeced action</li>
@@ -40,7 +40,7 @@
     <div id="first-steps">
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
-            <p class="mt-6 mb-1">Now add the component to layout</p>
+            <p class="mt-6 mb-1">Now add the component to the layout</p>
 
             <x-code language="html" :contents="$addComponentExample" no-copy />
             <br/>
@@ -72,7 +72,7 @@
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Sometimes you may want to inform the user that an action has been successful,
-                or it cannot be completed, even a simple warning, the dialog API allows for this easily.
+                or it cannot be completed, or even a simple warning. The dialog API allows for this easily.
                 See the example below.
             </p>
 
@@ -123,8 +123,8 @@
         <x-section.title href="#confirm-dialog" title="Confirm Dialog" />
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                You may also want to ask the user for a confirmation of a certain action,
-                the dialog API has a special way for that. See the example below.
+                You may also want to ask the user for a confirmation of a certain action.
+                The dialog API has a special way for that. See the example below.
             </p>
 
             <x-button
@@ -155,7 +155,7 @@
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>
         <x-code language="php" :contents="$livewireConfirmExample" />
 
-        <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via javascript</p>
+        <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via JavaScript</p>
         <x-code language="js" :contents="$javascriptConfirmExample" />
     </div>
 
@@ -164,15 +164,15 @@
 
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                Alternatively, you can use a html directive to create a confirmation dialog <br>
+                Alternatively, you can use a html directive to create a confirmation dialog. <br>
                 Blade components do not support <b>@bladeDirectives</b>
             </p>
         </div>
 
-        <p class="mt-4 mb-1 text-gray-500">You use it in alpinejs component</p>
+        <p class="mt-4 mb-1 text-gray-500">You use it in a Alpine.js component</p>
         <x-code language="html" :contents="$confirmDirectiveAlpineJs" />
 
-        <p class="mt-6 mb-1 text-gray-500">And use it in pure html</p>
+        <p class="mt-6 mb-1 text-gray-500">Or use it in pure html</p>
         <x-code language="html" :contents="$confirmDirectiveHtml" />
     </div>
 
@@ -180,7 +180,7 @@
         <x-section.title href="#dialog-events" title="Dialog Events" />
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                Dialog can have 3 events, onClose, onDismiss and onTimeout.
+                Dialog can have 3 events: onClose, onDismiss and onTimeout.
                 Each event will be triggered when they happen.
             </p>
 
@@ -196,7 +196,7 @@
         </div>
 
         <p class="mb-1 text-gray-500">
-            You can create events via javascript using closure
+            You can create events via JavaScript using a closure
         </p>
         <x-code language="js">
             {
@@ -350,7 +350,7 @@
     <div id="playground" class="space-y-4" x-data="{
         options: `{
     title: 'Playground Title',
-    description: 'testing in playground',
+    description: 'testing in the playground',
     icon: 'success',
     // close: 'Ok',
     close: {

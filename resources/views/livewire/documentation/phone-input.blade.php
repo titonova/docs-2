@@ -15,7 +15,7 @@
         <x-section.title title="Phone Input" href="#phone-input" />
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                The phone input extends the maskable input, and set default input mask.
+                The phone input extends the maskable input, and sets default input mask.
             </p>
         </div>
     </div>
@@ -53,7 +53,7 @@
 
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                You can create a new input component, just extends default component. Follow example.
+                You can create a new input component, just extend the default component.
             </p>
         </div>
 
