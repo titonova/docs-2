@@ -24,7 +24,7 @@
             </a>
 
             <a target="_blank" href="https://tailwindcss.com/docs/guides/laravel">
-                Install the Tailwind CSS
+                Install Tailwind CSS
             </a>
         </li>
 
