@@ -62,7 +62,7 @@
     </x-code-preview>
 
     <x-alerts.info>
-        Tip: If your project have a custom main element that handles the scroll, you can use the
+        Tip: If your project has a custom main element that handles the scroll, you can use the
         <b>main-container</b> attribute in your main element to block the scroll when the modal is opened
     </x-alerts.info>
 
