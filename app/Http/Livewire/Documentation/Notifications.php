@@ -31,7 +31,7 @@ class Notifications extends Component
     public string $javascriptNotificationExample = <<<JS
     window.\$wireui.notify({
         title: 'Profile saved!',
-        description: 'Your profile was successfull saved',
+        description: 'Your profile was successfully saved',
         icon: 'success'
     })
     JS;
@@ -56,7 +56,7 @@ class Notifications extends Component
             // use a simple syntax: success | error | warning | info
             \$this->notification()->success(
                 \$title = 'Profile saved',
-                \$description = 'Your profile was successfull saved'
+                \$description = 'Your profile was successfully saved'
             );
             \$this->notification()->error(
                 \$title = 'Error !!!',
@@ -66,12 +66,12 @@ class Notifications extends Component
             // or use a full syntax
             \$this->notification([
                 'title'       => 'Profile saved!',
-                'description' => 'Your profile was successfull saved',
+                'description' => 'Your profile was successfully saved',
                 'icon'        => 'success'
             ]);
             \$this->notification()->send([
                 'title'       => 'Profile saved!',
-                'description' => 'Your profile was successfull saved',
+                'description' => 'Your profile was successfully saved',
                 'icon'        => 'success'
             ]);
         }

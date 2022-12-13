@@ -17,7 +17,7 @@
         <p>
            Then, open the file <x-mark>config/wireui.php</x-mark> and rename the alias key with your preferred name.
             <br/><br/>
-           After saving, you must clear the View Cache, run the command:
+           After saving, you must clear the View Cache by running the following command:
         </p>
 
         <x-code

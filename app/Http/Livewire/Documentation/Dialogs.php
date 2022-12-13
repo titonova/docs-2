@@ -21,7 +21,7 @@ class Dialogs extends Component
     public string $javascriptExample = <<<JS
     window.\$wireui.dialog({
         title: 'Profile saved!',
-        description: 'Your profile was successfull saved',
+        description: 'Your profile was successfully saved',
         icon: 'success'
     })
     JS;
@@ -131,7 +131,7 @@ class Dialogs extends Component
             // use a simple syntax: success | error | warning | info
             \$this->dialog()->success(
                 \$title = 'Profile saved',
-                \$description = 'Your profile was successfull saved'
+                \$description = 'Your profile was successfully saved'
             );
             \$this->dialog()->error(
                 \$title = 'Error !!!',
@@ -141,12 +141,12 @@ class Dialogs extends Component
             // or use a full syntax
             \$this->dialog([
                 'title'       => 'Profile saved!',
-                'description' => 'Your profile was successfull saved',
+                'description' => 'Your profile was successfully saved',
                 'icon'        => 'success'
             ]);
             \$this->dialog()->show([
                 'title'       => 'Profile saved!',
-                'description' => 'Your profile was successfull saved',
+                'description' => 'Your profile was successfully saved',
                 'icon'        => 'success'
             ]);
         }

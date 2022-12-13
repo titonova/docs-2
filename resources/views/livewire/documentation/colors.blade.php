@@ -4,9 +4,9 @@
 
         <div class="mt-5 mb-2 prose text-gray-500 xl:max-w-3xl xl:mb-8">
             <p>
-                You can customize default colors for all WireUI components: Notifications, dialogs, inputs, selects, buttons...
+                You can customize the default colors for all WireUI components: Notifications, dialogs, inputs, selects, buttons...
                 <br/>
-                You just need to extend Tailwind Colors setting in <x-mark>tailwind.config.js</x-mark> adding preferred ones. <br>
+                You just need to extend Tailwind Colors setting in <x-mark>tailwind.config.js</x-mark> adding the preferred ones. <br>
             </p>
         </div>
 
