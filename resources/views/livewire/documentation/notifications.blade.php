@@ -59,6 +59,16 @@
         <x-code language="php" :contents="$livewireNotificationExample" />
     </div>
 
+    <x-alerts.warning class="mb-4 shadow-none">
+            Notification messages are not HTML escaped, thus it's important you escape variables passed into them to prevent XSS vulnerabilities.
+            <x-code language="php" >
+                    $this->notification()->send([
+                        'title'       => 'Message from '.e($username),
+                        'description' => 'You have a new message from '.e($username),
+                    ]);
+            </x-code>
+    </x-alerts.warning>
+        
     <div id="alert-notifications">
         <x-section.title href="#alert-notifications" title="Alert Notifications" />
         <div class="mt-5 prose text-gray-500 max-w-none">
