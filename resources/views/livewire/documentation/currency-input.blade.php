@@ -15,8 +15,8 @@
         <x-section.title title="Currency Input" href="#currency-input" />
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                The currency input help us when need a currency mask.
-                It's possible customize currency separators and decimals precision.
+                The currency input helps us when we need a currency mask.
+                It's possible to customize the currency separators and decimals precision.
             </p>
         </div>
     </div>

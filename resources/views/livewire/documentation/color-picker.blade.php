@@ -75,7 +75,7 @@
         <x-section.title title="Tailwind Colors" href="#tailwind-colors" />
 
         <x-alerts.info class="my-5">
-            Sometimes you want to use the Tailwind colors from your Tailwind CSS config, just use the below code to generate the new colors.
+            If you want to use the Tailwind colors from your Tailwind CSS config, just use the code below to generate the new colors.
             If you are using TypeScript see
             <b class="text-teal-600">
                 <a href="https://github.com/wireui/wireui/blob/e3e3aff647b306ec1883c7dabec208daaa475d46/ts/components/color-picker/colors.ts" target="_blank">this file</a>
@@ -84,9 +84,8 @@
 
         <x-code language="js">
             import Alpine from 'alpinejs'
-            import resolveConfig from 'tailwindcss/resolveConfig'
             // update with your Tailwind config path
-            import tailwindConfig from '@/tailwind.config.js'
+            import { theme } from '@/tailwind.config.js'
 
             // array of duplicated colors to exclude
             const excludeColors = [
@@ -99,10 +98,9 @@
             ]
 
             const makeColors = () => {
-                const config = resolveConfig(tailwindConfig)
-                const rawColors = config?.theme?.colors ?? {}
+                const tailwindColors = theme.extend.colors ?? {}
 
-                const colors = Object.entries(rawColors).flatMap(([name, values]) => {
+                const colors = Object.entries(tailwindColors).flatMap(([name, values]) => {
                     if (typeof values === 'string' || excludeColors.includes(name)) {
                         return []
                     }

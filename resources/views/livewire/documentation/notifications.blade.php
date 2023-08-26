@@ -20,11 +20,11 @@
         <div class="mt-5 prose text-gray-500 max-w-none xl:mb-8">
             <p>
                 The WireUI notification API is designed to show alerts, notifications and action confirmations.
-                Notifications use livewire events to work.
+                Notifications use Livewire events to work.
                 You can customize a notification however you like.
             </p>
             <p>
-                Example case use:
+                Example use cases:
             </p>
             <ul>
                 <li>Alert succeced action</li>
@@ -38,7 +38,7 @@
     <div id="first-steps">
         <x-section.title href="#first-steps" title="First Steps" />
         <div class="mt-5 text-gray-500">
-            <p class="mt-6 mb-1">Now add the component to layout</p>
+            <p class="mt-6 mb-1">Add the component to the layout</p>
             <x-code language="html" :contents="$addComponentNotificationExample" />
         </div>
     </div>
@@ -54,17 +54,27 @@
     <div id="livewire-notification">
         <x-section.title href="#livewire-notification" title="Livewire Notification" />
         <p class="mt-5 mb-1 text-gray-500">
-            Notifications can be created directly from Livewire Component
+            Notifications can be created directly from a Livewire Component
         </p>
         <x-code language="php" :contents="$livewireNotificationExample" />
     </div>
 
+    <x-alerts.warning class="mb-4 shadow-none">
+            Notification messages are not HTML escaped, thus it's important you escape variables passed into them to prevent XSS vulnerabilities.
+            <x-code language="php" >
+                    $this->notification()->send([
+                        'title'       => 'Message from '.e($username),
+                        'description' => 'You have a new message from '.e($username),
+                    ]);
+            </x-code>
+    </x-alerts.warning>
+        
     <div id="alert-notifications">
         <x-section.title href="#alert-notifications" title="Alert Notifications" />
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
                 Sometimes you may want to inform the user that an action has been successful,
-                or it cannot be completed, even a simple warning, the notifications API allows for this easily.
+                or it cannot be completed, or even a simple warning. The notifications API allows for this easily.
                 See the example below.
             </p>
 
@@ -116,8 +126,8 @@
         <x-section.title href="#confirm-notifications" title="Confirm Notifications" />
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                You may also want to ask the user for a confirmation of a certain action,
-                the Notifications API has a special way for that. See the example below.
+                You may also want to ask the user for a confirmation of a certain action.
+                The Notifications API has a special way for that. See the example below.
             </p>
 
             <x-button
@@ -149,13 +159,13 @@
         <x-code language="html" :contents="$bladeConfirmExample" />
         <br/>
         <x-alerts.warning>
-            This directive does not work on blade component, like <b>x-button</b>
+            This directive does not work on a blade component, like the <b>x-button</b>
         </x-alerts.warning>
 
         <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification through the Livewire Component</p>
         <x-code language="php" :contents="$livewireConfirmExample" />
 
-        <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via javascript</p>
+        <p class="mt-6 mb-1 text-gray-500">You can create a confirmation notification via JavaScript</p>
         <x-code language="js" :contents="$javascriptConfirmExample" />
     </div>
 
@@ -163,7 +173,7 @@
         <x-section.title href="#notification-events" title="Notifications Events" />
         <div class="mt-5 prose text-gray-500 max-w-none">
             <p>
-                Notifications can have 3 events, onClose, onDismiss and onTimeout.
+                Notifications can have 3 events: onClose, onDismiss and onTimeout.
                 Each event will be triggered when they happen.
             </p>
 
@@ -179,7 +189,7 @@
         </div>
 
         <p class="mb-1 text-gray-500">
-            You can create events via javascript using closure
+            You can create events via JavaScript using a closure
         </p>
         <x-code language="js">
             {
@@ -229,7 +239,7 @@
             <x-option-table-row prop="timeout" required="false" default="8500" type="int" />
             <x-option-table-row prop="dense" required="false" default="none" type="boolean" />
             <x-option-table-row prop="rightButtons" required="false" default="false" type="boolean" />
-            <x-option-table-row prop="progressBar" required="false" default="true" type="boolean" />
+            <x-option-table-row prop="progressbar" required="false" default="true" type="boolean" />
             <x-option-table-row prop="params" required="false" default="none" type="any" />
             <x-option-table-row prop="method" required="false" default="none" type="string" />
             <x-option-table-row prop="emit" required="false" default="none" type="string" />
@@ -288,7 +298,7 @@
         <div class="bg-slate-100 dark:bg-secondary-800 dark:border-secondary-700 shadow rounded-lg border px-4 py-2 mt-4" x-data="{
             options: `{
 title: 'Playground Title',
-description: 'testing in playground',
+description: 'testing in the playground',
 icon: 'success',
 }`,
             addNotification() {

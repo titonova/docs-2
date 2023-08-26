@@ -28,7 +28,7 @@
         language="html"
         :code="$simpleExample">
         <div class="max-w-sm mx-auto">
-            <x-textarea label="Annotations" placeholder="write your annotations" />
+            <x-textarea label="Notes" placeholder="write your notes" />
         </div>
     </x-code-preview>
 

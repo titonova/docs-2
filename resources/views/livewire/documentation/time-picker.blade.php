@@ -21,7 +21,7 @@
 
         <x-alerts.warning>
             If you are using a model property bind <b>(wire:model="appointment.datetime")</b>
-            as datetime, must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>,
+            as datetime, you must set model as <b>.defer</b> because datetime <b>cannot have empty time</b>,
             and automatically set 00:00 to time
         </x-alerts.warning>
     </div>

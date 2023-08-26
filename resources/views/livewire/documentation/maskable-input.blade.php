@@ -17,8 +17,8 @@
         <x-section.title title="Maskable Inputs" href="#maskable-inputs" />
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                The maskable input help us when need input pattern, like phone, ID, email and whatever.
-                It's possible make any pattern. See possible tokens.
+                The maskable input helps us when we need an input pattern, like phone, ID, email and whatever.
+                It's possible to make any pattern. See possible tokens.
                 Mask everything!
             </p>
         </div>
@@ -108,7 +108,7 @@
 
         <div class="mt-5 prose xl:max-w-3xl xl:mb-8 text-gray-500">
             <p>
-                You can create a new input component, just extends default component. Follow example.
+                You can create a new input component, just extend the default component.
             </p>
         </div>
 

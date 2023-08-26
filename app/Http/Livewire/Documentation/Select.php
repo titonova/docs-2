@@ -116,7 +116,7 @@ class Select extends Component
         ...
         x-on:open="alert('openned select')"
         x-on:close="alert('closed select')"
-        x-on:select="alert('selected/unselected option')"
+        x-on:selected="alert('selected/unselected option')"
         x-on:clear="alert('cleared select')"
     >
         ...
@@ -131,7 +131,8 @@ class Select extends Component
     <x-select ...  :async-data="[
         'api' => route('api.users.index'),
         'method' => 'POST', // default is GET
-        'params' => ['ble' => 'baz'] // default is []
+        'params' => ['ble' => 'baz'], // default is []
+        'credentials' => 'include' // default is undefined
     ]" />
     HTML;
 

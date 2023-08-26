@@ -22,14 +22,18 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('css-utilities', Documentation\CssUtilities::class)->name('css-utilities');
     Route::get('troubleshooting', Documentation\Troubleshooting::class)->name('troubleshooting');
     Route::get('heroicons', Documentation\Heroicons::class)->name('heroicons');
+    Route::get('badges', Documentation\Badges::class)->name('badges');
     Route::get('notifications', Documentation\Notifications::class)->name('notifications');
     Route::get('hooks', Documentation\Hooks::class)->name('hooks');
     Route::get('inputs', Documentation\Inputs::class)->name('inputs');
+    Route::get('inputs-password', Documentation\PasswordInput::class)->name('inputs.password');
+    Route::get('inputs-number', Documentation\NumberInput::class)->name('inputs.number');
     Route::get('errors', Documentation\Errors::class)->name('errors');
     Route::get('maskable-inputs', Documentation\MaskableInput::class)->name('maskable-inputs');
     Route::get('phone-input', Documentation\PhoneInput::class)->name('phone-input');
     Route::get('buttons', Documentation\Buttons::class)->name('buttons');
     Route::get('currency-input', Documentation\CurrencyInput::class)->name('currency-input');
+    Route::get('avatar', Documentation\Avatar::class)->name('avatar');
     Route::get('dropdown', Documentation\Dropdown::class)->name('dropdown');
     Route::get('datetime-picker', Documentation\DatetimePicker::class)->name('datetime-picker');
     Route::get('time-picker', Documentation\TimePicker::class)->name('time-picker');

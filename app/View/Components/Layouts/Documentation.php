@@ -35,6 +35,14 @@ class Documentation extends Component
                 'route'  => route('docs.inputs'),
             ],
             [
+                'label' => 'Password Input',
+                'route' => route('docs.inputs.password'),
+            ],
+            [
+                'label' => 'Number Input',
+                'route' => route('docs.inputs.number'),
+            ],
+            [
                 'label' => 'Textarea',
                 'route' => route('docs.textarea'),
             ],
@@ -122,6 +130,14 @@ class Documentation extends Component
                 'header' => 'UI Components',
                 'label'  => 'Icons',
                 'route'  => route('docs.heroicons'),
+            ],
+            [
+                'label' => 'Badges',
+                'route' => route('docs.badges'),
+            ],
+            [
+                'label' => 'Avatar',
+                'route' => route('docs.avatar'),
             ],
             [
                 'label' => 'Dropdown',
